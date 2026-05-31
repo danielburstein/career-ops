@@ -1,0 +1,5 @@
+| ID | Date | Company | Role | Score | Status | Applied | Report |
+|---|---|---|---|---|---|---|---|
+| 1 | 2026-05-27 | Vercel | Software Engineer, AI Gateway | 4.4/5 | Evaluada | ❌ | [001](reports/001-vercel-ai-gateway-2026-05-27.md) | Re-eval 2026-05-27 (4.3→4.4). Perfect technical match (AI infra + concurrency); YOE gap is the only hurdle. |
+| 002 | 2026-05-27 | Acme Corp | Software Engineer, Backend | 4.2/5 | Evaluada | ❌ | [002](reports/002-acme-corp-2026-05-27.md) |
+| 005 | 2026-05-27 | Data Analytics Startup | Software Engineer, Backend | 4.7/5 | Evaluada | ❌ | [005](reports/005-data-analytics-startup-2026-05-27.md) |

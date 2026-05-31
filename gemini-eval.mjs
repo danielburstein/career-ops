@@ -215,6 +215,7 @@ USER ARCHETYPES & NARRATIVE (_profile.md)
 ═══════════════════════════════════════════════════════
 ${profileContent}
 
+JavaScript
 ═══════════════════════════════════════════════════════
 IMPORTANT OPERATING RULES FOR THIS CLI SESSION
 ═══════════════════════════════════════════════════════
@@ -223,7 +224,8 @@ IMPORTANT OPERATING RULES FOR THIS CLI SESSION
    - For Block G (Legitimacy): analyze the JD text only; skip URL/page freshness checks.
    - Post-evaluation file saving is handled by the script, not by you.
 2. Generate Blocks A through G in full, in English, unless the JD is in another language.
-3. At the very end, output a machine-readable summary block in this exact format:
+3. CRITICAL FORMATTING RULE: When generating Markdown tables, use exactly three dashes for the header separator rows (e.g., |---|---|). DO NOT pad the separators with extra dashes to match column width.
+4. At the very end, output a machine-readable summary block in this exact format:
 
 ---SCORE_SUMMARY---
 COMPANY: <company name or "Unknown">
@@ -244,7 +246,7 @@ const model = genAI.getGenerativeModel({
   model: modelName,
   generationConfig: {
     temperature: 0.4,      // deterministic enough for structured evaluation
-    maxOutputTokens: 8192, // full 7-block evaluation
+    maxOutputTokens: 65536, // full 7-block evaluation
   },
 });
 

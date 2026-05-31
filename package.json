@@ -16,7 +16,13 @@
     "liveness": "node check-liveness.mjs",
     "scan": "node scan.mjs",
     "patterns": "node analyze-patterns.mjs",
-    "gemini:eval": "node gemini-eval.mjs"
+    "gemini:eval": "node gemini-eval.mjs",
+    "pre-filter": "node pre-filter.mjs",
+    "gemini:batch": "node batch-gemini.mjs",
+    "summary": "node batch-summary.mjs",
+    "apply": "node auto-apply.mjs",
+    "apply:queue": "node auto-apply.mjs --queue",
+    "pipeline": "node pipeline.js"
   },
   "keywords": [
     "ai",
@@ -38,6 +44,7 @@
     "@google/generative-ai": "^0.24.1",
     "dotenv": "^17.0.0",
     "js-yaml": "^4.1.1",
+    "p-limit": "^5.0.0",
     "playwright": "^1.58.1"
   }
 }

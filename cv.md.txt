@@ -1,0 +1,293 @@
+# DANIEL BURSTEIN
+
+📧 deburstein@ucsd.edu  
+📞 (669) 600-9610  
+🔗 LinkedIn: https://linkedin.com/in/daniel-burstein  
+🔗 GitHub: https://github.com/danielburstein  
+📍 Bay Area, CA
+
+---
+
+# Summary
+
+Strong computer programmer with a heavy mathematics background and a passion for problem-solving. Experienced working with a wide range of technologies and collaborating on teams of various sizes. Eager to learn new skills, gain experience, and consistently deliver above and beyond expectations.
+
+---
+
+# Education
+
+## University of California, San Diego (UCSD)
+**B.S. in Computer Science and Mathematics**  
+Graduation: June 2025
+
+### Relevant Coursework
+- Advanced Data Structures
+- Design & Analysis of Algorithms
+- Software Engineering
+- Theory of Computation
+- Machine Learning
+- Data Science in Practice
+- Operating Systems Principles
+- Linear Programming
+- Programming Languages
+- Modern Algebra II
+- Graph Theory
+- Mathematical Reasoning
+
+---
+
+# Technical Skills
+
+**Languages & Frameworks:**  
+Python, C++, Java, TypeScript, Next.js, Node.js
+
+**Tools & Technologies:**  
+Tailwind CSS, Docker, Git, Linux/Shell, AWS, Redis, PostgreSQL, SQL, REST APIs
+
+---
+
+# Experience
+
+## Moment37 — Software Engineer Intern
+**April 2025 – July 2025**
+
+- Built and scaled KS Book Creator, an AI-powered book generation platform that drove $2M in client revenue within 10 days of launch.
+- Designed and developed a robust Next.js + TypeScript frontend architecture with Zustand, supporting 1,000+ concurrent users and reducing page load times by 35% through optimized state management and responsive UI design.
+- Engineered and maintained scalable backend services with FastAPI, SQLModel, and PostgreSQL, processing thousands of book outlines and chapters weekly with a failure rate under 1%.
+- Integrated advanced AI-driven tools including LLM models and Perplexity AI to automate content creation, increasing production speed and quality.
+- Implemented automated deployment pipelines using Docker, Railway, and GitHub Actions, streamlining CI/CD processes and improving release efficiency.
+
+## 6Degrees LTD — Software Engineer Intern
+**June 2024 – August 2024**
+
+- Optimized Bluetooth Low Energy (BLE) data transmission by compressing communication packets via UART with hex encoding, reducing payload size by 80% without loss of data fidelity.
+- Integrated haptic feedback functionality with over 100 options, enabling real-time vibration control through BLE and UART for wearable AI devices.
+- Implemented BLE profile initialization, including BLE HID and BLE UART, improving device connectivity and service discovery protocols.
+- Designed and refined sensor-driven systems that increased motion tracking precision by 85% and enhanced VR gameplay functionality to alleviate phantom limb pain.
+
+## ScuffleMC — Founder & CEO
+**February 2022 – September 2023**
+
+- Developed and launched a multiplayer game that attracted over 600,000 unique players and generated approximately $150,000 in revenue.
+- Led a team of 40 developers, designers, artists, and builders to achieve project milestones and deliverables.
+- Built backend tools using Node.js and managed collaboration workflows with Git.
+- Managed infrastructure through OVH and AWS while utilizing MySQL databases for player data and game state management.
+
+---
+
+# Professional Projects
+
+## AI Video Creator
+**Python, FastAPI, Docker, Railway, FFMPEG**  
+**August 2025 – Present**
+
+- Engineered a fully automated AI video production pipeline that transforms a single user prompt into cohesive short-form videos.
+- Integrated APIs for narrative generation, text-to-speech synthesis, image generation, caption creation, and multi-platform uploads to enable end-to-end AI video production.
+- Utilized FFMPEG for final video assembly, combining AI-generated captions, synthesized voice-overs, and customized background visuals into polished outputs.
+
+
+
+
+
+---
+
+
+# Major Technical Wins — Daniel Burstein
+
+## AI-Powered Book Creation Platform (KS Book Creator)
+
+### Situation
+A rapidly scaling AI startup needed to launch and stabilize an AI-powered book creation platform capable of handling massive user demand after explosive early traction and revenue growth.
+
+### Task
+Build and maintain production-grade infrastructure for an end-to-end AI book generation platform while supporting scalability, content generation workflows, caching, asynchronous processing, and real-time user interactions.
+
+### Action
+Engineered full-stack features across a modern distributed architecture using:
+- **Frontend:** Next.js, TypeScript, Zustand
+- **Backend:** FastAPI, Python, SQLModel
+- **Database:** PostgreSQL
+- **Infrastructure:** Redis for caching, queues, and task orchestration
+
+Implemented AI-driven workflows for:
+- Automated outline generation
+- Long-form content generation
+- Citation generation pipelines
+- Stateful book editing flows
+
+Optimized asynchronous task handling and caching layers to support high request throughput while maintaining responsive UI interactions between the frontend and backend services.
+
+### Result
+Helped support an AI SaaS platform that generated over **$2 million in revenue within its first 10 days**, while maintaining scalable infrastructure capable of supporting rapid user growth and AI-heavy workloads.
+
+---
+
+## BLE Communication Compression System
+
+### Situation
+A Bluetooth-enabled hardware platform was transmitting inefficient BLE payloads, causing unnecessary bandwidth usage and limiting communication performance between embedded devices and connected systems.
+
+### Task
+Reduce BLE packet sizes while preserving all required information and extend device communication capabilities for haptic feedback transmission.
+
+### Action
+Developed low-level communication optimizations during a Software Engineering Internship at 6Degrees LTD using:
+- **Languages:** C++, embedded systems tooling
+- **Protocols:** BLE, UART
+- **Data Encoding:** Hexadecimal packet compression techniques
+
+Compressed BLE information into optimized UART-compatible payloads, significantly reducing packet overhead while retaining full functionality.
+
+Extended the communication stack to support:
+- Dynamic haptic feedback transmission
+- BLE-to-UART bridging
+- Bluetooth initialization improvements
+- Device profile setup and configuration logic
+
+### Result
+Successfully reduced communication overhead and improved device responsiveness while enabling additional hardware functionality through efficient BLE/UART integration.
+
+---
+
+## High-Concurrency Minecraft Server Infrastructure
+
+### Situation
+Large-scale multiplayer game servers required reliable infrastructure capable of handling high player concurrency, custom gameplay systems, and scalable network routing.
+
+### Task
+Manage and develop backend infrastructure, automation systems, and plugin architecture for high-traffic community servers.
+
+### Action
+Built and maintained large-scale multiplayer infrastructure using:
+- **Languages:** Java, Skript
+- **Server Software:** Spigot/Paper
+- **Infrastructure Tools:** Pterodactyl Panel, proxy routing systems
+
+Developed:
+- Custom Java plugins for gameplay systems and moderation tooling
+- Automated server-side workflows using Skript
+- Proxy routing configurations for distributed player handling
+- Infrastructure automation for deployment and server management
+
+Optimized server performance and scalability while maintaining uptime under high player load conditions.
+
+### Result
+Delivered stable, scalable multiplayer infrastructure with automated administration systems and improved operational efficiency for high-concurrency game environments.
+
+---
+
+## Automated Video Generation Pipeline
+
+### Situation
+Content creation workflows involving AI-generated video required excessive manual coordination between multiple generation tools and scene management systems.
+
+### Task
+Create an automated pipeline capable of orchestrating scene-by-scene AI video generation across multiple generative media APIs.
+
+### Action
+Engineered an automated video generation engine in Python integrating:
+- Kling API
+- LTX-2 API
+- Seedance 2.0 API
+
+Designed orchestration systems for:
+- Sequential scene generation
+- Automated prompt routing
+- Asset management
+- Multi-model generation coordination
+- End-to-end workflow automation
+
+Built modular processing pipelines to streamline content production and reduce manual intervention across the generation lifecycle.
+
+### Result
+Enabled automated, scalable AI-driven video production workflows capable of generating structured multi-scene content with minimal human involvement.
+
+---
+
+## Advanced Data Structures & Systems Programming
+
+### Situation
+Complex systems programming coursework required implementing highly efficient custom data structures and low-level algorithms without modifying provided interfaces.
+
+### Task
+Implement performant data structures and algorithms while adhering to strict architectural constraints.
+
+### Action
+Developed advanced systems-level implementations in C++ including:
+- Multiway trie data structures
+- Recursive node management systems
+- Dynamic memory handling
+- Efficient lookup and deletion algorithms
+
+Worked extensively with:
+- Pointer-based memory management
+- Nested helper classes
+- Hash-map backed node traversal
+- Performance-oriented algorithm design
+
+Applied strong mathematical and algorithmic foundations to optimize runtime complexity and memory efficiency.
+
+### Result
+Successfully implemented constrained systems-level architectures while strengthening expertise in low-level programming, algorithm optimization, and memory-safe design patterns.
+
+---
+
+## Statistical Computing & Experimental Analysis Workflows
+
+### Situation
+Data-intensive coursework and experimentation required reproducible statistical analysis pipelines across multiple domains involving inference, modeling, and experimental design.
+
+### Task
+Build reliable statistical workflows for data manipulation, experimentation, and analytical modeling.
+
+### Action
+Worked extensively with:
+- **Languages:** R, Python
+- **Libraries:** pandas, NumPy, statsmodels, scipy, seaborn, patsy
+
+Implemented:
+- Experimental design analysis
+- Statistical modeling workflows
+- Regression analysis
+- Data cleaning and transformation pipelines
+- Automated analytical notebooks
+
+Applied mathematical foundations in:
+- Floating point systems
+- Numerical optimization
+- Coordinate descent methods
+- Statistical inference
+
+### Result
+Built strong quantitative analysis capabilities combining software engineering, mathematics, and reproducible data science workflows.
+
+---
+
+### Situation
+I started building my own Minecraft server because I enjoyed creating software and multiplayer experiences for other players. What began as a personal project quickly gained traction and attracted a large online community.
+
+### Task
+As the server grew, I became responsible for maintaining gameplay systems, managing infrastructure, supporting users, and coordinating a growing development team while ensuring the server remained stable and enjoyable for players.
+
+### Action
+I developed the game systems from scratch and eventually recruited and managed approximately three dozen individuals, including developers, artists, moderators, builders, and social media influencers. I organized updates, coordinated meetings, handled player feedback, and maintained the technical backend infrastructure. I also configured hosting systems, proxy routing, and automation tools to support the increasing player load.
+
+### Result
+The server grew to roughly 750 unique daily users with an average of 200 concurrent users at any given time. Through this experience, I developed leadership, communication, and technical problem-solving skills while learning how to scale and manage a large online community.
+
+---
+
+### Situation
+At one point, the Minecraft server experienced a major hosting failure caused by unresolved memory issues. Hundreds of players were affected, and the server became unstable.
+
+### Task
+I needed to quickly restore server functionality, minimize downtime for users, and prevent the same issue from occurring again.
+
+### Action
+I communicated directly with the hosting provider while simultaneously keeping the player community informed. After determining the provider could not resolve the issue, I decided to migrate the entire server infrastructure to a new hosting platform. Within approximately one hour, I transferred files, reconfigured systems, restored services, and verified that the server was functioning properly on the new infrastructure.
+
+### Result
+The migration minimized downtime for hundreds of users and restored server stability. The experience taught me how to make high-pressure technical decisions quickly while balancing communication, leadership, and infrastructure management.
+
+---
+

@@ -25,14 +25,7 @@ Execute the same as the `oferta` mode (read `modes/oferta.md` for all A-F blocks
 Save the full evaluation in `reports/{###}-{company-slug}-{YYYY-MM-DD}.md` (see format in `modes/oferta.md`).
 Include Block G in the saved report. Add **URL:** {url} and **Legitimacy:** {tier} to the report header.
 
-## Step 3 — Generate PDF
-
-Read `config/profile.yml`. Check `cv.output_format`:
-
-- If `"latex"`, execute the full pipeline from `modes/latex.md`
-- Otherwise (default), execute the full pipeline from `modes/pdf.md`
-
-## Step 4 — Draft Application Answers (only if score >= 4.5)
+## Step 3 — Draft Application Answers (only if score >= 4.5)
 
 If the final score is >= 4.5, generate a draft of responses for the application form:
 
@@ -68,8 +61,8 @@ If the final score is >= 4.5, generate a draft of responses for the application 
 
 **Language**: Always in the language of the JD (EN default). Apply `/tech-translate`.
 
-## Step 5 — Update Tracker
+## Step 4 — Update Tracker
 
-Record it in `data/applications.md` with all columns including Report and PDF as ✅.
+Record it in `data/applications.md` with all columns including Report as ✅ and PDF as ❌.
 
 **If any step fails**, continue with the next ones and mark the failed step as pending in the tracker.
