@@ -376,6 +376,34 @@ async function scanUnfilledFields(page) {
   const unfilled = await page.evaluate(() => {
     const required = [...document.querySelectorAll('[required], [aria-required="true"]')];
 
+    function getVisibleValue(el) {
+      const tag = el.tagName.toLowerCase();
+
+      if (tag === 'select') return el.value?.trim() || '';
+      if (tag === 'textarea') return el.value?.trim() || '';
+
+      if (tag === 'input') {
+        if (el.value?.trim()) return el.value.trim();
+
+        // Find React-Select container using closest() — resilient to extra nesting layers
+        const valueContainer = el.closest('[class*="ValueContainer"], [class*="value-container"], [class*="control"]');
+        if (valueContainer) {
+          if (valueContainer.querySelector('[class*="singleValue"], [class*="single-value"], [class*="selectedValue"]')) return 'filled';
+          if (valueContainer.querySelector('[class*="placeholder"], [class*="Placeholder"]')) return '';
+        }
+        return '';
+      }
+
+      // Non-input custom components (div/span containers):
+      if (el.querySelector('[class*="singleValue"], [class*="single-value"], [class*="selectedValue"]')) return 'filled';
+      if (el.querySelector('[class*="placeholder"], [class*="Placeholder"]')) return '';
+      const innerInput = el.querySelector('input');
+      if (innerInput?.value?.trim()) return innerInput.value.trim();
+      const rawText = el.textContent?.replace(/[×✕▾▼]/g, '').trim() || '';
+      if (rawText && !/^select\.{0,3}$/i.test(rawText) && rawText.length > 1) return rawText;
+      return '';
+    }
+
     return required
       .filter(el => {
         const tag = el.tagName.toLowerCase();
@@ -383,14 +411,14 @@ async function scanUnfilledFields(page) {
 
         if (tag === 'input' && type === 'hidden') return false;
         if (type === 'radio' || type === 'checkbox') return !el.checked;
-        if (tag === 'select') return el.selectedIndex <= 0 || el.value === '';
 
-        if (!el.value && el.getAttribute('aria-required')) {
-          const text = el.textContent?.trim();
-          return !text || text === 'Select...';
+        // Skip nested required elements (inner search inputs inside dropdown containers)
+        if (el.parentElement && el.parentElement.closest('[required], [aria-required="true"]')) {
+          return false;
         }
 
-        return !el.value || el.value.trim() === '';
+        const value = getVisibleValue(el);
+        return value === '' || /^select\.{0,3}$/i.test(value);
       })
       .map(el => {
         const id = el.id || el.name;
@@ -398,8 +426,11 @@ async function scanUnfilledFields(page) {
           ? document.querySelector(`label[for="${id}"]`)
           : el.closest('label') || el.previousElementSibling;
 
+        let cleanLabel = labelEl?.textContent?.trim() || el.placeholder || el.name || 'Unknown';
+        cleanLabel = cleanLabel.replace(/\n/g, ' ').replace(/\s+/g, ' ');
+
         return {
-          label: labelEl?.textContent?.trim() || el.placeholder || el.name || 'Unknown',
+          label: cleanLabel,
           type: el.tagName.toLowerCase(),
           inputType: el.type || '',
           id: el.id,
