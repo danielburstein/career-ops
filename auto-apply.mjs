@@ -429,18 +429,43 @@ async function scanUnfilledFields(page) {
         let cleanLabel = labelEl?.textContent?.trim() || el.placeholder || el.name || 'Unknown';
         cleanLabel = cleanLabel.replace(/\n/g, ' ').replace(/\s+/g, ' ');
 
+        // While el is in scope, fix "Select..." / "Unknown" via parent form group
+        if (!cleanLabel || /^(select\.{0,3}|unknown)$/i.test(cleanLabel)) {
+          const formGroup = el.closest('[class*="field"], [class*="question"], fieldset, li');
+          const fallback = formGroup?.querySelector('label')?.textContent?.trim();
+          if (fallback) cleanLabel = fallback.replace(/\n/g, ' ').replace(/\s+/g, ' ');
+        }
+
         return {
           label: cleanLabel,
           type: el.tagName.toLowerCase(),
           inputType: el.type || '',
-          id: el.id,
-          name: el.name,
+          id: el.id || '',
+          name: el.name || '',
           ariaHasPopup: el.getAttribute('aria-haspopup') || '',
         };
       });
   });
 
-  return unfilled;
+  // Smart dedup: keep first per label, but upgrade id/name if a later entry has one
+  const uniqueUnfilled = [];
+  const seenLabels = new Map();
+
+  for (const field of unfilled) {
+    if (!seenLabels.has(field.label)) {
+      seenLabels.set(field.label, field);
+      uniqueUnfilled.push(field);
+    } else {
+      const existing = seenLabels.get(field.label);
+      if (!existing.id && !existing.name && (field.id || field.name)) {
+        existing.id = field.id;
+        existing.name = field.name;
+        existing.type = field.type;
+      }
+    }
+  }
+
+  return uniqueUnfilled;
 }
 
 // ============================================================================
@@ -523,6 +548,37 @@ async function fillField(page, field, answer) {
         await page.locator(`text="${answer}"`).click();
         return true;
       } catch {
+        return false;
+      }
+    }
+
+    // React-Select: detect if this input is inside a control container
+    const isReactSelectInput = await page.locator(sel).evaluate(el =>
+      !!el.closest('[class*="control"], [class*="Control"]')
+    ).catch(() => false);
+
+    if (isReactSelectInput) {
+      try {
+        console.log(`  🖱️ Opening custom dropdown for: ${sel}`);
+        // XPath ancestor traversal → Playwright native click → trusted event
+        const controlLocator = page.locator(sel)
+          .locator('xpath=ancestor::*[contains(@class, "control") or contains(@class, "Control")][1]');
+        await controlLocator.click();
+        await page.waitForTimeout(400);
+
+        const options = page.locator('[class*="option"]');
+        const count = await options.count();
+        for (let i = 0; i < count; i++) {
+          const text = await options.nth(i).textContent();
+          if (text && text.toLowerCase().includes(answer.toLowerCase())) {
+            await options.nth(i).click();
+            return true;
+          }
+        }
+        await page.keyboard.press('Escape');
+        return false;
+      } catch (e) {
+        console.log(`  ⚠️ Dropdown interaction failed: ${e.message}`);
         return false;
       }
     }
