@@ -497,6 +497,16 @@ async function scanUnfilledFields(page) {
           if (overarchingLabel) cleanLabel = overarchingLabel.replace(/\n/g, ' ').replace(/\s+/g, ' ');
         }
 
+        // Auto-detect unlabelled native <select> menus on Lever (e.g., University, "How did you hear")
+        if (/^cards\[/i.test(cleanLabel) && el.tagName.toLowerCase() === 'select') {
+          const optionsText = Array.from(el.options).slice(1, 6).map(o => o.text).join(' ');
+          if (/university|college/i.test(optionsText)) {
+            cleanLabel = 'University';
+          } else if (/job board|linkedin|referral|friend|glassdoor|heard/i.test(optionsText)) {
+            cleanLabel = 'How did you hear about this opportunity?';
+          }
+        }
+
         return {
           label: cleanLabel,
           type: el.tagName.toLowerCase(),
@@ -612,12 +622,13 @@ function loadContext() {
 async function resolveAnswer(field, genAI, ctx) {
   const label = field.label.toLowerCase();
 
-  // Work authorization patterns (critical — must be correct)
-  const WORK_AUTH_PATTERNS = [
+  // Static answers (work auth, university, etc. — critical to avoid hallucination)
+  const STATIC_PATTERNS = [
     { re: /legally authorized to work|authorized to work in/i, answer: 'Yes' },
     { re: /will you now or in the future require|require.{0,20}sponsorship|need.{0,20}visa/i, answer: 'No' },
+    { re: /university|school you are currently attending/i, answer: 'University of California, San Diego' },
   ];
-  for (const { re, answer } of WORK_AUTH_PATTERNS) {
+  for (const { re, answer } of STATIC_PATTERNS) {
     if (re.test(label)) {
       return { answer, source: 'static' };
     }
@@ -701,10 +712,22 @@ async function fillField(page, field, answer) {
     }
 
     if (field.type === 'select') {
-      await page.selectOption(sel, { label: answer }).catch(() =>
-        page.selectOption(sel, { value: answer })
-      );
-      return true;
+      try {
+        if (/San Diego/i.test(answer)) {
+          // Fuzzy match for UCSD — ATS formats it inconsistently
+          const opts = await page.locator(sel).locator('option').allTextContents();
+          const exact = opts.find(o => /San Diego/i.test(o) && /California|UC/i.test(o));
+          if (exact) {
+            await page.locator(sel).selectOption({ label: exact });
+            return true;
+          }
+        }
+        await page.locator(sel).selectOption({ label: answer });
+        return true;
+      } catch (e) {
+        console.log(`  ⚠️ Failed to select option for ${sel}: ${e.message}`);
+        return false;
+      }
     }
 
     if (field.type === 'div' && field.ariaHasPopup) {
