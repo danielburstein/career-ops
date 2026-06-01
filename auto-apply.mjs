@@ -323,7 +323,7 @@ async function triggerSimplifyAutofill(page, maxRetries = 10) {
 // ============================================================================
 // Wait for Simplify to auto-fill
 // ============================================================================
-async function waitForSimplify(page, timeoutMs = 45000) {
+async function waitForSimplify(page, timeoutMs = 60000) {
   const clicked = await triggerSimplifyAutofill(page);
 
   if (!clicked) {
@@ -331,31 +331,46 @@ async function waitForSimplify(page, timeoutMs = 45000) {
     return;
   }
 
-  // Give Simplify a generous buffer to map the DOM and start typing
   await page.waitForTimeout(2000);
 
-  // Poll until all field values are stable for 2 consecutive seconds (Simplify done)
   console.log('  ⏳ Waiting for Simplify to finish filling...');
-  const STABLE_REQUIRED = 4;   // 4 × 500ms = 2 seconds with no changes
+  const STABLE_REQUIRED = 8;   // 8 × 500ms = 4s — bridges Simplify's API pause
   const deadline = Date.now() + timeoutMs;
   let stableCount = 0;
   let lastSnapshot = '';
 
   while (Date.now() < deadline) {
+    // Primary: look for Simplify's "Autofill complete!" banner in shadow DOM
+    const isCompleteBannerVisible = await page.evaluate(() => {
+      function searchForText(root, text) {
+        for (const el of root.querySelectorAll('*')) {
+          if (el.textContent?.includes(text) && el.childElementCount === 0) return true;
+          if (el.shadowRoot && searchForText(el.shadowRoot, text)) return true;
+        }
+        return false;
+      }
+      return searchForText(document, 'Autofill complete!');
+    });
+
+    if (isCompleteBannerVisible) {
+      console.log('  ✅ Simplify "Autofill complete!" signal detected.');
+      await page.waitForTimeout(1000);
+      return;
+    }
+
+    // Fallback: DOM stability (catches Simplify updates that change the banner text)
     const snapshot = await page.evaluate(() =>
       [...document.querySelectorAll(
         'input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea'
       )].map(el => el.value).join('|')
     );
 
-    // Strip delimiters to check if actual text has been injected (avoids false-stable on empty form)
-    // An empty 5-field form produces "||||" which has length 4 but no actual text
     const hasActualText = snapshot.replace(/\|/g, '').trim().length > 0;
 
     if (snapshot === lastSnapshot && hasActualText) {
       stableCount++;
       if (stableCount >= STABLE_REQUIRED) {
-        console.log('  ✅ Simplify finished filling');
+        console.log('  ✅ Simplify finished filling (DOM stabilized for 4s).');
         return;
       }
     } else {
