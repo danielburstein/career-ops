@@ -20,7 +20,7 @@
  */
 
 import 'dotenv/config';
-import { readFileSync, mkdirSync, existsSync, readdirSync, copyFileSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, copyFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createInterface } from 'readline';
