@@ -485,9 +485,21 @@ async function scanUnfilledFields(page) {
 }
 
 // ============================================================================
+// Load context files (profile + style guide)
+// ============================================================================
+function loadContext() {
+  const profilePath = join(ROOT, 'profile_context.md');
+  const stylePath = join(ROOT, 'response_style.md');
+  return {
+    profile: existsSync(profilePath) ? readFileSync(profilePath, 'utf-8') : '',
+    style: existsSync(stylePath) ? readFileSync(stylePath, 'utf-8') : '',
+  };
+}
+
+// ============================================================================
 // Resolve answer: static → Gemini → manual
 // ============================================================================
-async function resolveAnswer(field, genAI) {
+async function resolveAnswer(field, genAI, ctx) {
   const label = field.label.toLowerCase();
 
   for (const [pattern, answer] of STATIC_ANSWERS) {
@@ -496,15 +508,27 @@ async function resolveAnswer(field, genAI) {
     }
   }
 
-  if (genAI) {
+  if (genAI && ctx.profile && ctx.style) {
     try {
-      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+      const model = genAI.getGenerativeModel({
+        model: 'gemini-2.5-pro',
+        systemInstruction: ctx.style,
+        generationConfig: { temperature: 0.3 },
+      });
+
+      const prompt = `## Applicant Profile
+${ctx.profile}
+
+## Job Description
+${ctx.jobDesc}
+
+## Question to Answer
+"${field.label}"
+
+Output only the answer, nothing else.`;
+
       const result = await model.generateContent({
-        contents: [{
-          parts: [{
-            text: `Answer in 1-5 words: "${label}"\n\nContext: UCSD grad (June 2025), 2 years SWE exp, GPA 3.2\n\nOnly answer:`,
-          }],
-        }],
+        contents: [{ parts: [{ text: prompt }] }],
       });
 
       const answer = result.response.text().trim();
@@ -512,7 +536,7 @@ async function resolveAnswer(field, genAI) {
         return { answer, source: 'gemini' };
       }
     } catch (e) {
-      // Fall through
+      console.log(`  ⚠️  Gemini error: ${e.message}`);
     }
   }
 
@@ -649,6 +673,9 @@ async function main() {
     console.log('⚠️  GEMINI_API_KEY not set — custom questions need manual input\n');
   }
 
+  // Load context for custom question answering
+  const ctx = { ...loadContext(), jobDesc: report.content };
+
   let browser, page;
 
   try {
@@ -688,7 +715,7 @@ async function main() {
 
       // Fill each unfilled field
       for (const field of unfilled) {
-        const { answer, source } = await resolveAnswer(field, genAI);
+        const { answer, source } = await resolveAnswer(field, genAI, ctx);
         const filled = await fillField(page, field, answer);
         console.log(
           `  ${filled ? '✅' : '⚠️ '} ${field.label} ← ${answer} (${source})`
