@@ -53,6 +53,8 @@ let reportNum = null;
 let chromeProfile = 'Profile 6';
 let noSubmit = false;
 let refreshProfile = false;
+let queueMode = false;
+let minScore = 4.4;
 
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--report') {
@@ -65,11 +67,17 @@ for (let i = 0; i < args.length; i++) {
     noSubmit = true;
   } else if (args[i] === '--refresh-profile') {
     refreshProfile = true;
+  } else if (args[i] === '--queue') {
+    queueMode = true;
+  } else if (args[i] === '--min-score') {
+    minScore = parseFloat(args[i + 1]);
+    i++;
   }
 }
 
-if (!reportNum) {
+if (!queueMode && !reportNum) {
   console.log('Usage: node auto-apply.mjs --report <NUM> [--chrome-profile <name>] [--refresh-profile] [--no-submit]');
+  console.log('   or: node auto-apply.mjs --queue [--min-score <NUM>]');
   process.exit(1);
 }
 
@@ -791,6 +799,84 @@ async function takeScreenshot(page, basename) {
 }
 
 // ============================================================================
+// Queue mode: parse tracker for applications at or above score threshold
+// ============================================================================
+function parseQueueFromTracker(minScore = 4.4) {
+  const trackerPath = join(ROOT, 'data', 'applications.md');
+  const lines = readFileSync(trackerPath, 'utf-8').split('\n');
+  const queue = [];
+  for (const line of lines) {
+    if (!line.startsWith('|') || line.includes('---')) continue;
+    const cols = line.split('|').map(c => c.trim()).filter(Boolean);
+    if (cols.length < 8) continue;
+    // Table: # | Date | Company | Role | Score | Status | PDF | Report | Notes
+    const score = parseFloat(cols[4]);
+    const status = cols[5];
+    const reportLink = cols[7]; // e.g. [031](reports/031-glean-...)
+    const reportNumMatch = reportLink.match(/\[(\d+)\]/);
+    if (!isNaN(score) && score >= minScore && status === 'Evaluated' && reportNumMatch) {
+      queue.push({
+        reportNum: reportNumMatch[1],
+        company: cols[2],
+        role: cols[3],
+        score,
+      });
+    }
+  }
+  return queue.sort((a, b) => b.score - a.score);
+}
+
+// ============================================================================
+// Mark application as applied in tracker
+// ============================================================================
+function markApplied(reportNum) {
+  const trackerPath = join(ROOT, 'data', 'applications.md');
+  const lines = readFileSync(trackerPath, 'utf-8').split('\n');
+  const updated = lines.map(line => {
+    if (!line.startsWith('|')) return line;
+    const cols = line.split('|').map(c => c.trim());
+    const reportCell = cols.find(c => c.startsWith(`[${reportNum}]`));
+    if (reportCell && line.includes('Evaluated')) {
+      return line.replace('Evaluated', 'Applied');
+    }
+    return line;
+  });
+  writeFileSync(trackerPath, updated.join('\n'), 'utf-8');
+}
+
+// ============================================================================
+// Process one application: fill form and take screenshot (no submit)
+// ============================================================================
+async function processOneApplication(page, report, reportNum, genAI, ctx) {
+  const urlMatch = report.content.match(/\*\*URL:\*\*\s*(\S+)/);
+  if (!urlMatch) throw new Error('No URL in report');
+
+  const url = urlMatch[1];
+  await page.goto(url, { waitUntil: 'domcontentloaded' });
+  await page.waitForTimeout(2000);
+
+  await clickApplyIfNeeded(page);
+  await waitForSimplify(page);
+
+  console.log('🔍 Scanning form...');
+  const unfilled = await scanUnfilledFields(page);
+
+  if (unfilled.length > 0) {
+    console.log(`⚠️  ${unfilled.length} unfilled required fields:\n`);
+    for (const field of unfilled) {
+      const { answer, source } = await resolveAnswer(field, genAI, ctx);
+      const filled = await fillField(page, field, answer);
+      console.log(`  ${filled ? '✅' : '⚠️ '} ${field.label} ← ${answer} (${source})`);
+    }
+  } else {
+    console.log('✅ All fields filled by Simplify');
+  }
+
+  const screenshotPath = await takeScreenshot(page, `${reportNum}-final`);
+  return { screenshotPath, url };
+}
+
+// ============================================================================
 // MAIN
 // ============================================================================
 async function main() {
@@ -903,4 +989,109 @@ async function main() {
   }
 }
 
-main().catch(console.error);
+// ============================================================================
+// Queue mode: process multiple applications with user confirmation
+// ============================================================================
+async function queueMain() {
+  const queue = parseQueueFromTracker(minScore);
+  if (!queue.length) {
+    console.log('✅ No Evaluated applications at or above the score threshold.');
+    process.exit(0);
+  }
+
+  console.log(`\n📋 Queue: ${queue.length} applications (score ≥ ${minScore})\n`);
+  queue.forEach((a, i) =>
+    console.log(`  ${i + 1}. [${a.reportNum}] ${a.company} — ${a.role} (${a.score})`)
+  );
+  console.log('');
+
+  const automationDir = ensureAutomationProfile(chromeProfile);
+  await killChrome();
+  clearChromeCrashState(automationDir, 'Default');
+
+  await launchChrome(automationDir);
+  console.log('🔌 Connecting to Chrome...');
+  const { browser } = await connectChrome();
+
+  const genAI = process.env.GEMINI_API_KEY
+    ? new GoogleGenerativeAI(process.env.GEMINI_API_KEY)
+    : null;
+
+  const ctx = loadContext();
+  let applied = 0, skipped = 0;
+
+  for (let i = 0; i < queue.length; i++) {
+    const { reportNum, company, role, score } = queue[i];
+    console.log(`\n${'─'.repeat(60)}`);
+    console.log(`[${i + 1}/${queue.length}] ${company} — ${role} (${score})`);
+    console.log(`${'─'.repeat(60)}\n`);
+
+    let report;
+    try {
+      report = readReport(reportNum);
+    } catch (e) {
+      console.log(`  ⚠️  Could not read report ${reportNum}: ${e.message}. Skipping.`);
+      skipped++;
+      continue;
+    }
+
+    const context = browser.contexts()[0];
+    const page = await context.newPage();
+
+    try {
+      const appCtx = { ...ctx, jobDesc: report.content };
+      await processOneApplication(page, report, reportNum, genAI, appCtx);
+    } catch (e) {
+      console.log(`  ⚠️  Error filling application: ${e.message}. Skipping.`);
+      await page.close();
+      skipped++;
+      continue;
+    }
+
+    const decision = await prompt(
+      '\n  Review the form in Chrome.\n  [Enter] = manually submitted   [s/submit] = script submits   [skip] = skip\n  > '
+    );
+
+    if (/^skip$/i.test(decision.trim())) {
+      console.log('  ⏭️  Skipped.');
+      await page.close();
+      skipped++;
+    } else if (/^s(ubmit)?$/i.test(decision.trim())) {
+      const submitBtn = await page.$(
+        'button[type="submit"], input[type="submit"], [data-qa="btn-submit"], #submit_app, .template-btn-submit, #application-submit'
+      );
+      if (submitBtn) {
+        await submitBtn.click();
+        console.log('  ✅ Submitted by script.');
+        await page.waitForTimeout(2000);
+      } else {
+        console.log('  ⚠️  Could not find submit button — assuming manually submitted.');
+      }
+      markApplied(reportNum);
+      console.log(`  📝 Marked as Applied in tracker.`);
+      await page.close();
+      applied++;
+    } else {
+      markApplied(reportNum);
+      console.log(`  📝 Marked as Applied in tracker.`);
+      await page.close();
+      applied++;
+    }
+  }
+
+  await browser.close();
+  console.log(`\n${'═'.repeat(60)}`);
+  console.log(`✅ Queue complete: ${applied} applied, ${skipped} skipped`);
+  console.log(`${'═'.repeat(60)}\n`);
+  process.exit(0);
+}
+
+// Dispatch
+if (queueMode) {
+  queueMain().catch(e => {
+    console.error(`❌ ${e.message}`);
+    process.exit(1);
+  });
+} else {
+  main().catch(console.error);
+}
