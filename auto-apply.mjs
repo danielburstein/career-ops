@@ -282,6 +282,40 @@ async function connectChrome() {
 }
 
 // ============================================================================
+// Click Apply button if needed (for Lever, Workday, other portals)
+// ============================================================================
+async function clickApplyIfNeeded(page) {
+  const hasForm = await page.evaluate(() =>
+    document.querySelectorAll('[required], [aria-required="true"]').length > 0
+  );
+
+  if (hasForm) return; // Form already visible (Greenhouse-style)
+
+  console.log('  🔍 No form found, searching for Apply button...');
+
+  // Combined selector — checked simultaneously, includes Lever-specific classes
+  const applySelector = 'a:has-text("Apply"), button:has-text("Apply"), [data-qa="btn-apply"], .postings-btn, .template-btn-submit';
+  const btn = page.locator(applySelector).first();
+
+  if (await btn.isVisible({ timeout: 2000 }).catch(() => false)) {
+    console.log('  🖱️ Clicking Apply button to open form...');
+    await btn.click();
+
+    // Smart wait: resolve the instant [required] fields enter the DOM (up to 8s)
+    console.log('  ⏳ Waiting for application form to load...');
+    await page.waitForFunction(() =>
+      document.querySelectorAll('[required], [aria-required="true"]').length > 0,
+      { timeout: 8000 }
+    ).catch(() => {
+      console.log('  ⚠️  Form fields did not appear after clicking Apply.');
+    });
+    return;
+  }
+
+  console.log('  ⚠️  No Apply button found — proceeding anyway');
+}
+
+// ============================================================================
 // Trigger Simplify autofill via shadow DOM traversal
 // ============================================================================
 async function triggerSimplifyAutofill(page, maxRetries = 10) {
@@ -420,18 +454,15 @@ async function scanUnfilledFields(page) {
       return '';
     }
 
-    return required
+    // --- Text inputs (non-radio/checkbox)
+    const textFields = required
       .filter(el => {
         const tag = el.tagName.toLowerCase();
         const type = (el.type || '').toLowerCase();
 
         if (tag === 'input' && type === 'hidden') return false;
-        if (type === 'radio' || type === 'checkbox') return !el.checked;
-
-        // Skip nested required elements (inner search inputs inside dropdown containers)
-        if (el.parentElement && el.parentElement.closest('[required], [aria-required="true"]')) {
-          return false;
-        }
+        if (type === 'radio' || type === 'checkbox') return false;
+        if (el.parentElement && el.parentElement.closest('[required], [aria-required="true"]')) return false;
 
         const value = getVisibleValue(el);
         return value === '' || /^select\.{0,3}$/i.test(value);
@@ -445,11 +476,25 @@ async function scanUnfilledFields(page) {
         let cleanLabel = labelEl?.textContent?.trim() || el.placeholder || el.name || 'Unknown';
         cleanLabel = cleanLabel.replace(/\n/g, ' ').replace(/\s+/g, ' ');
 
-        // While el is in scope, fix "Select..." / "Unknown" via parent form group
-        if (!cleanLabel || /^(select\.{0,3}|unknown)$/i.test(cleanLabel)) {
-          const formGroup = el.closest('[class*="field"], [class*="question"], fieldset, li');
-          const fallback = formGroup?.querySelector('label')?.textContent?.trim();
-          if (fallback) cleanLabel = fallback.replace(/\n/g, ' ').replace(/\s+/g, ' ');
+        // Lever label traversal
+        if (!cleanLabel || /^(select\.{0,3}|unknown)$/i.test(cleanLabel) || /^cards\[/.test(cleanLabel)) {
+          const formGroup = el.closest('[class*="field"], [class*="question"], .application-label, fieldset, li');
+          if (formGroup) {
+            const leverLabel = formGroup.querySelector('.application-label, .text, .application-question-text');
+            if (leverLabel) {
+              cleanLabel = leverLabel.textContent.trim().replace(/\n/g, ' ').replace(/\s+/g, ' ');
+            } else {
+              const fallback = formGroup.querySelector('label')?.textContent?.trim();
+              if (fallback) cleanLabel = fallback.replace(/\n/g, ' ').replace(/\s+/g, ' ');
+            }
+          }
+        }
+
+        // Catch nested yes/no/true/false labels
+        if (/^(yes|no|true|false)$/i.test(cleanLabel)) {
+          const formGroup = el.closest('li, [class*="question"], fieldset');
+          const overarchingLabel = formGroup?.querySelector('.application-label, legend, .text')?.textContent?.trim();
+          if (overarchingLabel) cleanLabel = overarchingLabel.replace(/\n/g, ' ').replace(/\s+/g, ' ');
         }
 
         return {
@@ -461,6 +506,71 @@ async function scanUnfilledFields(page) {
           ariaHasPopup: el.getAttribute('aria-haspopup') || '',
         };
       });
+
+    // --- Radio/checkbox grouping
+    const radioByName = new Map();
+    const checkboxByKey = new Map();
+
+    for (const el of required) {
+      const type = (el.type || '').toLowerCase();
+      if (type !== 'radio' && type !== 'checkbox') continue;
+
+      const key = el.name ||
+        el.closest('fieldset')?.id ||
+        el.closest('[role="group"]')?.id ||
+        'anon_' + (el.closest('li, [class*="question"]')?.textContent?.slice(0, 30) || String(Math.random()));
+
+      const map = type === 'radio' ? radioByName : checkboxByKey;
+      if (!map.has(key)) map.set(key, { elements: [], anyChecked: false, name: el.name || '' });
+      const g = map.get(key);
+      g.elements.push(el);
+      if (el.checked) g.anyChecked = true;
+    }
+
+    function getGroupLabel(firstEl) {
+      const c = firstEl.closest('fieldset, [role="group"], [class*="question"], li');
+      if (!c) return '';
+      const lev = c.querySelector('.application-label, legend, .text, .application-question-text');
+      return (lev?.textContent?.trim() || '').replace(/\n/g, ' ').replace(/\s+/g, ' ');
+    }
+
+    function getOptionLabels(elements) {
+      return elements.map(el => {
+        const id = el.id;
+        const lbl = id
+          ? document.querySelector(`label[for="${id}"]`)?.textContent?.trim()
+          : el.closest('label')?.textContent?.trim();
+        return lbl || el.value || '';
+      }).filter(Boolean);
+    }
+
+    // Radios: always re-scan (Simplify can be wrong)
+    const radioFields = [...radioByName.values()].map(g => ({
+      label: getGroupLabel(g.elements[0]) || g.name || 'Unknown',
+      type: 'input',
+      inputType: 'radio',
+      id: '',
+      name: g.name,
+      ariaHasPopup: '',
+      options: getOptionLabels(g.elements),
+      currentValue: (g.elements.find(e => e.checked) ? getOptionLabels([g.elements.find(e => e.checked)])[0] : ''),
+    }));
+
+    // Checkboxes: skip if ANY is checked (Simplify already selected something)
+    const checkboxFields = [...checkboxByKey.values()]
+      .filter(g => !g.anyChecked)
+      .map(g => ({
+        label: getGroupLabel(g.elements[0]) || g.name || 'Unknown',
+        type: 'input',
+        inputType: 'checkbox',
+        id: '',
+        name: g.name,
+        ariaHasPopup: '',
+        options: getOptionLabels(g.elements),
+        currentValue: '',
+      }));
+
+    return [...textFields, ...radioFields, ...checkboxFields];
   });
 
   // Smart dedup: keep first per label, but upgrade id/name if a later entry has one
@@ -502,6 +612,17 @@ function loadContext() {
 async function resolveAnswer(field, genAI, ctx) {
   const label = field.label.toLowerCase();
 
+  // Work authorization patterns (critical — must be correct)
+  const WORK_AUTH_PATTERNS = [
+    { re: /legally authorized to work|authorized to work in/i, answer: 'Yes' },
+    { re: /will you now or in the future require|require.{0,20}sponsorship|need.{0,20}visa/i, answer: 'No' },
+  ];
+  for (const { re, answer } of WORK_AUTH_PATTERNS) {
+    if (re.test(label)) {
+      return { answer, source: 'static' };
+    }
+  }
+
   for (const [pattern, answer] of STATIC_ANSWERS) {
     if (pattern.test(label)) {
       return { answer, source: 'static' };
@@ -516,6 +637,10 @@ async function resolveAnswer(field, genAI, ctx) {
         generationConfig: { temperature: 0.3 },
       });
 
+      const optionsStr = field.options?.length
+        ? `\n\nAvailable choices: ${field.options.join(', ')}`
+        : '';
+
       const prompt = `## Applicant Profile
 ${ctx.profile}
 
@@ -523,7 +648,7 @@ ${ctx.profile}
 ${ctx.jobDesc}
 
 ## Question to Answer
-"${field.label}"
+"${field.label}"${optionsStr}
 
 Output only the answer, nothing else.`;
 
@@ -554,6 +679,7 @@ async function fillField(page, field, answer) {
 
   try {
     if (field.inputType === 'radio' || field.inputType === 'checkbox') {
+      if (!field.name) return false; // Can't target by name — bail cleanly
       const options = await page.$$(`[name="${field.name}"]`);
       for (const opt of options) {
         const id = await opt.getAttribute('id');
@@ -696,6 +822,9 @@ async function main() {
     console.log(`📄 Opening job form...`);
     await page.goto(url, { waitUntil: 'domcontentloaded' });
     await page.waitForTimeout(2000);
+
+    // Click Apply button if needed (for Lever, Workday, etc.)
+    await clickApplyIfNeeded(page);
 
     // Wait for Simplify to fill standard fields
     await waitForSimplify(page);
