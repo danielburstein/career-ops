@@ -649,18 +649,14 @@ async function resolveAnswer(field, genAI, ctx) {
   }
 
   if (genAI && ctx.profile && ctx.style) {
-    try {
-      const model = genAI.getGenerativeModel({
-        model: 'gemini-2.5-pro',
-        systemInstruction: ctx.style,
-        generationConfig: { temperature: 0.3 },
-      });
+    const MODELS = ['gemini-2.5-pro', 'gemini-2.5-flash'];
+    const MAX_RETRIES = 3;
 
-      const optionsStr = field.options?.length
-        ? `\n\nAvailable choices: ${field.options.join(', ')}`
-        : '';
+    const optionsStr = field.options?.length
+      ? `\n\nAvailable choices: ${field.options.join(', ')}`
+      : '';
 
-      const prompt = `## Applicant Profile
+    const prompt = `## Applicant Profile
 ${ctx.profile}
 
 ## Job Description
@@ -671,16 +667,37 @@ ${ctx.jobDesc}
 
 Output only the answer, nothing else.`;
 
-      const result = await model.generateContent({
-        contents: [{ parts: [{ text: prompt }] }],
-      });
+    for (const modelName of MODELS) {
+      for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+        try {
+          const model = genAI.getGenerativeModel({
+            model: modelName,
+            systemInstruction: ctx.style,
+            generationConfig: { temperature: 0.3 },
+          });
 
-      const answer = result.response.text().trim();
-      if (answer && answer.length > 0) {
-        return { answer, source: 'gemini' };
+          const result = await model.generateContent({
+            contents: [{ parts: [{ text: prompt }] }],
+          });
+
+          const answer = result.response.text().trim();
+          if (answer && answer.length > 0) {
+            return { answer, source: `gemini (${modelName})` };
+          }
+          break; // got a response but it was empty — don't retry
+        } catch (e) {
+          const is503 = e.message?.includes('503') || e.message?.includes('high demand');
+          if (is503 && attempt < MAX_RETRIES) {
+            const delay = 2000 * attempt; // 2s, 4s, 6s
+            console.log(`  ⏳ Gemini ${modelName} busy (attempt ${attempt}/${MAX_RETRIES}), retrying in ${delay / 1000}s...`);
+            await new Promise(r => setTimeout(r, delay));
+            continue;
+          }
+          // Non-503 error or exhausted retries — try next model
+          console.log(`  ⚠️  Gemini ${modelName} failed: ${e.message.slice(0, 80)}`);
+          break;
+        }
       }
-    } catch (e) {
-      console.log(`  ⚠️  Gemini error: ${e.message}`);
     }
   }
 
