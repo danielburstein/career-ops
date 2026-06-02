@@ -428,6 +428,46 @@ async function waitForSimplify(page, timeoutMs = 60000) {
 }
 
 // ============================================================================
+// Find label that precedes an element (scan backward in DOM)
+// ============================================================================
+function findPrecedingLabel(el) {
+  let node = el;
+  while (node && node.tagName !== 'BODY') {
+    let sib = node.previousElementSibling;
+    while (sib) {
+      const isLabel = sib.matches('.application-label, .text, .application-question-text, label');
+      const labelEl = isLabel ? sib : sib.querySelector('.application-label, .text, .application-question-text');
+      const text = labelEl?.textContent?.trim();
+      if (text) return text.replace(/\n/g, ' ').replace(/\s+/g, ' ');
+      sib = sib.previousElementSibling;
+    }
+    if (node.tagName === 'LI') break; // don't escape question boundary
+    node = node.parentElement;
+  }
+  return '';
+}
+
+// ============================================================================
+// Detect CAPTCHA challenges on the page
+// ============================================================================
+async function waitForCaptchaIfNeeded(page) {
+  const hasCaptcha = await page.evaluate(() => !!(
+    document.querySelector('iframe[src*="captcha"]') ||
+    document.querySelector('iframe[src*="turnstile"]') ||
+    document.querySelector('iframe[src*="funcaptcha"]') ||
+    document.querySelector('[class*="captcha"]') ||
+    document.querySelector('[class*="hcaptcha"]') ||
+    document.querySelector('.cf-challenge-running') ||
+    document.querySelector('[data-testid*="captcha"]')
+  )).catch(() => false);
+
+  if (hasCaptcha) {
+    console.log('\n  🔒 CAPTCHA detected! Please solve it in Chrome, then press Enter...');
+    await prompt('  > ');
+  }
+}
+
+// ============================================================================
 // Scan for unfilled required fields
 // ============================================================================
 async function scanUnfilledFields(page) {
@@ -484,18 +524,11 @@ async function scanUnfilledFields(page) {
         let cleanLabel = labelEl?.textContent?.trim() || el.placeholder || el.name || 'Unknown';
         cleanLabel = cleanLabel.replace(/\n/g, ' ').replace(/\s+/g, ' ');
 
-        // Lever label traversal
+        // Lever label traversal — scan backward to find preceding label
         if (!cleanLabel || /^(select\.{0,3}|unknown)$/i.test(cleanLabel) || /^cards\[/.test(cleanLabel)) {
-          const formGroup = el.closest('[class*="field"], [class*="question"], .application-label, fieldset, li');
-          if (formGroup) {
-            const leverLabel = formGroup.querySelector('.application-label, .text, .application-question-text');
-            if (leverLabel) {
-              cleanLabel = leverLabel.textContent.trim().replace(/\n/g, ' ').replace(/\s+/g, ' ');
-            } else {
-              const fallback = formGroup.querySelector('label')?.textContent?.trim();
-              if (fallback) cleanLabel = fallback.replace(/\n/g, ' ').replace(/\s+/g, ' ');
-            }
-          }
+          // Walk up DOM and check previous siblings for labels (prevents mismatch in multi-field cards)
+          const preceding = findPrecedingLabel(el);
+          if (preceding) cleanLabel = preceding;
         }
 
         // Catch nested yes/no/true/false labels
@@ -546,6 +579,10 @@ async function scanUnfilledFields(page) {
     }
 
     function getGroupLabel(firstEl) {
+      // Use preceding label search to avoid mismatches in multi-field cards
+      const preceding = findPrecedingLabel(firstEl);
+      if (preceding) return preceding;
+      // Fallback to container search
       const c = firstEl.closest('fieldset, [role="group"], [class*="question"], li');
       if (!c) return '';
       const lev = c.querySelector('.application-label, legend, .text, .application-question-text');
@@ -873,6 +910,7 @@ async function processOneApplication(page, report, reportNum, genAI, ctx) {
   await page.waitForTimeout(2000);
 
   await clickApplyIfNeeded(page);
+  await waitForCaptchaIfNeeded(page);
   await waitForSimplify(page);
 
   console.log('🔍 Scanning form...');
@@ -1074,15 +1112,24 @@ async function queueMain() {
       await page.close();
       skipped++;
     } else if (/^s(ubmit)?$/i.test(decision.trim())) {
-      const submitBtn = await page.$(
-        'button[type="submit"], input[type="submit"], [data-qa="btn-submit"], #submit_app, .template-btn-submit, #application-submit'
-      );
-      if (submitBtn) {
-        await submitBtn.click();
-        console.log('  ✅ Submitted by script.');
-        await page.waitForTimeout(2000);
-      } else {
-        console.log('  ⚠️  Could not find submit button — assuming manually submitted.');
+      try {
+        const submitLocator = page.locator(
+          'button[type="submit"], input[type="submit"], [data-qa="btn-submit"], #submit_app, .template-btn-submit, #application-submit'
+        ).first();
+        const visible = await submitLocator.isVisible({ timeout: 3000 }).catch(() => false);
+        if (visible) {
+          await submitLocator.scrollIntoViewIfNeeded();
+          await submitLocator.click();
+          console.log('  ✅ Submitted by script.');
+          await page.waitForTimeout(2000);
+        } else {
+          console.log('  ⚠️  Submit button not found. Please submit manually and press Enter.');
+          await prompt('  > ');
+        }
+      } catch (e) {
+        console.log(`  ⚠️  Click failed: ${e.message.slice(0, 80)}`);
+        console.log('  Please submit manually and press Enter when done.');
+        await prompt('  > ');
       }
       markApplied(reportNum);
       console.log(`  📝 Marked as Applied in tracker.`);
