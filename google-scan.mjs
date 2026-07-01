@@ -428,7 +428,7 @@ function initGeminiModel() {
   if (!geminiModel) {
     const genAI = new GoogleGenerativeAI(apiKey);
     geminiModel = genAI.getGenerativeModel({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-2.0-flash-lite',
       generationConfig: { temperature: 0.2, maxOutputTokens: 200 },
     });
   }
