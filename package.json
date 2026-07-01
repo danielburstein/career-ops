@@ -15,6 +15,7 @@
     "rollback": "node update-system.mjs rollback",
     "liveness": "node check-liveness.mjs",
     "scan": "node scan.mjs",
+    "google-scan": "node google-scan.mjs",
     "patterns": "node analyze-patterns.mjs",
     "gemini:eval": "node gemini-eval.mjs",
     "pre-filter": "node pre-filter.mjs",
@@ -22,7 +23,7 @@
     "summary": "node batch-summary.mjs",
     "apply": "node auto-apply.mjs",
     "apply:queue": "node auto-apply.mjs --queue",
-    "pipeline": "node pipeline.js"
+    "pipeline": "node pre-filter.mjs && node batch-gemini.mjs && node merge-tracker.mjs"
   },
   "keywords": [
     "ai",
