@@ -54,7 +54,7 @@ let chromeProfile = 'Profile 6';
 let noSubmit = false;
 let refreshProfile = false;
 let queueMode = false;
-let minScore = 4.4;
+let minScore = 4.2;
 
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--report') {
@@ -97,6 +97,22 @@ async function prompt(question) {
   const rl = createInterface({ input: process.stdin, output: process.stdout });
   return new Promise(resolve => {
     rl.question(question, answer => {
+      rl.close();
+      resolve(answer.trim());
+    });
+  });
+}
+
+async function promptWithTimeout(question, timeoutMs = 3000) {
+  const rl = createInterface({ input: process.stdin, output: process.stdout });
+  return new Promise(resolve => {
+    const timer = setTimeout(() => {
+      rl.close();
+      process.stdout.write('\n');
+      resolve('');
+    }, timeoutMs);
+    rl.question(question, answer => {
+      clearTimeout(timer);
       rl.close();
       resolve(answer.trim());
     });
@@ -352,14 +368,33 @@ async function triggerSimplifyAutofill(page, maxRetries = 10) {
     if (coords && coords.x > 0 && coords.y > 0) {
       console.log(`  🎯 Found button at (${Math.round(coords.x)}, ${Math.round(coords.y)}), clicking...`);
       await page.mouse.click(coords.x, coords.y);
-      console.log('  ✅ Clicked Simplify Autofill button (trusted click)');
-      return true;
+
+      // Verify click actually activated Simplify (button should disappear/change)
+      await page.waitForTimeout(1500);
+      const stillPresent = await page.evaluate(() => {
+        function findButton(root) {
+          for (const el of root.querySelectorAll('button, [role="button"]')) {
+            if (/autofill this page/i.test(el.textContent)) return true;
+          }
+          for (const el of root.querySelectorAll('*')) {
+            if (el.shadowRoot && findButton(el.shadowRoot)) return true;
+          }
+          return false;
+        }
+        return findButton(document);
+      });
+
+      if (!stillPresent) {
+        console.log('  ✅ Clicked Simplify Autofill button (trusted click)');
+        return true;
+      }
+      console.log(`  🔄 Button still present after click, retrying (${i + 1}/${maxRetries})...`);
     }
 
     await page.waitForTimeout(600);
   }
 
-  console.log('  ⚠️  Could not find Simplify Autofill button after 6 seconds');
+  console.log('  ⚠️  Could not activate Simplify Autofill button after retries');
   return false;
 }
 
@@ -428,38 +463,31 @@ async function waitForSimplify(page, timeoutMs = 60000) {
 }
 
 // ============================================================================
-// Find label that precedes an element (scan backward in DOM)
-// ============================================================================
-function findPrecedingLabel(el) {
-  let node = el;
-  while (node && node.tagName !== 'BODY') {
-    let sib = node.previousElementSibling;
-    while (sib) {
-      const isLabel = sib.matches('.application-label, .text, .application-question-text, label');
-      const labelEl = isLabel ? sib : sib.querySelector('.application-label, .text, .application-question-text');
-      const text = labelEl?.textContent?.trim();
-      if (text) return text.replace(/\n/g, ' ').replace(/\s+/g, ' ');
-      sib = sib.previousElementSibling;
-    }
-    if (node.tagName === 'LI') break; // don't escape question boundary
-    node = node.parentElement;
-  }
-  return '';
-}
-
-// ============================================================================
 // Detect CAPTCHA challenges on the page
 // ============================================================================
 async function waitForCaptchaIfNeeded(page) {
-  const hasCaptcha = await page.evaluate(() => !!(
-    document.querySelector('iframe[src*="captcha"]') ||
-    document.querySelector('iframe[src*="turnstile"]') ||
-    document.querySelector('iframe[src*="funcaptcha"]') ||
-    document.querySelector('[class*="captcha"]') ||
-    document.querySelector('[class*="hcaptcha"]') ||
-    document.querySelector('.cf-challenge-running') ||
-    document.querySelector('[data-testid*="captcha"]')
-  )).catch(() => false);
+  const hasCaptcha = await page.evaluate(() => {
+    // Only trigger on visible/active CAPTCHA challenges, not silent background embeds
+    const isVisible = el => !!(el && el.offsetParent !== null && el.getBoundingClientRect().width > 0);
+
+    // Cloudflare Turnstile — always a visible widget
+    if (document.querySelector('iframe[src*="turnstile"]')) return true;
+    // FunCaptcha — always visible
+    if (document.querySelector('iframe[src*="funcaptcha"]')) return true;
+    // Cloudflare challenge page
+    if (document.querySelector('.cf-challenge-running')) return true;
+    // hCaptcha — check visibility
+    const hcaptcha = document.querySelector('[class*="hcaptcha"]');
+    if (hcaptcha && isVisible(hcaptcha)) return true;
+    // reCAPTCHA — only trigger if the challenge iframe is visible (not the silent g-recaptcha embed)
+    const recaptchaChallenge = document.querySelector('iframe[src*="recaptcha"][src*="bframe"]');
+    if (recaptchaChallenge && isVisible(recaptchaChallenge)) return true;
+    // Generic captcha iframe (not reCAPTCHA, not turnstile)
+    const captchaIframe = document.querySelector('iframe[src*="captcha"]:not([src*="recaptcha"])');
+    if (captchaIframe && isVisible(captchaIframe)) return true;
+
+    return false;
+  }).catch(() => false);
 
   if (hasCaptcha) {
     console.log('\n  🔒 CAPTCHA detected! Please solve it in Chrome, then press Enter...');
@@ -576,6 +604,24 @@ async function scanUnfilledFields(page) {
       const g = map.get(key);
       g.elements.push(el);
       if (el.checked) g.anyChecked = true;
+    }
+
+    // Find label that precedes an element (scan backward in DOM)
+    function findPrecedingLabel(el) {
+      let node = el;
+      while (node && node.tagName !== 'BODY') {
+        let sib = node.previousElementSibling;
+        while (sib) {
+          const isLabel = sib.matches('.application-label, .text, .application-question-text, label');
+          const labelEl = isLabel ? sib : sib.querySelector('.application-label, .text, .application-question-text');
+          const text = labelEl?.textContent?.trim();
+          if (text) return text.replace(/\n/g, ' ').replace(/\s+/g, ' ');
+          sib = sib.previousElementSibling;
+        }
+        if (node.tagName === 'LI') break; // don't escape question boundary
+        node = node.parentElement;
+      }
+      return '';
     }
 
     function getGroupLabel(firstEl) {
@@ -853,9 +899,26 @@ async function takeScreenshot(page, basename) {
 }
 
 // ============================================================================
+// Skip seniority filtering for apply queue
+// ============================================================================
+function shouldSkipSeniority(roleTitle) {
+  const skipPatterns = [
+    /\b(?:senior|sr\.?)\b/i,
+    /\blead\b/i,
+    /\bstaff\b/i,
+    /\bprincipal\b/i,
+    /^director/i,
+    /^vp\s+/i,
+    /^head\s+of/i,
+    /engineering manager/i,
+  ];
+  return skipPatterns.some(p => p.test(roleTitle));
+}
+
+// ============================================================================
 // Queue mode: parse tracker for applications at or above score threshold
 // ============================================================================
-function parseQueueFromTracker(minScore = 4.4) {
+function parseQueueFromTracker(minScore = 4.2) {
   const trackerPath = join(ROOT, 'data', 'applications.md');
   const lines = readFileSync(trackerPath, 'utf-8').split('\n');
   const queue = [];
@@ -866,13 +929,14 @@ function parseQueueFromTracker(minScore = 4.4) {
     // Table: # | Date | Company | Role | Score | Status | PDF | Report | Notes
     const score = parseFloat(cols[4]);
     const status = cols[5];
+    const role = cols[3];
     const reportLink = cols[7]; // e.g. [031](reports/031-glean-...)
     const reportNumMatch = reportLink.match(/\[(\d+)\]/);
-    if (!isNaN(score) && score >= minScore && status === 'Evaluated' && reportNumMatch) {
+    if (!isNaN(score) && score >= minScore && status === 'Evaluated' && reportNumMatch && !shouldSkipSeniority(role)) {
       queue.push({
         reportNum: reportNumMatch[1],
         company: cols[2],
-        role: cols[3],
+        role,
         score,
       });
     }
@@ -899,6 +963,24 @@ function markApplied(reportNum) {
 }
 
 // ============================================================================
+// Mark application as discarded in tracker
+// ============================================================================
+function markDiscarded(reportNum) {
+  const trackerPath = join(ROOT, 'data', 'applications.md');
+  const lines = readFileSync(trackerPath, 'utf-8').split('\n');
+  const updated = lines.map(line => {
+    if (!line.startsWith('|')) return line;
+    const cols = line.split('|').map(c => c.trim());
+    const reportCell = cols.find(c => c.startsWith(`[${reportNum}]`));
+    if (reportCell && line.includes('Evaluated')) {
+      return line.replace('Evaluated', 'Discarded');
+    }
+    return line;
+  });
+  writeFileSync(trackerPath, updated.join('\n'), 'utf-8');
+}
+
+// ============================================================================
 // Process one application: fill form and take screenshot (no submit)
 // ============================================================================
 async function processOneApplication(page, report, reportNum, genAI, ctx) {
@@ -906,6 +988,23 @@ async function processOneApplication(page, report, reportNum, genAI, ctx) {
   if (!urlMatch) throw new Error('No URL in report');
 
   const url = urlMatch[1];
+  console.log(`  🔗 ${url}`);
+
+  // Early decision window: 8 seconds to skip or discard before automation
+  const earlyDecision = await promptWithTimeout(
+    '  [Enter/8s] = proceed   [skip] = skip this session   [remove] = discard permanently\n  > ',
+    8000
+  );
+  if (/^r(emove)?$/i.test(earlyDecision)) {
+    markDiscarded(reportNum);
+    console.log('  🗑️  Discarded — removed from future queue runs.');
+    return 'discarded';
+  }
+  if (/^s(kip)?$/i.test(earlyDecision)) {
+    console.log('  ⏭️  Skipped.');
+    return 'skipped';
+  }
+
   await page.goto(url, { waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(2000);
 
@@ -913,19 +1012,19 @@ async function processOneApplication(page, report, reportNum, genAI, ctx) {
   await waitForCaptchaIfNeeded(page);
   await waitForSimplify(page);
 
-  console.log('🔍 Scanning form...');
-  const unfilled = await scanUnfilledFields(page);
-
-  if (unfilled.length > 0) {
-    console.log(`⚠️  ${unfilled.length} unfilled required fields:\n`);
-    for (const field of unfilled) {
-      const { answer, source } = await resolveAnswer(field, genAI, ctx);
-      const filled = await fillField(page, field, answer);
-      console.log(`  ${filled ? '✅' : '⚠️ '} ${field.label} ← ${answer} (${source})`);
-    }
-  } else {
-    console.log('✅ All fields filled by Simplify');
-  }
+  // TODO: re-enable Gemini gap-fill when ready
+  // console.log('🔍 Scanning form...');
+  // const unfilled = await scanUnfilledFields(page);
+  // if (unfilled.length > 0) {
+  //   console.log(`⚠️  ${unfilled.length} unfilled required fields:\n`);
+  //   for (const field of unfilled) {
+  //     const { answer, source } = await resolveAnswer(field, genAI, ctx);
+  //     const filled = await fillField(page, field, answer);
+  //     console.log(`  ${filled ? '✅' : '⚠️ '} ${field.label} ← ${answer} (${source})`);
+  //   }
+  // } else {
+  //   console.log('✅ All fields filled by Simplify');
+  // }
 
   const screenshotPath = await takeScreenshot(page, `${reportNum}-final`);
   return { screenshotPath, url };
@@ -1095,7 +1194,12 @@ async function queueMain() {
 
     try {
       const appCtx = { ...ctx, jobDesc: report.content };
-      await processOneApplication(page, report, reportNum, genAI, appCtx);
+      const result = await processOneApplication(page, report, reportNum, genAI, appCtx);
+      if (result === 'discarded' || result === 'skipped') {
+        await page.close();
+        skipped++;
+        continue;
+      }
     } catch (e) {
       console.log(`  ⚠️  Error filling application: ${e.message}. Skipping.`);
       await page.close();
@@ -1104,14 +1208,19 @@ async function queueMain() {
     }
 
     const decision = await prompt(
-      '\n  Review the form in Chrome.\n  [Enter] = manually submitted   [s/submit] = script submits   [skip] = skip\n  > '
+      '\n  Review the form in Chrome.\n  [Enter] = manually submitted   [s/submit] = script submits   [skip] = skip this session   [remove] = discard permanently\n  > '
     );
 
-    if (/^skip$/i.test(decision.trim())) {
+    if (/^r(emove)?$/i.test(decision.trim())) {
+      markDiscarded(reportNum);
+      console.log('  🗑️  Discarded — removed from future queue runs.');
+      await page.close();
+      skipped++;
+    } else if (/^s(kip)?$/i.test(decision.trim())) {
       console.log('  ⏭️  Skipped.');
       await page.close();
       skipped++;
-    } else if (/^s(ubmit)?$/i.test(decision.trim())) {
+    } else if (/^su(bmit)?$/i.test(decision.trim())) {
       try {
         const submitLocator = page.locator(
           'button[type="submit"], input[type="submit"], [data-qa="btn-submit"], #submit_app, .template-btn-submit, #application-submit'

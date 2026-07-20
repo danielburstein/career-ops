@@ -136,123 +136,1948 @@
 
 ## Pendientes
 
-- [ ] https://job-boards.greenhouse.io/intercom/jobs/7784684 | Intercom | Engineering Manager, AI Models Infrastructure
-- [ ] https://job-boards.greenhouse.io/intercom/jobs/7393950 | Intercom | Staff Product Engineer, AI
-- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5150472008 | Anthropic | Staff Software Engineer, Inference
-- [ ] https://job-boards.greenhouse.io/anthropic/jobs/5203868008 | Anthropic | Staff Software Engineer, Node Infra
-- [ ] https://jobs.ashbyhq.com/sierra/b89816c1-80b2-449b-b69e-2c261b8e9e23 | Sierra | Software Engineer, Agent
-- [ ] https://jobs.ashbyhq.com/sierra/757f6d53-8849-46b5-b23e-184753c05e62 | Sierra | Strategist, Agent Development
-- [ ] https://jobs.ashbyhq.com/decagon/dc7c3b51-5be0-4890-a481-5bb200df48eb | Decagon | Senior Software Engineer, Enterprise Product
-- [ ] https://jobs.ashbyhq.com/decagon/a4796fbc-b45c-4e1b-b1d2-1a17c0b4fa7a | Decagon | Senior Software Engineer, Core Infrastructure
-- [ ] https://jobs.ashbyhq.com/decagon/52943ef2-e3ed-44d8-ab3f-17dd28d0376d | Decagon | Staff Software Engineer, Enterprise Product
-- [ ] https://jobs.ashbyhq.com/decagon/123e4aae-9550-4e69-be08-6789e09db07e | Decagon | Senior Agent Product Manager
-- [ ] https://jobs.ashbyhq.com/decagon/b0ef58e4-c1aa-49f2-a803-a1c8d92fe0fc | Decagon | Customer Engineer, Agent Builder
-- [ ] https://jobs.ashbyhq.com/decagon/c15c3dc8-6df7-43ca-aeeb-dc2beed2668e | Decagon | Senior Software Engineer, Developer Platform
-- [ ] https://jobs.ashbyhq.com/decagon/d400020b-2f97-4316-a8c2-9dc70f254cdd | Decagon | Senior Software Engineer, Data Infrastructure
+- [x] #SKIP https://job-boards.greenhouse.io/intercom/jobs/7784684 | Intercom | Engineering Manager, AI Models Infrastructure
+- [x] #SKIP https://job-boards.greenhouse.io/intercom/jobs/7393950 | Intercom | Staff Product Engineer, AI
+- [x] #SKIP https://job-boards.greenhouse.io/anthropic/jobs/5150472008 | Anthropic | Staff Software Engineer, Inference
+- [x] #SKIP https://job-boards.greenhouse.io/anthropic/jobs/5203868008 | Anthropic | Staff Software Engineer, Node Infra
+- [x] #SKIP https://jobs.ashbyhq.com/sierra/b89816c1-80b2-449b-b69e-2c261b8e9e23 | Sierra | Software Engineer, Agent
+- [x] #SKIP https://jobs.ashbyhq.com/sierra/757f6d53-8849-46b5-b23e-184753c05e62 | Sierra | Strategist, Agent Development
+- [x] #SKIP https://jobs.ashbyhq.com/decagon/dc7c3b51-5be0-4890-a481-5bb200df48eb | Decagon | Senior Software Engineer, Enterprise Product
+- [x] #SKIP https://jobs.ashbyhq.com/decagon/a4796fbc-b45c-4e1b-b1d2-1a17c0b4fa7a | Decagon | Senior Software Engineer, Core Infrastructure
+- [x] #SKIP https://jobs.ashbyhq.com/decagon/52943ef2-e3ed-44d8-ab3f-17dd28d0376d | Decagon | Staff Software Engineer, Enterprise Product
+- [x] #SKIP https://jobs.ashbyhq.com/decagon/123e4aae-9550-4e69-be08-6789e09db07e | Decagon | Senior Agent Product Manager
+- [x] #SKIP https://jobs.ashbyhq.com/decagon/b0ef58e4-c1aa-49f2-a803-a1c8d92fe0fc | Decagon | Customer Engineer, Agent Builder
+- [x] #SKIP https://jobs.ashbyhq.com/decagon/c15c3dc8-6df7-43ca-aeeb-dc2beed2668e | Decagon | Senior Software Engineer, Developer Platform
+- [x] #SKIP https://jobs.ashbyhq.com/decagon/d400020b-2f97-4316-a8c2-9dc70f254cdd | Decagon | Senior Software Engineer, Data Infrastructure
 - [ ] https://jobs.ashbyhq.com/cohere/cd3eacfe-1169-4df0-8164-93a857d5ddf0 | Cohere | RevOps Analyst (Analytics)
 - [ ] https://jobs.ashbyhq.com/cohere/a03e02e4-76be-4666-a71d-e7b1d51e4a0f | Cohere | RevOps GTM Systems Architect
-- [ ] https://boomi.com/boomi-jobs/?gh_jid=5776784004 | Boomi | Senior Software Engineer
+- [x] #SKIP https://boomi.com/boomi-jobs/?gh_jid=5776784004 | Boomi | Senior Software Engineer
 - [ ] https://job-boards.greenhouse.io/later/jobs/8366755002 | Later | Domain Architect
-- [ ] https://jobs.ashbyhq.com/pinecone/499ce77a-7ed0-462e-9efb-3e7dad6cd5ad | Pinecone | Senior/Staff Software Engineer, Search & Retrieval Infrastructure
+- [x] #SKIP https://jobs.ashbyhq.com/pinecone/499ce77a-7ed0-462e-9efb-3e7dad6cd5ad | Pinecone | Senior/Staff Software Engineer, Search & Retrieval Infrastructure
 - [ ] https://jobs.lever.co/palantir/d33e0c31-ac7e-4f57-ba74-36f2df6ae2f5 | Palantir | Backend Software Engineer - Defense
 - [ ] https://jobs.lever.co/palantir/8148182c-6127-4689-b615-7815a94173bb | Palantir | Forward Deployed Software Engineer
 - [ ] https://jobs.lever.co/palantir/e82b696e-a085-4bbf-8bcb-6d2c4f8cf2f7 | Palantir | Forward Deployed Software Engineer - US Government
-- [ ] https://jobs.lever.co/palantir/a92b55d0-1d36-4884-8e65-f456450b3a74 | Palantir | Senior Backend Software Engineer - Application Development
-- [ ] https://jobs.lever.co/palantir/b5ad6660-8145-4be5-97e2-3799f2912f5b | Palantir | Senior Backend Software Engineer - Infrastructure
-- [ ] https://jobs.lever.co/palantir/d2a87a1d-63f4-4dcd-b0d0-f6be91fed4d3 | Palantir | Senior Front End Software Engineer - Application Development
-- [ ] https://jobs.lever.co/palantir/55005ee7-4e06-4520-b569-f6e8f26745cb | Palantir | Senior Software Engineer, Network Infrastructure
-- [ ] https://jobs.lever.co/palantir/68d690cf-fc8a-4755-9b69-abe13f93d262 | Palantir | Senior Software Engineer, Substrate
+- [x] #SKIP https://jobs.lever.co/palantir/a92b55d0-1d36-4884-8e65-f456450b3a74 | Palantir | Senior Backend Software Engineer - Application Development
+- [x] #SKIP https://jobs.lever.co/palantir/b5ad6660-8145-4be5-97e2-3799f2912f5b | Palantir | Senior Backend Software Engineer - Infrastructure
+- [x] #SKIP https://jobs.lever.co/palantir/d2a87a1d-63f4-4dcd-b0d0-f6be91fed4d3 | Palantir | Senior Front End Software Engineer - Application Development
+- [x] #SKIP https://jobs.lever.co/palantir/55005ee7-4e06-4520-b569-f6e8f26745cb | Palantir | Senior Software Engineer, Network Infrastructure
+- [x] #SKIP https://jobs.lever.co/palantir/68d690cf-fc8a-4755-9b69-abe13f93d262 | Palantir | Senior Software Engineer, Substrate
 - [ ] https://jobs.lever.co/palantir/f75cb0d2-6608-450b-848e-0f27937c930d | Palantir | Software Engineer - Apollo Platform
 - [ ] https://jobs.lever.co/palantir/c0b60d64-1244-4270-9d55-14115c97c24b | Palantir | Software Engineer - Mission Manager
 - [ ] https://jobs.lever.co/palantir/df20ad9f-3d7f-4267-8e37-8253f717534a | Palantir | Systems Engineer - Business Systems
 
 
-- [ ] https://jobs.ashbyhq.com/sierra/8f9d2381-aa28-4ad8-bdbd-8b6a7585b56c | Sierra | Software Engineer, Agent
-- [ ] https://jobs.ashbyhq.com/sierra/99e82c10-977f-4b42-a737-2d9812ce614d | Sierra | Strategist, Agent Development
+- [x] #SKIP https://jobs.ashbyhq.com/sierra/8f9d2381-aa28-4ad8-bdbd-8b6a7585b56c | Sierra | Software Engineer, Agent
+- [x] #SKIP https://jobs.ashbyhq.com/sierra/99e82c10-977f-4b42-a737-2d9812ce614d | Sierra | Strategist, Agent Development
 - [ ] https://jobs.lever.co/palantir/90aa8748-3fef-4e2b-9ea9-c4dc5f37f0d2 | Palantir | Forward Deployed Software Engineer
-- [ ] https://jobs.lever.co/palantir/89a77547-8b74-45b2-8590-f04b16e19a59 | Palantir | Senior Software Engineer, Network Infrastructure
-- [ ] https://jobs.lever.co/palantir/b80d45be-7fe8-4a11-b159-65551320c61f | Palantir | Senior Software Engineer, Substrate
+- [x] #SKIP https://jobs.lever.co/palantir/89a77547-8b74-45b2-8590-f04b16e19a59 | Palantir | Senior Software Engineer, Network Infrastructure
+- [x] #SKIP https://jobs.lever.co/palantir/b80d45be-7fe8-4a11-b159-65551320c61f | Palantir | Senior Software Engineer, Substrate
 - [ ] https://jobs.lever.co/palantir/e168a922-a2f0-45d0-912c-678d66e15118 | Palantir | Software Engineer - Mission Manager
 - [ ] https://jobs.lever.co/palantir/e1d6117e-2ee0-4cf6-8040-256c3009389f | Palantir | Systems Engineer - Business Systems
 
-- [ ] https://jobs.ashbyhq.com/weaviate/c4c18609-c956-4a33-9a73-ad1d7680de6b | Weaviate | Product Manager, Database
-- [ ] https://jobs.ashbyhq.com/replit/47235851-fadd-4bd7-9cc6-61f545059ac1 | Replit | Staff Software Engineer, Product
-- [ ] https://jobs.ashbyhq.com/replit/12737078-74c7-4e63-98a7-5e8da1e9deb1 | Replit | Software Engineering Intern (Summer 2026)
-- [ ] https://jobs.ashbyhq.com/replit/8fbbe594-596a-4a4f-844b-dc00111e717f | Replit | Software Engineer, Mobile
-- [ ] https://jobs.ashbyhq.com/replit/447a6e11-b06b-4cc5-9203-cd55883f2af4 | Replit | Software Engineer, Growth
-- [ ] https://jobs.ashbyhq.com/replit/659a8e1e-69ba-44c0-a632-96665051a3e8 | Replit | Software Engineer, Compute Platform
-- [ ] https://jobs.ashbyhq.com/replit/cf236c47-218b-4a31-b0b6-d6ed12a8e077 | Replit | Senior Product Manager
-- [ ] https://jobs.ashbyhq.com/replit/14b3aef3-f926-4db9-8c31-af8ba848fbd8 | Replit | Staff Software Engineer, Money
-- [ ] https://jobs.ashbyhq.com/replit/5bdadf61-7955-46e8-8fdf-bd69818358b7 | Replit | Senior Software Engineer, Anti-Abuse & Security
-- [ ] https://jobs.ashbyhq.com/replit/bb52f792-58c2-41ab-954d-555c821fe3fe | Replit | Principal Software Engineer, Money Infrastructure
-- [ ] https://jobs.ashbyhq.com/replit/b82de6f8-aebf-47b8-8bdc-39ea33807975 | Replit | Senior Software Engineer, Agent Platform
-- [ ] https://jobs.ashbyhq.com/replit/b7f12834-78d2-424d-bf83-0c942815fbf7 | Replit | Software Engineer, Enterprise
-- [ ] https://jobs.ashbyhq.com/replit/f98605a1-36d2-4b2f-b9be-f66064a02645 | Replit | Staff Software Engineer, Replit Cloud
-- [ ] https://jobs.ashbyhq.com/replit/7fa1826e-d7fd-4837-8485-97de895ba7fc | Replit | Software Engineer, Replit Cloud
-- [ ] https://jobs.ashbyhq.com/replit/37f81c18-c742-4f7d-bf81-34c3f5142973 | Replit | Software Engineer, Growth Infrastructure
-- [ ] https://jobs.ashbyhq.com/replit/7b4bc2fe-5860-4f56-8746-aabb852cf0e1 | Replit | Software Engineer, Enterprise Platform
-- [ ] https://jobs.ashbyhq.com/replit/e6b55837-b60b-4564-92cc-e8624fd6ee60 | Replit | RevOps Architect
-- [ ] https://jobs.ashbyhq.com/replit/61cfbcb7-cd1e-49ab-82a1-e93c3962e343 | Replit | Staff Software Engineer, Enterprise Platform
-- [ ] https://jobs.ashbyhq.com/replit/43bd4e63-22c3-4b80-abd2-67eaf2c89790 | Replit | Staff Software Engineer, Agent Platform
-- [ ] https://jobs.ashbyhq.com/replit/75e69146-a092-43a1-b1d6-023d433d3ae7 | Replit | Staff Software Engineer, Anti-Abuse & Security
-- [ ] https://jobs.ashbyhq.com/replit/d0e0dd7d-59d1-4de8-afbb-54aea680b51d | Replit | Software Engineer, Developer Experience
-- [ ] https://jobs.ashbyhq.com/replit/93b62fcc-5358-4381-bbde-540d334a451f | Replit | Staff Software Engineer, Money Partnerships
-- [ ] https://jobs.ashbyhq.com/replit/75477d6d-82e2-413c-b355-ec9426e56555 | Replit | Senior Software Engineer, Trust & Safety
-- [ ] https://jobs.ashbyhq.com/replit/3a657901-8b8e-47cd-a122-e45881eef124 | Replit | Senior Software Engineer, Risk
-- [ ] https://jobs.ashbyhq.com/replit/649b284a-75c3-4d58-9958-4db2740e6f8d | Replit | Senior Software Engineer, Fraud
-- [ ] https://jobs.ashbyhq.com/replit/bd27a146-a100-4eef-80b5-f24a7ddff344 | Replit | Staff Software Engineer, Trust & Safety
-- [ ] https://jobs.ashbyhq.com/replit/76aebfe2-f481-4463-9650-1bdaffaeb24d | Replit | Staff Software Engineer, Risk
-- [ ] https://jobs.ashbyhq.com/replit/27618f18-d516-42c0-a321-592f18606431 | Replit | Staff Software Engineer, Fraud
-- [ ] https://jobs.ashbyhq.com/cursor/0ec39ed7-a5dc-4551-bb26-b7f4f9fb4a74 | Cursor | Software Engineer, Growth 
-- [ ] https://jobs.ashbyhq.com/cursor/0863d184-1b2f-42cd-9fca-37fa90efe2eb | Cursor | Software Engineer, Services Platform
-- [ ] https://jobs.ashbyhq.com/cursor/6d576a09-f30d-4e5e-bb58-5d7ef56cb511 | Cursor | Software Engineer, Infrastructure
-- [ ] https://jobs.ashbyhq.com/cursor/515926c1-f044-4aff-9d5f-0bb84cb7eca2 | Cursor | Software Engineer, Storage
-- [ ] https://jobs.ashbyhq.com/cursor/77bf35db-119c-4533-8187-1e8d5ae08c45 | Cursor | Software Engineer, Core Services
-- [ ] https://jobs.ashbyhq.com/cursor/044a003e-d6cc-43b6-806a-833d9399c3d4 | Cursor | GTM Engineer, Growth Programs
-- [ ] https://jobs.ashbyhq.com/cursor/e08262e8-c089-488d-9b59-9e21f7702b64 | Cursor | Software Engineer, Client Infrastructure
-- [ ] https://jobs.ashbyhq.com/cursor/36e69353-0452-4bf6-9f35-b1e7307959a7 | Cursor | Software Engineer, Generalist
-- [ ] https://jobs.ashbyhq.com/cursor/54a9cfcd-570a-4e9c-b52c-bd2336c60991 | Cursor | Software Engineer, Enterprise 
-- [ ] https://jobs.ashbyhq.com/cursor/0aa0650b-f93c-416e-9e2f-4fdf1556fd14 | Cursor | Software Engineer, ML Research 
-- [ ] https://jobs.ashbyhq.com/cursor/3551cdaa-cf08-4c04-adbe-a968185bc769 | Cursor | Software Engineer, Product 
-- [ ] https://jobs.ashbyhq.com/cursor/193c326d-2ffc-4c11-8bba-73d243fd178b | Cursor | AI Deployment Manager
-- [ ] https://jobs.ashbyhq.com/cursor/6e6f5bc2-eb32-40e2-bba9-cfa56479600d | Cursor | Software Engineer, Agent Harness
-- [ ] https://jobs.ashbyhq.com/cursor/94cc6684-9dbf-43f9-8ffc-405614e64ddd | Cursor | Software Engineer, Security
-- [ ] https://jobs.ashbyhq.com/cursor/88d47f97-0bea-448c-9abb-4720e4acf17a | Cursor | Software Engineer, Bugbot
-- [ ] https://jobs.ashbyhq.com/cursor/b6807f07-c4b7-4435-8c4c-0bef35865ad7 | Cursor | Software Engineer, Enterprise Platform
-- [ ] https://jobs.ashbyhq.com/cursor/010063bd-6083-4fc0-a455-e6f0193b5347 | Cursor | Software Engineer, Developer Productivity
-- [ ] https://jobs.ashbyhq.com/cursor/8d07fe0f-34aa-458b-88e8-091469a963dc | Cursor | Software Engineer, Data Infrastructure
-- [ ] https://jobs.ashbyhq.com/cursor/fb97e304-9d99-4b07-9474-1290121a87d5 | Cursor | Regional Director, AI Deployment
-- [ ] https://jobs.ashbyhq.com/cursor/c66cde5e-9cb6-4a2e-a330-9323e1edf2a9 | Cursor | Software Engineer, ML Infrastructure
-- [ ] https://jobs.ashbyhq.com/cursor/45c815b0-5100-4934-8558-0e750b8aed79 | Cursor | Software Engineer, Model Routing & Inference
-- [ ] https://jobs.ashbyhq.com/cursor/409d6bff-d60c-45b7-8d4c-21f6574010de | Cursor | Strategic Account Executive, Retail
-- [ ] https://jobs.ashbyhq.com/cursor/47994d20-cc6a-436b-8da0-2eceabfd413e | Cursor | Software Engineer, Billing
-- [ ] https://jobs.ashbyhq.com/cursor/34cecd0c-c392-4454-8ef5-261310541011 | Cursor | Forward Deployed Engineer
-- [ ] https://jobs.ashbyhq.com/cursor/2bbe9f02-83a5-4173-98be-9085d1cb5693 | Cursor | Software Engineer, Agent Evaluation and Quality
-- [ ] https://jobs.ashbyhq.com/cursor/cda9256f-e820-4f0a-9e77-e44c61295e1d | Cursor | Solutions Architect
-- [ ] https://jobs.ashbyhq.com/cursor/21110d73-77cb-465b-9977-65afb3e82cec | Cursor | Product Manager, Cloud Agents
-- [ ] https://jobs.ashbyhq.com/cursor/66e67c2e-c828-4ddb-a2c0-7d3cb672f19d | Cursor | Product Manager
-- [ ] https://jobs.ashbyhq.com/cursor/69abc2ba-2823-40c3-9b86-94ab63859649 | Cursor | Product Manager, Agent Harness
-- [ ] https://jobs.ashbyhq.com/cursor/1d6dbbb2-a5af-41a6-a70a-ca97690d9313 | Cursor | Software Engineer, User Operations
-- [ ] https://jobs.ashbyhq.com/cursor/685bf26b-9119-4c89-8ff5-4f5adb748b88 | Cursor | Analytics Platform Engineer
-- [ ] https://jobs.ashbyhq.com/cursor/b6d90b7f-7586-46e8-bab6-8d87b881906c | Cursor | Solutions Architect, London
-- [ ] https://jobs.ashbyhq.com/cursor/847a46b5-0143-4e34-9dd9-109d31a9eda6 | Cursor | RVP, Solutions Architect APJ
-- [ ] https://jobs.ashbyhq.com/perplexity/043d6a58-87a1-4e3c-bf47-4dc351b94cf4 | Perplexity | Member of Technical Staff (Software Engineer, Monetization)
-- [ ] https://jobs.ashbyhq.com/perplexity/94ccf41e-d3e1-41aa-9569-c3bcbffc4184 | Perplexity | Member of Technical Staff (Backend Software Engineer, Search Crawler)
-- [ ] https://jobs.ashbyhq.com/perplexity/9ac5e638-85f6-4308-bcd5-7dfe0a30a79b | Perplexity | Member of Technical Staff (Backend Software Engineer, API Platform)
-- [ ] https://jobs.ashbyhq.com/perplexity/6c9b3c71-85ba-47db-bce5-44fd9fa95d03 | Perplexity | Member of Technical Staff (Software Engineer, Security)
-- [ ] https://jobs.ashbyhq.com/perplexity/c03bf199-9faa-48a4-809d-095c72b06000 | Perplexity | Member of Technical Staff (Software Engineer, Acceleration)
-- [ ] https://jobs.ashbyhq.com/perplexity/2cef7831-6ed3-4663-aec4-57f79f08c95a | Perplexity | Member of Technical Staff (Backend Software Engineer)
-- [ ] https://jobs.ashbyhq.com/perplexity/7755eb0a-0f51-4286-b75e-591e44c741bc | Perplexity | Member of Technical Staff (Software Engineer, Data Flywheel)
-- [ ] https://jobs.ashbyhq.com/perplexity/4c0ac8bb-55bf-4fb0-b7d7-36d69f55e6c8 | Perplexity | Member of Technical Staff (Software Engineer, Computer)
+- [x] #SKIP https://jobs.ashbyhq.com/weaviate/c4c18609-c956-4a33-9a73-ad1d7680de6b | Weaviate | Product Manager, Database
+- [x] #SKIP https://jobs.ashbyhq.com/replit/47235851-fadd-4bd7-9cc6-61f545059ac1 | Replit | Staff Software Engineer, Product
+- [x] #SKIP https://jobs.ashbyhq.com/replit/12737078-74c7-4e63-98a7-5e8da1e9deb1 | Replit | Software Engineering Intern (Summer 2026)
+- [x] #SKIP https://jobs.ashbyhq.com/replit/8fbbe594-596a-4a4f-844b-dc00111e717f | Replit | Software Engineer, Mobile
+- [x] #SKIP https://jobs.ashbyhq.com/replit/447a6e11-b06b-4cc5-9203-cd55883f2af4 | Replit | Software Engineer, Growth
+- [x] #SKIP https://jobs.ashbyhq.com/replit/659a8e1e-69ba-44c0-a632-96665051a3e8 | Replit | Software Engineer, Compute Platform
+- [x] #SKIP https://jobs.ashbyhq.com/replit/cf236c47-218b-4a31-b0b6-d6ed12a8e077 | Replit | Senior Product Manager
+- [x] #SKIP https://jobs.ashbyhq.com/replit/14b3aef3-f926-4db9-8c31-af8ba848fbd8 | Replit | Staff Software Engineer, Money
+- [x] #SKIP https://jobs.ashbyhq.com/replit/5bdadf61-7955-46e8-8fdf-bd69818358b7 | Replit | Senior Software Engineer, Anti-Abuse & Security
+- [x] #SKIP https://jobs.ashbyhq.com/replit/bb52f792-58c2-41ab-954d-555c821fe3fe | Replit | Principal Software Engineer, Money Infrastructure
+- [x] #SKIP https://jobs.ashbyhq.com/replit/b82de6f8-aebf-47b8-8bdc-39ea33807975 | Replit | Senior Software Engineer, Agent Platform
+- [x] #SKIP https://jobs.ashbyhq.com/replit/b7f12834-78d2-424d-bf83-0c942815fbf7 | Replit | Software Engineer, Enterprise
+- [x] #SKIP https://jobs.ashbyhq.com/replit/f98605a1-36d2-4b2f-b9be-f66064a02645 | Replit | Staff Software Engineer, Replit Cloud
+- [x] #SKIP https://jobs.ashbyhq.com/replit/7fa1826e-d7fd-4837-8485-97de895ba7fc | Replit | Software Engineer, Replit Cloud
+- [x] #SKIP https://jobs.ashbyhq.com/replit/37f81c18-c742-4f7d-bf81-34c3f5142973 | Replit | Software Engineer, Growth Infrastructure
+- [x] #SKIP https://jobs.ashbyhq.com/replit/7b4bc2fe-5860-4f56-8746-aabb852cf0e1 | Replit | Software Engineer, Enterprise Platform
+- [x] #SKIP https://jobs.ashbyhq.com/replit/e6b55837-b60b-4564-92cc-e8624fd6ee60 | Replit | RevOps Architect
+- [x] #SKIP https://jobs.ashbyhq.com/replit/61cfbcb7-cd1e-49ab-82a1-e93c3962e343 | Replit | Staff Software Engineer, Enterprise Platform
+- [x] #SKIP https://jobs.ashbyhq.com/replit/43bd4e63-22c3-4b80-abd2-67eaf2c89790 | Replit | Staff Software Engineer, Agent Platform
+- [x] #SKIP https://jobs.ashbyhq.com/replit/75e69146-a092-43a1-b1d6-023d433d3ae7 | Replit | Staff Software Engineer, Anti-Abuse & Security
+- [x] #SKIP https://jobs.ashbyhq.com/replit/d0e0dd7d-59d1-4de8-afbb-54aea680b51d | Replit | Software Engineer, Developer Experience
+- [x] #SKIP https://jobs.ashbyhq.com/replit/93b62fcc-5358-4381-bbde-540d334a451f | Replit | Staff Software Engineer, Money Partnerships
+- [x] #SKIP https://jobs.ashbyhq.com/replit/75477d6d-82e2-413c-b355-ec9426e56555 | Replit | Senior Software Engineer, Trust & Safety
+- [x] #SKIP https://jobs.ashbyhq.com/replit/3a657901-8b8e-47cd-a122-e45881eef124 | Replit | Senior Software Engineer, Risk
+- [x] #SKIP https://jobs.ashbyhq.com/replit/649b284a-75c3-4d58-9958-4db2740e6f8d | Replit | Senior Software Engineer, Fraud
+- [x] #SKIP https://jobs.ashbyhq.com/replit/bd27a146-a100-4eef-80b5-f24a7ddff344 | Replit | Staff Software Engineer, Trust & Safety
+- [x] #SKIP https://jobs.ashbyhq.com/replit/76aebfe2-f481-4463-9650-1bdaffaeb24d | Replit | Staff Software Engineer, Risk
+- [x] #SKIP https://jobs.ashbyhq.com/replit/27618f18-d516-42c0-a321-592f18606431 | Replit | Staff Software Engineer, Fraud
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/0ec39ed7-a5dc-4551-bb26-b7f4f9fb4a74 | Cursor | Software Engineer, Growth 
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/0863d184-1b2f-42cd-9fca-37fa90efe2eb | Cursor | Software Engineer, Services Platform
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/6d576a09-f30d-4e5e-bb58-5d7ef56cb511 | Cursor | Software Engineer, Infrastructure
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/515926c1-f044-4aff-9d5f-0bb84cb7eca2 | Cursor | Software Engineer, Storage
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/77bf35db-119c-4533-8187-1e8d5ae08c45 | Cursor | Software Engineer, Core Services
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/044a003e-d6cc-43b6-806a-833d9399c3d4 | Cursor | GTM Engineer, Growth Programs
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/e08262e8-c089-488d-9b59-9e21f7702b64 | Cursor | Software Engineer, Client Infrastructure
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/36e69353-0452-4bf6-9f35-b1e7307959a7 | Cursor | Software Engineer, Generalist
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/54a9cfcd-570a-4e9c-b52c-bd2336c60991 | Cursor | Software Engineer, Enterprise 
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/0aa0650b-f93c-416e-9e2f-4fdf1556fd14 | Cursor | Software Engineer, ML Research 
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/3551cdaa-cf08-4c04-adbe-a968185bc769 | Cursor | Software Engineer, Product 
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/193c326d-2ffc-4c11-8bba-73d243fd178b | Cursor | AI Deployment Manager
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/6e6f5bc2-eb32-40e2-bba9-cfa56479600d | Cursor | Software Engineer, Agent Harness
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/94cc6684-9dbf-43f9-8ffc-405614e64ddd | Cursor | Software Engineer, Security
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/88d47f97-0bea-448c-9abb-4720e4acf17a | Cursor | Software Engineer, Bugbot
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/b6807f07-c4b7-4435-8c4c-0bef35865ad7 | Cursor | Software Engineer, Enterprise Platform
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/010063bd-6083-4fc0-a455-e6f0193b5347 | Cursor | Software Engineer, Developer Productivity
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/8d07fe0f-34aa-458b-88e8-091469a963dc | Cursor | Software Engineer, Data Infrastructure
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/fb97e304-9d99-4b07-9474-1290121a87d5 | Cursor | Regional Director, AI Deployment
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/c66cde5e-9cb6-4a2e-a330-9323e1edf2a9 | Cursor | Software Engineer, ML Infrastructure
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/45c815b0-5100-4934-8558-0e750b8aed79 | Cursor | Software Engineer, Model Routing & Inference
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/409d6bff-d60c-45b7-8d4c-21f6574010de | Cursor | Strategic Account Executive, Retail
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/47994d20-cc6a-436b-8da0-2eceabfd413e | Cursor | Software Engineer, Billing
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/34cecd0c-c392-4454-8ef5-261310541011 | Cursor | Forward Deployed Engineer
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/2bbe9f02-83a5-4173-98be-9085d1cb5693 | Cursor | Software Engineer, Agent Evaluation and Quality
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/cda9256f-e820-4f0a-9e77-e44c61295e1d | Cursor | Solutions Architect
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/21110d73-77cb-465b-9977-65afb3e82cec | Cursor | Product Manager, Cloud Agents
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/66e67c2e-c828-4ddb-a2c0-7d3cb672f19d | Cursor | Product Manager
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/69abc2ba-2823-40c3-9b86-94ab63859649 | Cursor | Product Manager, Agent Harness
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/1d6dbbb2-a5af-41a6-a70a-ca97690d9313 | Cursor | Software Engineer, User Operations
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/685bf26b-9119-4c89-8ff5-4f5adb748b88 | Cursor | Analytics Platform Engineer
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/b6d90b7f-7586-46e8-bab6-8d87b881906c | Cursor | Solutions Architect, London
+- [x] #SKIP https://jobs.ashbyhq.com/cursor/847a46b5-0143-4e34-9dd9-109d31a9eda6 | Cursor | RVP, Solutions Architect APJ
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/043d6a58-87a1-4e3c-bf47-4dc351b94cf4 | Perplexity | Member of Technical Staff (Software Engineer, Monetization)
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/94ccf41e-d3e1-41aa-9569-c3bcbffc4184 | Perplexity | Member of Technical Staff (Backend Software Engineer, Search Crawler)
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/9ac5e638-85f6-4308-bcd5-7dfe0a30a79b | Perplexity | Member of Technical Staff (Backend Software Engineer, API Platform)
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/6c9b3c71-85ba-47db-bce5-44fd9fa95d03 | Perplexity | Member of Technical Staff (Software Engineer, Security)
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/c03bf199-9faa-48a4-809d-095c72b06000 | Perplexity | Member of Technical Staff (Software Engineer, Acceleration)
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/2cef7831-6ed3-4663-aec4-57f79f08c95a | Perplexity | Member of Technical Staff (Backend Software Engineer)
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/7755eb0a-0f51-4286-b75e-591e44c741bc | Perplexity | Member of Technical Staff (Software Engineer, Data Flywheel)
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/4c0ac8bb-55bf-4fb0-b7d7-36d69f55e6c8 | Perplexity | Member of Technical Staff (Software Engineer, Computer)
 - [ ] https://jobs.lever.co/palantir/98b81271-9e15-40b7-8dce-0c62f24702f9 | Palantir | Forward Deployed Software Engineer
-- [ ] https://jobs.lever.co/palantir/c38bb622-6f8e-43a1-8ae7-32291da328a8 | Palantir | Senior Software Engineer, Substrate
-- [ ] https://jobs.ashbyhq.com/sierra/8646493c-93a6-482e-a810-4a0aa6e3438f | Sierra | Software Engineer, Agent
+- [x] #SKIP https://jobs.lever.co/palantir/c38bb622-6f8e-43a1-8ae7-32291da328a8 | Palantir | Senior Software Engineer, Substrate
+- [x] #SKIP https://jobs.ashbyhq.com/sierra/8646493c-93a6-482e-a810-4a0aa6e3438f | Sierra | Software Engineer, Agent
 
-- [ ] https://jobs.ashbyhq.com/perplexity/2b5a9f9c-7cd5-4579-b7c2-69d09e0214c8 | Perplexity | Member of Technical Staff (Backend Software Engineer)
-- [ ] https://jobs.ashbyhq.com/sierra/631848ec-1a74-4067-8b9f-cd04a71aab6d | Sierra | Software Engineer, Agent
+- [x] #SKIP https://jobs.ashbyhq.com/perplexity/2b5a9f9c-7cd5-4579-b7c2-69d09e0214c8 | Perplexity | Member of Technical Staff (Backend Software Engineer)
+- [x] #SKIP https://jobs.ashbyhq.com/sierra/631848ec-1a74-4067-8b9f-cd04a71aab6d | Sierra | Software Engineer, Agent
 - [ ] https://jobs.lever.co/palantir/bf718bd3-b2ef-451e-8033-cb4d2d9c094b | Palantir | Forward Deployed Software Engineer
 
-- [ ] https://jobs.ashbyhq.com/sierra/787c1efd-2327-46e7-9335-59a20ad4be18 | Sierra | Software Engineer, Agent
+- [x] #SKIP https://jobs.ashbyhq.com/sierra/787c1efd-2327-46e7-9335-59a20ad4be18 | Sierra | Software Engineer, Agent
 - [ ] https://jobs.lever.co/palantir/c4442730-2926-41ad-8c0e-5e5a6b4d14ae | Palantir | Forward Deployed Software Engineer
 
 - [ ] https://jobs.lever.co/palantir/d084b769-6f53-4409-afa8-c183b059b384 | Palantir | Forward Deployed Software Engineer
+
+- [x] #SKIP https://coreweave.com/careers/job?4684346006&board=coreweave&gh_jid=4684346006 | Weights & Biases (CoreWeave) | Sr. Product Manager, Finance
+- [x] #SKIP https://job-boards.greenhouse.io/gleanwork/jobs/4701618005 | Glean | Product Manager, Connectors
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8330188002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8419271002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8501390002 | Databricks | AI Solutions Architect (Pre-sales) - Strategic Accounts
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8462016002 | Databricks | Data & AI Platform Architect (Professional Services)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8554531002 | Databricks | Data and AI Solution Architect (Professional Services)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8396801002 | Databricks | Data Platform Solutions Architect (Professional Services) 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8439047002 | Databricks | Data Platform Solutions Architect (Professional Services) - Emerging Enterprise & DNB
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8549044002 | Databricks | Delivery Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=6966448002 | Databricks | Delivery Solutions Architect - Communications, Media, Entertainment & Games
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8548984002 | Databricks | Delivery Solutions Architect - Digital Native Business
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8442976002 | Databricks | Delivery Solutions Architect - Financial Services
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8476399002 | Databricks | Delivery Solutions Architect - Healthcare & Life Sciences
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8557425002 | Databricks | Delivery Solutions Architect - High-Tech & Manufacturing
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8540464002 | Databricks | Delivery Solutions Architect - Public Sector
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8476401002 | Databricks | Delivery Solutions Architect - Startups & Emerging Enterprise
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8295622002 | Databricks | Director, Engineering Governance- Mountain View, CA
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8287373002 | Databricks | Director, Enterprise - Retail & CPG
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8287372002 | Databricks | Director, Enterprise - Retail & CPG, m/f/d
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8409447002 | Databricks | Director,Technical Solutions (Big Data/ AI)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8509687002 | Databricks | Enterprise Account Executive, Fashion & Retail
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8294402002 | Databricks | Enterprise Account Executive - Kansai Region
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8440917002 | Databricks | Enterprise Account Executive - Retail/CPG
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8476506002 | Databricks | Field Engineering, AI/ML Product Specialist
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8540455002 | Databricks | Forward Deployed Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8480642002 | Databricks | Industry Lead Solutions Architect - Financial Services
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8569436002 | Databricks | Lakebase Sales Specialist - Retail
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8480815002 | Databricks | Lead Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8403943002 | Databricks | Lead Solutions Architect (Digital Natives Business)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8437076002 | Databricks | Lead Solutions Architect (Pre-sales) – Public Sector
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7642125002 | Databricks | Lead Solutions Architect  - Strategic Customers
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8538884002 | Databricks | Lead Technical Program Manager, Professional Services - Retail
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8545248002 | Databricks | Manager, Delivery Solutions Architects
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8565280002 | Databricks | Manager, Delivery Solutions Architects - Financial Services
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8176503002 | Databricks | Manager, Engineering - AI/BI
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8349447002 | Databricks | Manager, Enterprise Presales - Kansai Region
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8517065002 | Databricks | Manager, Field Engineering France  - Specialist Solutions Architects
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8505897002 | Databricks | Named Enterprise Account Executive  - Retail/CPG
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8459908002 | Databricks | Network Automation Engineer 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8397501002 | Databricks | Outbound Product Manager, AI Operations
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8347880002 | Databricks |  Partner Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8449860002 | Databricks | Partner Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=7011263002 | Databricks | PhD GenAI Research Scientist Intern
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8532728002 | Databricks | Principal Research Scientist - AI Scaling & Optimization
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8487145002 | Databricks | Product Marketing Director, AI
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8501125002 | Databricks |  Resident Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8514430002 | Databricks | Resident Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8461239002 | Databricks | Resident Solutions Architect - Communications, Media, Entertainment & Games
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8488399002 | Databricks | Resident Solutions Architect - Digital Native Business 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8456965002 | Databricks | Resident Solutions Architect - Financial Services
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494148002 | Databricks | Resident Solutions Architect - Healthcare & Life Sciences
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494156002 | Databricks | Resident Solutions Architect - Manufacturing
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494137002 | Databricks | Resident Solutions Architect - Public Sector
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8495067002 | Databricks | Retail & Consumer Goods APAC Leader 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8374717002 | Databricks | Retail & Consumer Goods EMEA Leader
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8091041002 | Databricks | Senior Applied AI Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8490282002 | Databricks | Senior Engineering Manager, AI Runtime
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8297797002 | Databricks | Senior GenAI Research Engineer - Optimization and Kernels
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8540516002 | Databricks | Senior GenAI Research Scientist - AI Efficiency & Optimization
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6954585002 | Databricks | Senior Machine Learning Engineer - GenAI Platform 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8509230002 | Databricks | Senior Software Engineer - AI Platform (NYC)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8509096002 | Databricks | Senior Software Engineer - AI Product (NYC)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8183195002 | Databricks | Senior Software Engineer  - Application Traffic team
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8093295002 | Databricks | Senior Software Engineer - Backend
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8233899002 | Databricks | Senior Software Engineer (Backend) - AI/ML Environments
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8527117002 | Databricks | Senior Software Engineer, Compute Infrastructure
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6544383002 | Databricks | Senior Software Engineer - Database Engine Internals
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6936994002 | Databricks | Senior Software Engineer - Distributed Data Systems
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=5445641002 | Databricks | Senior Software Engineer - Fullstack
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8211634002 | Databricks | Senior Software Engineer - Fullstack (NYC)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6318503002 | Databricks | Senior Software Engineer - Infrastructure and Tools
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7934782002 | Databricks | Senior Software Engineer - Ingestion
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7938410002 | Databricks | Senior Software Engineer (L5) - Partner Ecosystem
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8211648002 | Databricks | Senior Software Engineer, Model Serving
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8027404002 | Databricks | Senior Software Engineer  - Money Team
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7647353002 | Databricks | Senior Software Engineer- Networking
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7619811002 | Databricks | Senior Software Engineer - Observability
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7841782002 | Databricks | Senior Software Engineer - Search
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7274459002 | Databricks | Senior Software Engineer - Security 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8509683002 | Databricks | Senior Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8554470002 | Databricks | Senior Solutions Architect - Digital Natives
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8517068002 | Databricks | Senior Solutions Architect (Enterprise Accounts)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8570587002 | Databricks | Senior Solutions Architect - Lakebase
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8516236002 | Databricks | Senior Solutions Architect - Lakewatch
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8480817002 | Databricks | Senior Solutions Architect (Utilities/Energy)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8025494002 | Databricks | Senior Solutions Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8554468002 | Databricks | Senior Solutions Engineer (Pre-Sales) - Healthcare & Life Sciences
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8544165002 | Databricks | Senior Solutions Engineer - Qatar & S.Africa Fly-in
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8506063002 | Databricks | Senior Specialist Solutions Architect - AI & ML Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8540267002 | Databricks | Senior Staff Applied AI Engineer - Context Retrieval
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7807722002 | Databricks | Senior Staff Software Engineer - App and Partner Ecosystem
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8421894002 | Databricks | Senior Staff Software Engineer - Backend
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7651326002 | Databricks | Senior Staff Software Engineer (Backend)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8303017002 | Databricks | Senior Staff Software Engineer - Delta
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7934466002 | Databricks | Senior Staff Software Engineer - Enzyme
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7274563002 | Databricks | Senior Staff Software Engineer - IAM
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8493002002 | Databricks | Senior Staff Software Engineer - Lakeflow Pipelines Datasets
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8433583002 | Databricks | Senior Staff Software Engineer- Networking
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8439350002 | Databricks | Senior Staff Software Engineer- Search Quality
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7274908002 | Databricks | Senior Staff Software Engineer - Security Infrastructure
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8422481002 | Databricks | Senior Staff Software Engineer - Unity Catalog Runtime Enforcement 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7902994002 | Databricks |  Senior Technical Solutions Engineer, Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7874145002 | Databricks | Senior Technical Solutions Engineer - Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8488552002 | Databricks | Senior Technical Solutions Engineer (Platform)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7902935002 | Databricks | Senior Technical Solutions Engineer, Platform
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8012650002 | Databricks | Software Engineer - Backend
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8012658002 | Databricks | Software Engineer - Database Engine Internals
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8012691002 | Databricks | Software Engineer - Distributed Data Systems
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8029677002 | Databricks | Software Engineer - Fullstack
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8202670002 | Databricks | Software Engineer - GenAI inference 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=7640776002 | Databricks | Software Engineering New Grad (2026)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=7896350002 | Databricks | Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=6356702002 | Databricks | Solutions Architect 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8392406002 | Databricks | Solutions Architect Consumer France
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8353757002 | Databricks | Solutions Architect: Data & AI
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8346277002 | Databricks | Solutions Architect : Data & AI - Digital Native 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8518496002 | Databricks | Solutions Architect: Data & AI - Public Sector
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=6117719002 | Databricks | Solutions Architect - Digital Native Business
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8434467002 | Databricks | Solutions Architect - Digital Native Business, Strategic
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=6328361002 | Databricks | Solutions Architect - Emerging Enterprise
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=6328388002 | Databricks | Solutions Architect - Emerging Enterprise (Startups) 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8450157002 | Databricks | Solutions Architect -  Field Engineering (GCC)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8481717002 | Databricks | Solutions Architect - FSI
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8499584002 | Databricks | Solutions Architect (Greater China Region) 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8531019002 | Databricks | Solutions Architect  Greenfield(New Logo) France
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8560496002 | Databricks | Solutions Architect Greenfield (New Logo) Start Ups France
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8085877002 | Databricks | Solutions Architect - Healthcare/Life Sciences Team (HLS)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8243219002 | Databricks | Solutions Architect - High-Tech MFG
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8437010002 | Databricks | Solutions Architect (Hong-Kong)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8432348002 | Databricks | Solutions Architect, Hunter - Digital Native Business
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8438763002 | Databricks | Solutions Architect (Indonesia)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=6545547002 | Databricks | Solutions Architect - Manufacturing
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8530861002 | Databricks | Solutions Architect - MFG
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6679262002 | Databricks | Solutions Architect - Montreal
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8455752002 | Databricks | Solutions Architect (Pre-sales)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8437026002 | Databricks | Solutions Architect (Pre-sales) - Digital Native
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8437028002 | Databricks | Solutions Architect (Pre-sales) - Kansai Region
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8437024002 | Databricks | Solutions Architect (Pre-sales) - Retail/CPG
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8522044002 | Databricks | Solutions Architect - Public Sector (SLED) 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=6049142002 | Databricks | Solutions Architect, Retail 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8452396002 | Databricks | Solutions Architect (Retail/CPG)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=6649865002 | Databricks | Solutions Architect, Retail - CPG
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8487768002 | Databricks | Solutions Architect, Strategic Retail - Central 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8499585002 | Databricks | Solutions Architect (Taiwan)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8529348002 | Databricks | Solutions Architect (Vietnam)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8359542002 | Databricks | Solutions Engineer
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8382743002 | Databricks | Specialist Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8544533002 | Databricks | Specialist Solutions Architect - AI/ML
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8525037002 | Databricks | Specialist Solutions Architect - Cloud Infrastructure & Platform
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8570023002 | Databricks | Specialist Solutions Architect - Data Engineering & Observability
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8555703002 | Databricks | Specialist Solutions Architect - Data Engineering & Warehousing
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8337429002 | Databricks | Specialist Solutions Architect - Data Warehousing (Healthcare & Life Sciences)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8538914002 | Databricks | Sr. Delivery Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8469076002 | Databricks | Sr. Delivery Solutions Architect - AI Native
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8557430002 | Databricks | Sr. Delivery Solutions Architect - High-Tech & Manufacturing
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8568151002 | Databricks | Sr. Director, Enterprise - Retail Vertical - Strategic Accounts 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8516116002 | Databricks | Sr. Forward Deployed Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8220814002 | Databricks | Sr Fullstack Engineer, Agentic Applications
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8439172002 | Databricks | Sr. ISV & Partner Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8463169002 | Databricks | Sr IT Systems/Automation Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8491947002 | Databricks | Sr. Manager, Engineering - AI Gateway (LLM Inference)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8431931002 | Databricks | Sr. Manager, Field Engineering - Public Sector (Intel, Navy, Air Force)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8073294002 | Databricks | Sr. Manager, Partner Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8428820002 | Databricks | Sr. Product Designer, AI/BI
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8200462002 | Databricks | Sr. Product Manager, Compute Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8136204002 | Databricks | Sr. Product Manager, Databricks AI
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8235785002 | Databricks | Sr. Product Manager, Databricks Free Edition
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8326570002 | Databricks | Sr. Product Manager, Databricks Repos
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6322654002 | Databricks | Sr. Product Manager, Data Engineering
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7863365002 | Databricks | Sr. Product Manager, Data Governance
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7929994002 | Databricks | Sr. Product Manager, DBSQL
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8186386002 | Databricks | Sr. Product Manager, Lakeflow
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8387085002 | Databricks | Sr. Product Manager - Technical
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8210937002 | Databricks | Sr. Resident Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7643201002 | Databricks | Sr. Software Engineer - Backend
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8416951002 | Databricks | Sr Software Engineer- Customer Experience Intelligence (CXI)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8493170002 | Databricks | Sr Software Engineer, Infrastructure
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8211450002 | Databricks | Sr Software Engineer-Networking
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6569774002 | Databricks | Sr. Software Engineer - Performance
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6569772002 | Databricks | Sr. Software Engineer - Performance 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8512856002 | Databricks | Sr Software Engineer -Public Sector
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7958967002 | Databricks | Sr Software Engineer, Search
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7958676002 | Databricks | Sr Software Engineer, Search Relevance (Applied AI)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8417656002 | Databricks | Sr. Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8541221002 | Databricks | Sr. Solutions Architect - AI Natives Business
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8480646002 | Databricks | Sr. Solutions Architect - Financial Services (Wealth and Asset Management)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8353049002 | Databricks | Sr. Solutions Architect - Games
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8476403002 | Databricks | Sr. Solutions Architect - Global Telecommunications 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8449356002 | Databricks | Sr. Solutions Architect - Greenfield (New Logo) France
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8407197002 | Databricks | Sr. Solutions Architect - Lakebase
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8512037002 | Databricks | Sr. Solutions Architect - Polish Speaker
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8198484002 | Databricks | Sr. Solutions Architect - Public Sector (Federal Civilian)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8417705002 | Databricks | Sr. Solutions Architect - Public Sector (Hunter) 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8548982002 | Databricks | Sr. Solutions Architect - Public Sector (SLED)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8397493002 | Databricks | Sr. Solutions Architect - Public Sector (SLED) 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6456675002 | Databricks | Sr. Solutions Architect, Retail
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8221491002 | Databricks | Sr. Solutions Architect, Retail 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8458028002 | Databricks | Sr. Solutions Architect - Strategic AI Native
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8434465002 | Databricks | Sr. Solutions Architect - Strat Media
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8516307002 | Databricks | Sr. Solutions Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8563183002 | Databricks | Sr. Solutions Engineer - AI Natives Business
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8497706002 | Databricks | Sr. Solutions Engineer - Financial Services (Insurance) 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8472164002 | Databricks | Sr. Solutions Engineer - GSI's and FinTech Data
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8417647002 | Databricks | Sr. Solutions Engineer - Hunter Team
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8389657002 | Databricks | Sr. Solutions Engineer Italy
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8417654002 | Databricks | Sr. Solutions Engineer - MFG
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8417673002 | Databricks | Sr. Solutions Engineer - Oil, Gas, Energy
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8415025002 | Databricks | Sr. Solutions Engineer - Public Sector (DoW - 4th Estate)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7507778002 | Databricks | Sr. Solutions Engineer, Retail - CPG
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8407190002 | Databricks | Sr. Specialist Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8493787002 | Databricks | Sr. Specialist Solutions Architect - Builder Team
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8557780002 | Databricks | Sr. Staff AI Research TLM - AI Systems
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8220902002 | Databricks | Sr. Staff Fullstack Engineer, Agentic Applications
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7630152002 | Databricks | Sr Staff Software Engineer (Backend)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7823561002 | Databricks | Sr. Staff Software Engineer - Data Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8555864002 | Databricks | Sr. Staff Software Engineer - Managed Tables 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8285949002 | Databricks | Sr. Staff Software Engineer - Money Team
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8462811002 | Databricks | Sr.Staff Software Engineer- Network Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8391889002 | Databricks | Sr. Staff Software Engineer, Observability 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7993609002 | Databricks | Sr. Staff Software Engineer - Unity Catalog Data Governance
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8567322002 | Databricks | Sr. Technical Program Manager, Professional Services - Communications, Media, Entertainment, & Gaming
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8421122002 | Databricks | Sr Technical Solutions Engineer, Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8468436002 | Databricks | Staff Backend Software Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8367019002 | Databricks | Staff Backend Software Engineer- (AI Platform)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7872746002 | Databricks | Staff Backline Engineer - Data & AI
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8220836002 | Databricks | Staff Fullstack Engineer, Agentic Applications
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7642856002 | Databricks | Staff GenAI Research Scientist - Agents
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7649409002 | Databricks | Staff Product Manager
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8420609002 | Databricks | Staff Product Manager, AI Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7110499002 | Databricks | Staff Product Manager, Security
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8427954002 | Databricks | Staff Product Manager, Serverless Workspaces
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8394060002 | Databricks | Staff Product Manager - Technical
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7932280002 | Databricks | Staff Security Software Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8532681002 | Databricks | Staff Software Engineer - Agent Quality
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8509536002 | Databricks | Staff Software Engineer - AI Platform (NYC)   
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8509534002 | Databricks | Staff Software Engineer - AI Product (NYC)   
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8552484002 | Databricks | Staff Software Engineer - AI Research Infrastructure
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6779232002 | Databricks | Staff Software Engineer - Backend
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8093293002 | Databricks | Staff Software Engineer - Backend 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7642799002 | Databricks | Staff Software Engineer - Backend  
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6716344002 | Databricks | Staff Software Engineer (Core Experiences) 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8032546002 | Databricks | Staff Software Engineer - Customer Engagement & Docs Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8416959002 | Databricks | Staff Software Engineer – Customer Experience Intelligence (CXI)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6544386002 | Databricks |  Staff Software Engineer - Database Engine Internals
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=5646866002 | Databricks | Staff Software Engineer - Database Engine Internals
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7601565002 | Databricks | Staff Software Engineer - Databases
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7601572002 | Databricks | Staff Software Engineer - Data Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7652016002 | Databricks | Staff Software Engineer (Data Platform)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8029676002 | Databricks | Staff Software Engineer - Developer Experience
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6544364002 | Databricks | Staff Software Engineer - Distributed Data Systems
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8224683002 | Databricks | Staff Software Engineer, Foundational Model Serving
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8099343002 | Databricks | Staff Software Engineer - Fullstack
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8384595002 | Databricks | Staff Software Engineer - Fullstack (NYC)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8202698002 | Databricks | Staff Software Engineer - GenAI inference
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8202700002 | Databricks | Staff Software Engineer - GenAI Performance and Kernel
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7994801002 | Databricks | Staff Software Engineer - IAM
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7648674002 | Databricks | Staff Software Engineer (Infrastructure)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8200692002 | Databricks | Staff Software Engineer - Ingestion
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8476582002 | Databricks | Staff Software Engineer (L6) - Partner Ecosystem
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7958982002 | Databricks | Staff Software Engineer - Machine Learning (Search)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8298247002 | Databricks | Staff Software Engineer, Metrics and Logging
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8211647002 | Databricks | Staff Software Engineer, Model Serving 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7654349002 | Databricks | Staff Software Engineer (Money)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7111068002 | Databricks | Staff Software Engineer - Money Team
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7648669002 | Databricks | Staff Software Engineer- Networking
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8328675002 | Databricks | Staff Software Engineer, Observability 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8517555002 | Databricks | Staff Software Engineer- Public Sector
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8439348002 | Databricks | Staff Software Engineer- Search Quality
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8295792002 | Databricks | Staff Software Engineer, Search Quality
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7958688002 | Databricks | Staff Software Engineer  (Search Ranking)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7994759002 | Databricks | Staff Software Engineer - Security Infrastructure
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7979523002 | Databricks | Staff Software Engineer - User Activation
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8007203002 | Databricks | Staff Technical Solutions Engineer, Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7994379002 | Databricks | Strategic Account Executive - Retail 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8441884002 | Databricks | Strategic AI/BI Account Executive
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8458710002 | Databricks | Strategic Core Account Executive - Retail 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8482037002 | Databricks | Systems PhD - Software Engineer 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8431924002 | Databricks | Training & Operations Manager
+- [ ] https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0 | Palantir | Forward Deployed Software Engineer
+- [ ] https://jobs.lever.co/palantir/e24202f1-fccd-470f-b001-e24d901735a4 | Palantir | Year at Palantir - Forward Deployed Software Engineer, Internship - Commercial
+- [ ] https://jobs.lever.co/palantir/655f9937-a4ce-4e7d-80e2-a6659af07329 | Palantir | Year at Palantir - Software Engineer, Internship
+
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8503080002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8521090002 | Databricks | Data & AI Platform Architect (Professional Services)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8549681002 | Databricks | Delivery Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8548986002 | Databricks | Delivery Solutions Architect - Digital Native Business
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8540466002 | Databricks | Delivery Solutions Architect - Public Sector
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8285493002 | Databricks | Director, Enterprise - Retail & CPG, m/f/d
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8517059002 | Databricks | Manager, Delivery Solutions Architects
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8439182002 | Databricks | Partner Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8362737002 | Databricks | Resident Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494153002 | Databricks | Resident Solutions Architect - Communications, Media, Entertainment & Games
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8456948002 | Databricks | Resident Solutions Architect - Financial Services
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8371312002 | Databricks | Resident Solutions Architect - Healthcare & Life Sciences
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494155002 | Databricks | Resident Solutions Architect - Manufacturing
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494107002 | Databricks | Resident Solutions Architect - Public Sector
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8012803002 | Databricks | Senior Software Engineer - Backend
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8012809002 | Databricks | Senior Software Engineer - Database Engine Internals
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=4513122002 | Databricks | Senior Software Engineer - Distributed Data Systems
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7898766002 | Databricks | Senior Software Engineer - Fullstack
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8568420002 | Databricks | Senior Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8570586002 | Databricks | Senior Solutions Architect - Lakebase
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8516238002 | Databricks | Senior Solutions Architect - Lakewatch
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8239195002 | Databricks | Senior Solutions Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7651345002 | Databricks | Senior Staff Software Engineer (Backend)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8303015002 | Databricks | Senior Staff Software Engineer - Delta
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7274557002 | Databricks | Senior Staff Software Engineer - IAM
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7274902002 | Databricks | Senior Staff Software Engineer - Security Infrastructure
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8422483002 | Databricks | Senior Staff Software Engineer - Unity Catalog Runtime Enforcement 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=7737233002 | Databricks | Software Engineer - Backend
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8437074002 | Databricks | Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8231231002 | Databricks | Solutions Architect - Healthcare/Life Sciences Team (HLS)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8534974002 | Databricks | Solutions Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8507014002 | Databricks | Sr. Delivery Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8429978002 | Databricks | Sr. Product Designer, AI/BI
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8200284002 | Databricks | Sr. Product Manager, Compute Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8136071002 | Databricks | Sr. Product Manager, Databricks AI
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7680573002 | Databricks | Sr. Product Manager, Databricks Free Edition
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8326513002 | Databricks | Sr. Product Manager, Databricks Repos
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7863522002 | Databricks | Sr. Product Manager, Data Governance
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7924423002 | Databricks | Sr. Product Manager, DBSQL
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8211452002 | Databricks | Sr Software Engineer-Networking
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8437034002 | Databricks | Sr. Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8437014002 | Databricks | Sr. Solutions Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8367022002 | Databricks | Staff Backend Software Engineer- (AI Platform)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7649411002 | Databricks | Staff Product Manager
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8427940002 | Databricks | Staff Product Manager, AI Platform
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7110509002 | Databricks | Staff Product Manager, Security
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8420607002 | Databricks | Staff Product Manager, Serverless Workspaces
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8532682002 | Databricks | Staff Software Engineer - AI Research Infrastructure
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6779233002 | Databricks | Staff Software Engineer - Backend
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8374611002 | Databricks | Staff Software Engineer - Backend 
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8012818002 | Databricks | Staff Software Engineer - Database Engine Internals
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8012831002 | Databricks | Staff Software Engineer - Distributed Data Systems
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7994790002 | Databricks | Staff Software Engineer - IAM
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8201686002 | Databricks | Staff Software Engineer - Ingestion
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7994770002 | Databricks | Staff Software Engineer - Security Infrastructure
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8441888002 | Databricks | Strategic AI/BI Account Executive
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8482086002 | Databricks | Systems PhD - Software Engineer 
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7789256?gh_jid=7789256 | Cloudflare | Developer GTM Intern – Enterprise Sales & AI Automation (Summer 2026)
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7591808?gh_jid=7591808 | Cloudflare | Digital Customer Solutions Engineer (APAC/EMEA)
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/6660802?gh_jid=6660802 | Cloudflare | Field Solutions Engineer 
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7778796?gh_jid=7778796 | Cloudflare | Forward Deployed Engineer
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7428796?gh_jid=7428796 | Cloudflare | Head of GTM, AI Inference
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7729719?gh_jid=7729719 | Cloudflare | Marketing: AI Discoverability & Optimization Intern (Summer 2026)
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7736919?gh_jid=7736919 | Cloudflare | Marketing Events and Campaigns Intern (Mid-Year 2026)
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7606240?gh_jid=7606240 | Cloudflare | People Team Intern - HR Operations & AI Innovation (Fall 2026)
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7792962?gh_jid=7792962 | Cloudflare | Sales: Solutions Engineer - Intern (Summer & Fall 2026)
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7731685?gh_jid=7731685 | Cloudflare | Senior Forward Deployed Engineer
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7963669?gh_jid=7963669 | Cloudflare | Senior Majors Account Executive, Retail & Energy
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7469508?gh_jid=7469508 | Cloudflare | Senior Manager, Solutions Architecture, AI & Developer Platform
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7493333?gh_jid=7493333 | Cloudflare | Senior Manager, Solutions Engineering
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7439830?gh_jid=7439830 | Cloudflare | Senior Manager, Solutions Engineering Pre-Sales, Northern Europe
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7272028?gh_jid=7272028 | Cloudflare | Senior Named Account Executive, Spain
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7778747?gh_jid=7778747 | Cloudflare | Senior Solutions Engineer - Calgary
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7518684?gh_jid=7518684 | Cloudflare | Senior Solutions Engineer - Digital Native Enterprise - West
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7601630?gh_jid=7601630 | Cloudflare | Senior Solutions Engineer - Egypt, Kuwait & Bahrain
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7782508?gh_jid=7782508 | Cloudflare | Senior Solutions Engineer, Enterprise Accounts - Charlotte or Raleigh, NC
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7778956?gh_jid=7778956 | Cloudflare | Senior Solutions Engineer, Enterprise Accounts - Miami
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7518699?gh_jid=7518699 | Cloudflare | Senior Solutions Engineer, Enterprise Accounts - NYC
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7528276?gh_jid=7528276 | Cloudflare | Senior Solutions Engineering Manager, West
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7374554?gh_jid=7374554 | Cloudflare | Senior Solutions Engineer, Majors
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7812112?gh_jid=7812112 | Cloudflare | Senior Solutions Engineer, Majors - Detroit, MI
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7520051?gh_jid=7520051 | Cloudflare | Senior Solutions Engineer, Majors, Philadelphia or Pittsburgh 
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7864156?gh_jid=7864156 | Cloudflare | Senior Solutions Engineer, Majors, Raleigh, NC
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7551589?gh_jid=7551589 | Cloudflare | Senior Solutions Engineer, Majors, San Francisco
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7558268?gh_jid=7558268 | Cloudflare | Senior Solutions Engineer - Mid-Market - Dallas or Austin
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7786402?gh_jid=7786402 | Cloudflare | Senior Solutions Engineer - Mid-Market Tampa
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7954702?gh_jid=7954702 | Cloudflare | Senior Solutions Engineer, Named Accounts - Cincinnati, OH
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7826822?gh_jid=7826822 | Cloudflare | Senior Solutions Engineer, Named Accounts - San Francisco
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7518670?gh_jid=7518670 | Cloudflare | Senior Solutions Engineer - New England
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7530475?gh_jid=7530475 | Cloudflare | Senior Solutions Engineer, Public Sector Federal
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7526134?gh_jid=7526134 | Cloudflare | Senior Solutions Engineer, Russian Speaker 
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7767908?gh_jid=7767908 | Cloudflare | Senior Strategic Solutions Engineer, Delhi NCR
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7405387?gh_jid=7405387 | Cloudflare | Senior Territory Account Executive, AI / Developer
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7527453?gh_jid=7527453 | Cloudflare | Software Engineer, Data
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7529800?gh_jid=7529800 | Cloudflare | Solution Architect, AI / Cloudflare Developer Platform
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7505582?gh_jid=7505582 | Cloudflare | Solutions Architect, AI/Cloudflare Developer Platform 
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7242551?gh_jid=7242551 | Cloudflare | Solutions Engineer
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7831414?gh_jid=7831414 | Cloudflare | Solutions Engineer, Central & Eastern Europe - Czech Speaking
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7907255?gh_jid=7907255 | Cloudflare | Solutions Engineer, iGaming 
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7520215?gh_jid=7520215 | Cloudflare | Solutions Engineering Manager, Commercial -  West
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7738938?gh_jid=7738938 | Cloudflare | Solutions Engineer Intern (Summer 2026)
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7826916?gh_jid=7826916 | Cloudflare | Solutions Engineer Manager, Associate Programs
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7610071?gh_jid=7610071 | Cloudflare | Solutions Engineer, Nordics
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7962217?gh_jid=7962217 | Cloudflare | Territory Account Executive, iGaming (Thailand)
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7843673 | Reddit | Client Partner, Large Customer Sales (Retail, Ecomm)
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7926627 | Reddit | Director of Safety ML
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7895468 | Reddit | Fullstack Software Engineer, Notifications Lifecycle
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7917818 | Reddit | Lead Program Manager, Business Process Transformation 
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7872703 | Reddit | Senior AI Enforcement Analyst, Safety Operations
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7733445 | Reddit | Senior Client Partner, Large Customer Sales (Media & Entertainment)
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7858506 | Reddit | Senior Group Product Manager, Advertiser Optimization (Ads Marketplace)
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7891887 | Reddit | Senior Machine Learning Engineer, GenAI Security
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7922403 | Reddit | Senior Product Manager, ML Signals
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/6909091 | Reddit | Senior Software Engineer, Ads
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7902277 | Reddit | Senior Software Engineer, Compute Platform
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7753480 | Reddit | Senior Software Engineer, GenAI Platform
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7309137 | Reddit | Senior Software Engineer, GraphQL
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7895408 | Reddit | Senior Software Engineer, Reddit Pro - Publishers
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7772274 | Reddit | Senior Staff Machine Learning Engineer, GenAI Platform
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7847148 | Reddit | Senior Staff Machine Learning Engineer, ML Understanding
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7833622 | Reddit | Senior Staff ML Engineer, Search & Recommendation
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7844238 | Reddit | Senior Staff Software Engineer, Indexing & Retrieval Platform
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/6909093 | Reddit | Software Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/6512458 | Reddit | Software Engineer, Ads
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7947897 | Reddit | Sr. Manager, Large Customer Sales (Big Box Retail)
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7886459 | Reddit | Staff Machine Learning Engineer, AI Serving
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7803856 | Reddit | Staff Product Manager, Finance Applications
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7875645 | Reddit | Staff Software Engineer, Community Builders
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7895156 | Reddit | Staff Software Engineer, Media Experiences
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7954001 | Reddit | Staff Technical Product Manager, Ads ML Platform 
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8532137002?gh_jid=8532137002 | Lyft | AI Business Solution Architect
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8544636002?gh_jid=8544636002 | Lyft | Backend Software Engineer, Airports
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8483264002?gh_jid=8483264002 | Lyft | Business Systems Engineer
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8464813002?gh_jid=8464813002 | Lyft | Business Systems Engineer, Oracle OTC 
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8482826002?gh_jid=8482826002 | Lyft | Business Systems Engineer, Oracle PTM
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8483261002?gh_jid=8483261002 | Lyft | Business Systems Engineer, Oracle STP 
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8335733002?gh_jid=8335733002 | Lyft | Data Scientist, Algorithms, Optimization - Fulfillment
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8318645002?gh_jid=8318645002 | Lyft | Group Product Manager, Core Rider
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8490440002?gh_jid=8490440002 | Lyft | Group Product Manager II, Pricing
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8513755002?gh_jid=8513755002 | Lyft | Group Product Manager, Verticals
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8532600002?gh_jid=8532600002 | Lyft | Head of Claims
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8550252002?gh_jid=8550252002 | Lyft | Product Manager, Driver Earnings
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8514395002?gh_jid=8514395002 | Lyft | Product Manager, Driver Experience
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8514382002?gh_jid=8514382002 | Lyft | Product Manager, Premium Modes
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8550340002?gh_jid=8550340002 | Lyft | Product Manager, Risk Tech - Claims
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8508346002?gh_jid=8508346002 | Lyft | Senior AI Software Engineer, Risk - Insurance Claims Management
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8483708002?gh_jid=8483708002 | Lyft | Senior Data Scientist - Optimization, Central Market Management & AI
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8504066002?gh_jid=8504066002 | Lyft | Senior Design Program Manager, Design Foundations & AI Transformation
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8532132002?gh_jid=8532132002 | Lyft | Senior Illustrator, Design Foundations & AI Transformation
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8514397002?gh_jid=8514397002 | Lyft | Senior Product Manager - Autonomous Vehicles Partnerships
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8515377002?gh_jid=8515377002 | Lyft | Senior Software  Engineer, AI-Powered Developer Productivity 
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8459156002?gh_jid=8459156002 | Lyft | Senior Software Engineer, Autonomous Vehicle
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8559587002?gh_jid=8559587002 | Lyft | Senior Software Engineer, Backend
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8421525002?gh_jid=8421525002 | Lyft | Senior Software Engineer, CorpSec
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8399274002?gh_jid=8399274002 | Lyft | Senior Software Engineer, Driver XP 
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8445493002?gh_jid=8445493002 | Lyft | Senior Software Engineer, Lyft Business
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8490442002?gh_jid=8490442002 | Lyft | Senior Software Engineer, Marketplace
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8525090002?gh_jid=8525090002 | Lyft | Senior Software Engineer, Rider
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8508257002?gh_jid=8508257002 | Lyft | Senior Software Engineer, Self-Serve Intelligence
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8527740002?gh_jid=8527740002 | Lyft | Software Engineer, Ad Infra  
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8421508002?gh_jid=8421508002 | Lyft | Software Engineer (Backend), Growth Platforms
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8396751002?gh_jid=8396751002 | Lyft | Software Engineer, Pricing
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8525065002?gh_jid=8525065002 | Lyft |  Software Engineer, Rider Quality
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8544638002?gh_jid=8544638002 | Lyft | Software Engineer, Scheduled Rides
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8508259002?gh_jid=8508259002 | Lyft | Sr Software Engineer, Luxury
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8547683002?gh_jid=8547683002 | Lyft | Staff Growth Product Manager, Lyft Business
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8461144002?gh_jid=8461144002 | Lyft | Staff Product Manager, Lyft AI Platform & Marketplace Applications
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7754143?t=gh_src=&gh_jid=7754143 | Robinhood | Backend Software Engineer, Credit Cards & Banking
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7489476?t=gh_src=&gh_jid=7489476 | Robinhood | Data Scientist, ML (Agentic, CX)
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7592187?t=gh_src=&gh_jid=7592187 | Robinhood | Deputy MLRO / AML Lead
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7947548?t=gh_src=&gh_jid=7947548 | Robinhood | Product Manager, Brokerage
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7747728?t=gh_src=&gh_jid=7747728 | Robinhood | Product Manager, Money Movement
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7939818?t=gh_src=&gh_jid=7939818 | Robinhood | Security Engineer, AI Vulnerability Management
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7482186?t=gh_src=&gh_jid=7482186 | Robinhood | Senior Data Scientist, ML (Brokerage)
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7844218?t=gh_src=&gh_jid=7844218 | Robinhood | Senior Engineering Manager, AI Research and Development
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/6535807?t=gh_src=&gh_jid=6535807 | Robinhood | Senior Machine Learning Engineer, Agentic
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7728176?t=gh_src=&gh_jid=7728176 | Robinhood | Senior Security Engineer, AI Vulnerability Management
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7264931?t=gh_src=&gh_jid=7264931 | Robinhood | Senior Software Engineer, Backend
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7489675?t=gh_src=&gh_jid=7489675 | Robinhood | Senior Software Engineer, Capacity & Efficiency 
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7648454?t=gh_src=&gh_jid=7648454 | Robinhood | Senior Software Engineer, Cloud Integration
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7922957?t=gh_src=&gh_jid=7922957 | Robinhood | Senior Software Engineer, Data Compute
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/4738660?t=gh_src=&gh_jid=4738660 | Robinhood | Senior Software Engineer, Data Engineering
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7838644?t=gh_src=&gh_jid=7838644 | Robinhood | Senior Software Engineer - Robinhood Command Center
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7899482?t=gh_src=&gh_jid=7899482 | Robinhood | Senior Software Engineer, Security Platform
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7729019?t=gh_src=&gh_jid=7729019 | Robinhood | Senior Software Engineer, Storage Platform
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/6913966?t=gh_src=&gh_jid=6913966 | Robinhood | Senior Staff Software Developer, Developer Productivity & AI Tooling 
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7729014?t=gh_src=&gh_jid=7729014 | Robinhood | Senior Staff Software Engineer, Data Platform
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7263592?t=gh_src=&gh_jid=7263592 | Robinhood | Software Engineer, Backend
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7589432?t=gh_src=&gh_jid=7589432 | Robinhood | Software Engineer, Cloud Engineering
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7489695?t=gh_src=&gh_jid=7489695 | Robinhood | Software Engineering Manager, Growth
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7684760?t=gh_src=&gh_jid=7684760 | Robinhood | Software Engineer, Trade PMR
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7587151?t=gh_src=&gh_jid=7587151 | Robinhood | Staff Product Manager, Banking
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7821803?t=gh_src=&gh_jid=7821803 | Robinhood | Staff Product Manager, Cortex
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7812801?t=gh_src=&gh_jid=7812801 | Robinhood | Staff Product Manager, International
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7489427?t=gh_src=&gh_jid=7489427 | Robinhood | Staff Product Manager, International Growth & Expansion
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7264923?t=gh_src=&gh_jid=7264923 | Robinhood | Staff Software Engineer, Backend
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7716679?t=gh_src=&gh_jid=7716679 | Robinhood | Staff Software Engineer, Core Exchange
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7819461?t=gh_src=&gh_jid=7819461 | Robinhood | Staff Software Engineer, Security
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7489755?t=gh_src=&gh_jid=7489755 | Robinhood | Staff Software Engineer, Streaming Infrastructure
+- [x] #SKIP http://block.xyz/careers/jobs/5183640008?gh_jid=5183640008 | Block | Channel Sales Support Agent
+- [x] #SKIP http://block.xyz/careers/jobs/5183808008?gh_jid=5183808008 | Block | Channel Sales Support Agent - Bilingual French
+- [x] #SKIP http://block.xyz/careers/jobs/5183536008?gh_jid=5183536008 | Block | Channel Sales Support Agent (Reseller)
+- [ ] http://block.xyz/careers/jobs/4962872008?gh_jid=4962872008 | Block | Information Systems Engineer, Business Systems
+- [x] #SKIP http://block.xyz/careers/jobs/5181755008?gh_jid=5181755008 | Block | Lead Solutions Engineer
+- [x] #SKIP http://block.xyz/careers/jobs/5211252008?gh_jid=5211252008 | Block | Policy + External Affairs Communications Lead
+- [x] #SKIP http://block.xyz/careers/jobs/4963850008?gh_jid=4963850008 | Block | Product Manager, Advanced Insights & Modeling
+- [ ] http://block.xyz/careers/jobs/5185388008?gh_jid=5185388008 | Block | Regulatory Program Manager, Automation & Intelligence
+- [x] #SKIP http://block.xyz/careers/jobs/4811589008?gh_jid=4811589008 | Block | Senior Machine Learning Engineer, AI Personalization
+- [x] #SKIP http://block.xyz/careers/jobs/5196187008?gh_jid=5196187008 | Block | Senior Software Engineer, Cash App Banking
+- [x] #SKIP http://block.xyz/careers/jobs/5198776008?gh_jid=5198776008 | Block | Senior Software Engineer, Data Ingestion Platform
+- [x] #SKIP http://block.xyz/careers/jobs/5101413008?gh_jid=5101413008 | Block | Senior Solutions Engineer
+- [ ] http://block.xyz/careers/jobs/5207106008?gh_jid=5207106008 | Block | Software Engineer, Cash App Banking
+- [ ] http://block.xyz/careers/jobs/5069263008?gh_jid=5069263008 | Block | Software Engineer, Cash App - Controls
+- [ ] http://block.xyz/careers/jobs/5196175008?gh_jid=5196175008 | Block | Software Engineer, Cash App - Lending Products
+- [ ] http://block.xyz/careers/jobs/4888459008?gh_jid=4888459008 | Block | Software Engineer, Finance Applications
+- [x] #SKIP http://block.xyz/careers/jobs/5221193008?gh_jid=5221193008 | Block | Solutions Engineer
+- [ ] http://block.xyz/careers/jobs/4983760008?gh_jid=4983760008 | Block | Sports, Entertainment, & Leisure Account Services Manager
+- [x] #SKIP http://block.xyz/careers/jobs/5196196008?gh_jid=5196196008 | Block | Staff Software Engineer, Cash App Banking
+- [x] #SKIP http://block.xyz/careers/jobs/4684349008?gh_jid=4684349008 | Block | Staff Solutions Engineer
+- [x] #SKIP https://www.brex.com/careers/8433470002?gh_jid=8433470002 | Brex | Director of Product, Growth/AI
+- [x] #SKIP https://www.brex.com/careers/8393583002?gh_jid=8393583002 | Brex | Engineering Manager, AI — Brex Assistant
+- [x] #SKIP https://www.brex.com/careers/8367549002?gh_jid=8367549002 | Brex | Engineering Manager, GTM Engineering 
+- [ ] https://www.brex.com/careers/8443298002?gh_jid=8443298002 | Brex | Engineering Program Manager, AI
+- [x] #SKIP https://www.brex.com/careers/8438580002?gh_jid=8438580002 | Brex | Group Product Manager
+- [x] #SKIP https://www.brex.com/careers/8465003002?gh_jid=8465003002 | Brex | Senior Software Engineer, Backend (Product Engineering)
+- [x] #SKIP https://www.brex.com/careers/8461469002?gh_jid=8461469002 | Brex | Senior Software Engineer, Backend (Product Engineering) 
+- [x] #SKIP https://www.brex.com/careers/8501051002?gh_jid=8501051002 | Brex | Senior Software Engineer, Frontend
+- [x] #SKIP https://www.brex.com/careers/8477314002?gh_jid=8477314002 | Brex | Senior Software Engineer, Full Stack
+- [x] #SKIP https://www.brex.com/careers/8430196002?gh_jid=8430196002 | Brex | Senior Software Engineer, Product Data Platform
+- [x] #SKIP https://www.brex.com/careers/8522011002?gh_jid=8522011002 | Brex | Senior Software Engineer, Release Infra 
+- [ ] https://www.brex.com/careers/8523435002?gh_jid=8523435002 | Brex | Software Engineer, Forward Deployed Agent Builder
+- [ ] https://www.brex.com/careers/8536424002?gh_jid=8536424002 | Brex | Software Engineer II, Backend
+- [ ] https://www.brex.com/careers/8558051002?gh_jid=8558051002 | Brex | Software Engineer II, Cloud Infrastructure
+- [ ] https://www.brex.com/careers/8545586002?gh_jid=8545586002 | Brex | Software Engineer II, Credit Limit Engineering
+- [ ] https://www.brex.com/careers/8310523002?gh_jid=8310523002 | Brex | Software Engineer II, Frontend
+- [ ] https://www.brex.com/careers/8524941002?gh_jid=8524941002 | Brex | Software Engineer II, Product 
+- [x] #SKIP https://www.brex.com/careers/8433764002?gh_jid=8433764002 | Brex | Staff Product Manager
+- [x] #SKIP https://www.brex.com/careers/8436531002?gh_jid=8436531002 | Brex | Staff Product Manager, Growth
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7550852?gh_jid=7550852 | Okta | Director Solutions Engineering, Key Accounts (West Coast)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7817397?gh_jid=7817397 | Okta | Manager, Solutions Engineering
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7683869?gh_jid=7683869 | Okta | Manager, Solutions Engineering, Okta (SLED)
+- [ ] https://www.okta.com/company/careers/opportunity/7960228?gh_jid=7960228 | Okta | People Operational Excellence Specialist (Workday Automation)
+- [ ] https://www.okta.com/company/careers/opportunity/7960224?gh_jid=7960224 | Okta |  People Operations Specialist (ServiceNow Automation)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7689327?gh_jid=7689327 | Okta | Principal Applied AI Marketing Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7648974?gh_jid=7648974 | Okta | Principal Data Platform Engineer (Bengaluru)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7961339?gh_jid=7961339 | Okta | Principal Forward Deployed Engineer - Okta for AI Agents
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7568082?gh_jid=7568082 | Okta | Principal Partner Solutions Architect, AI & Identity Ecosystem
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7895690?gh_jid=7895690 | Okta | Principal Product Manager, AI 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7849955?gh_jid=7849955 | Okta | Principal Software Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7529441?gh_jid=7529441 | Okta | Principal Software Engineer - Access Foundation
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7819118?gh_jid=7819118 | Okta | Principal Software Engineer, AI (Web & Data)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7603685?gh_jid=7603685 | Okta | Product Manager - Identity Threat Protection
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7688710?gh_jid=7688710 | Okta | Salesforce Software Engineer 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7555425?gh_jid=7555425 | Okta | Senior Alliances Solutions Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7648977?gh_jid=7648977 | Okta | Senior Data Platform Engineer (Bengaluru)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7875099?gh_jid=7875099 | Okta | Senior Director of Sales & Revenue - AI & GTM Technology
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7961356?gh_jid=7961356 | Okta | Senior Forward Deployed Engineer - Okta for AI Agents
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7961549?gh_jid=7961549 | Okta | Senior Manager, AI Forward Deployed Engineering - Okta for AI Agents
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7743974?gh_jid=7743974 | Okta | Senior Manager, Software Engineering- Core (FED) 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7595065?gh_jid=7595065 | Okta | Senior Platform Engineer, Runtime (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7839344?gh_jid=7839344 | Okta | Senior Product Manager, Privileged Access Management
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7626022?gh_jid=7626022 | Okta | Senior Software Engineer 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7743622?gh_jid=7743622 | Okta | Senior Software Engineer, Actions (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7872569?gh_jid=7872569 | Okta | Senior Software Engineer, AI Framework & Services
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7875183?gh_jid=7875183 | Okta | Senior Software Engineer (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7603790?gh_jid=7603790 | Okta | Senior Software Engineer, Auth Experience 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7894398?gh_jid=7894398 | Okta | Senior Software Engineer (Core Frontier)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7834248?gh_jid=7834248 | Okta | Senior Software Engineer, End User Protection (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7810108?gh_jid=7810108 | Okta | Senior Software Engineer, (Golang, K82 & CI- Build Services)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7520032?gh_jid=7520032 | Okta | Senior Software Engineer - Identity Threat Protection
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7635237?gh_jid=7635237 | Okta | Senior Software Engineer - Platform
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7630525?gh_jid=7630525 | Okta | Senior Software Engineer, Platform Streaming (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7946586?gh_jid=7946586 | Okta | Senior Software Engineer - Sales Technology
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7788244?gh_jid=7788244 | Okta | Senior Software Engineer, Tenant Protection (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7859374?gh_jid=7859374 | Okta | Senior Solutions Architect
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7532953?gh_jid=7532953 | Okta | Senior Solutions Architect, Auth0
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7768480?gh_jid=7768480 | Okta | Senior Solutions Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7515197?gh_jid=7515197 | Okta | Senior Solutions Engineer, Auth0
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7607557?gh_jid=7607557 | Okta | Senior Solutions Engineer (North East)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7553244?gh_jid=7553244 | Okta | Senior Solutions Engineer, Okta
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/3751281?gh_jid=3751281 | Okta | Senior Solutions Engineer - Strategic
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/6907820?gh_jid=6907820 | Okta | Senior Solutions Engineer, Strategic (Chicago)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7536447?gh_jid=7536447 | Okta | Senior Solutions Engineer- West Coast
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7745062?gh_jid=7745062 | Okta | Service Delivery Trainer
+- [ ] https://www.okta.com/company/careers/opportunity/7861222?gh_jid=7861222 | Okta | Software Engineer - Customer Experience
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7602340?gh_jid=7602340 | Okta | Software Engineering Manager
+- [ ] https://www.okta.com/company/careers/opportunity/7855584?gh_jid=7855584 | Okta | Software Engineer Manager, Okta Developer Foundation
+- [ ] https://www.okta.com/company/careers/opportunity/7749222?gh_jid=7749222 | Okta | Solutions Architect, AI Identity 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7859596?gh_jid=7859596 | Okta | Solutions Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7692313?gh_jid=7692313 | Okta | Solutions Engineer/Auth0
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7535056?gh_jid=7535056 | Okta | Solutions Engineer, Auth0 - German speaking
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7765866?gh_jid=7765866 | Okta | Solutions Engineer, Okta (Commercial)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7940120?gh_jid=7940120 | Okta | Solutions Engineer, Okta (Mid Atlantic)(Enterprise)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7254769?gh_jid=7254769 | Okta | Sr. Product Manager, Identity Management
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7480043?gh_jid=7480043 | Okta | Sr Solutions Engineer - Japan
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7767720?gh_jid=7767720 | Okta | Sr. Training and Knowledge Management Manager (Legal)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7826456?gh_jid=7826456 | Okta | Staff Backend Software Engineer — Privileged Access Management (PAM)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/6923203?gh_jid=6923203 | Okta | Staff  Product Designer- AI Expertised
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7593685?gh_jid=7593685 | Okta | Staff Software Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/6585154?gh_jid=6585154 | Okta | Staff Software Engineer 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7895353?gh_jid=7895353 | Okta | Staff Software Engineer, Actions (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7649414?gh_jid=7649414 | Okta | Staff Software Engineer, AI
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7308745?gh_jid=7308745 | Okta | Staff Software Engineer, AI Agentic Experience (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7769341?gh_jid=7769341 | Okta | Staff Software Engineer, Backend 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7936790?gh_jid=7936790 | Okta | Staff Software Engineer - Backend (Spring)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7587533?gh_jid=7587533 | Okta | Staff Software Engineer, Backend, Spring
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7674814?gh_jid=7674814 | Okta | Staff Software Engineer, Data Platform (FedRamp)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7560775?gh_jid=7560775 | Okta | Staff Software Engineer, Delegated Administration (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7832247?gh_jid=7832247 | Okta | Staff Software Engineer, Developer Foundations 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7673698?gh_jid=7673698 | Okta | Staff Software Engineer - Device Identity
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7821930?gh_jid=7821930 | Okta | Staff Software Engineer, End User Protection (Auth0)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7571064?gh_jid=7571064 | Okta | Staff Software Engineer - Federal
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7233187?gh_jid=7233187 | Okta | Staff Software Engineer, Identity Threat Protection
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7782588?gh_jid=7782588 | Okta | Staff Software Engineer in Test, PAM 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7462926?gh_jid=7462926 | Okta | Staff Software Engineer - ISPM
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7582318?gh_jid=7582318 | Okta | Staff Software Engineer, Java, Spring
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7916607?gh_jid=7916607 | Okta | Staff Software Engineer, Java, Spring (Backend)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7602354?gh_jid=7602354 | Okta | Staff Software Engineer - Node.js  (JavaScript or TypeScript)
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7674829?gh_jid=7674829 | Okta | Staff Software Engineer, Non-Human Identity
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7696955?gh_jid=7696955 | Okta | Staff Software Engineer,  Passwordless 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7700915?gh_jid=7700915 | Okta | Staff Software Engineer - Platform App Services
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/6687504?gh_jid=6687504 | Okta | Staff Software Engineer, Security
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7714159?gh_jid=7714159 | Okta | Staff Software Engineer, Security Engineering
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7902408?gh_jid=7902408 | Okta | Staff UI Software Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7535277?gh_jid=7535277 | Okta | Strategic Solutions Engineer
+- [ ] https://www.rubrik.com/company/careers/departments/job.7510636?gh_jid=7510636 | Rubrik | Architect, AI Data Platform & Engineering
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7820150?gh_jid=7820150 | Rubrik | India Benefits & AI Operations Intern
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7798801?gh_jid=7798801 | Rubrik | Senior Database Solutions Architect (MS SQL Focus)
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7798893?gh_jid=7798893 | Rubrik | Senior Database Solutions Architect (Oracle Focus)
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7570678?gh_jid=7570678 | Rubrik | Senior Integration & Automation Engineer
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7849409?gh_jid=7849409 | Rubrik | Senior Manager - Platform Engineering
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7634214?gh_jid=7634214 | Rubrik | Senior Product Manager-Data Discovery & Classification
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7590492?gh_jid=7590492 | Rubrik |  Senior Software Engineer - API Infrastructure
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7849713?gh_jid=7849713 | Rubrik | Senior Software Engineer - Enterprise AI
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7586173?gh_jid=7586173 | Rubrik | Senior Software Engineer - Identity Infrastructure
+- [ ] https://www.rubrik.com/company/careers/departments/job.6866686?gh_jid=6866686 | Rubrik | Software Engineer - CPD
+- [ ] https://www.rubrik.com/company/careers/departments/job.7844785?gh_jid=7844785 | Rubrik | Software Engineer - CPD (SME)
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7472096?gh_jid=7472096 | Rubrik | Sr. Sales Engineer - AI 
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7885055?gh_jid=7885055 | Rubrik | Staff IT Product Manager, Sales & Marketing
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7423902?gh_jid=7423902 | Rubrik | Staff Platform Product Manager, Platform & Cloud Security
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7742518?gh_jid=7742518 | Rubrik | Staff Product Manager
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7540806?gh_jid=7540806 | Rubrik | Staff Product Manager-Cloud Data Protection
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7307062?gh_jid=7307062 | Rubrik | Staff Product Manager, Enterprise Data Protection
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7891325?gh_jid=7891325 | Rubrik | Staff Product Manager, Rubrik Security Cloud AI Platform
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7838334?gh_jid=7838334 | Rubrik | Staff Program Manager - Enterprise AI
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7838242?gh_jid=7838242 | Rubrik | Staff Software Developer - Enterprise AI
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7918690?gh_jid=7918690 | Rubrik | Staff Software Engineer - Reliability
+- [x] #SKIP https://www.rubrik.com/company/careers/departments/job.7508965?gh_jid=7508965 | Rubrik | Technical Product Manager
+- [x] #SKIP https://jobs.lever.co/spotify/cc21db45-9354-496b-b1a1-d5f293c4feb8 | Spotify | Senior Product Manager – Financial Engineering - Tax Solutions
+- [x] #SKIP https://jobs.lever.co/spotify/8b10d06e-0102-4306-831e-4949cb1cc753 | Spotify | Senior Software Engineer - Platform Infrastructure
+- [x] #SKIP https://jobs.lever.co/spotify/827bfa7b-cc50-46d7-bdac-f642a14fe92b | Spotify | Senior Software Engineer - TV Playback (C++)
+- [ ] https://www.asana.com/jobs/apply/7818833?gh_jid=7818833 | Asana | AI Engineer
+- [ ] https://www.asana.com/jobs/apply/7624663?gh_jid=7624663 | Asana | AI GTM Specialist
+- [x] #SKIP https://www.asana.com/jobs/apply/6619439?gh_jid=6619439 | Asana | Backend Software Engineer, Reykjavik
+- [x] #SKIP https://www.asana.com/jobs/apply/7863427?gh_jid=7863427 | Asana | Enterprise Product Manager
+- [x] #SKIP https://www.asana.com/jobs/apply/7923274?gh_jid=7923274 | Asana | Head of Customer AI Transformation
+- [x] #SKIP https://www.asana.com/jobs/apply/7494051?gh_jid=7494051 | Asana | Principal Product Manager, AI Growth
+- [ ] https://www.asana.com/jobs/apply/7872578?gh_jid=7872578 | Asana | Product Owner, GTM AI
+- [x] #SKIP https://www.asana.com/jobs/apply/7454232?gh_jid=7454232 | Asana | Senior Engineering Manager, AI Agents
+- [x] #SKIP https://www.asana.com/jobs/apply/7663184?gh_jid=7663184 | Asana | Senior Product Manager, Agent Context
+- [x] #SKIP https://www.asana.com/jobs/apply/7494023?gh_jid=7494023 | Asana | Senior Product Manager, AI Ecosystem Integrations
+- [x] #SKIP https://www.asana.com/jobs/apply/7392230?gh_jid=7392230 | Asana | Senior Product Manager, Project & Task Experience
+- [x] #SKIP https://www.asana.com/jobs/apply/7962239?gh_jid=7962239 | Asana | Senior Software Engineer, Account Management
+- [x] #SKIP https://www.asana.com/jobs/apply/7962348?gh_jid=7962348 | Asana | Senior Software Engineer, AI Chat
+- [x] #SKIP https://www.asana.com/jobs/apply/7678308?gh_jid=7678308 | Asana | Senior Software Engineer, AI Retrieval
+- [x] #SKIP https://www.asana.com/jobs/apply/7968157?gh_jid=7968157 | Asana | Senior Software Engineer, APIs
+- [x] #SKIP https://www.asana.com/jobs/apply/7968145?gh_jid=7968145 | Asana | Senior Software Engineer, Consumption Based Billing & Licensing
+- [x] #SKIP https://www.asana.com/jobs/apply/7662236?gh_jid=7662236 | Asana | Senior Software Engineer, Logging & Experiments
+- [x] #SKIP https://www.asana.com/jobs/apply/7968149?gh_jid=7968149 | Asana | Senior Software Engineer, Payment Platform
+- [x] #SKIP https://www.asana.com/jobs/apply/7568914?gh_jid=7568914 | Asana | Senior Software Engineer, Platform Reliability
+- [x] #SKIP https://www.asana.com/jobs/apply/7160557?gh_jid=7160557 | Asana | Senior Software Engineer, Product
+- [x] #SKIP https://www.asana.com/jobs/apply/6887013?gh_jid=6887013 | Asana | Senior Software Engineer, Site Reliability
+- [x] #SKIP https://www.asana.com/jobs/apply/7968154?gh_jid=7968154 | Asana | Senior Software Engineer, Web App Performance
+- [x] #SKIP https://www.asana.com/jobs/apply/7170100?gh_jid=7170100 | Asana | Senior Software Engineer, Web App Performance & Scalability
+- [x] #SKIP https://www.asana.com/jobs/apply/7607510?gh_jid=7607510 | Asana | Senior Solutions Architect
+- [x] #SKIP https://www.asana.com/jobs/apply/7707590?gh_jid=7707590 | Asana | Senior Staff Software Engineer
+- [ ] https://www.asana.com/jobs/apply/5844714?gh_jid=5844714 | Asana | Software Engineer
+- [ ] https://www.asana.com/jobs/apply/7968162?gh_jid=7968162 | Asana | Software Engineer, APIs
+- [ ] https://www.asana.com/jobs/apply/7299272?gh_jid=7299272 | Asana | Software Engineer, CI/CD
+- [ ] https://www.asana.com/jobs/apply/7367282?gh_jid=7367282 | Asana | Software Engineer, Data Infrastructure 
+- [ ] https://www.asana.com/jobs/apply/7961454?gh_jid=7961454 | Asana | Software Engineer, Product
+- [x] #SKIP https://www.asana.com/jobs/apply/5480143?gh_jid=5480143 | Asana | Software Engineer, Reykjavik
+- [x] #SKIP https://www.asana.com/jobs/apply/7913978?gh_jid=7913978 | Asana | Solutions Engineer
+- [x] #SKIP https://www.asana.com/jobs/apply/6202409?gh_jid=6202409 | Asana | Staff Software Engineer
+- [x] #SKIP https://www.asana.com/jobs/apply/7347313?gh_jid=7347313 | Asana | Staff Software Engineer, Admin Area
+- [x] #SKIP https://www.asana.com/jobs/apply/7776446?gh_jid=7776446 | Asana | Staff Software Engineer, API
+- [ ] https://careers.datadoghq.com/detail/7194969/?gh_jid=7194969 | Datadog | AI Research Engineer - Datadog AI Research (DAIR)
+- [ ] https://careers.datadoghq.com/detail/6572669/?gh_jid=6572669 | Datadog | AI Research Scientist - Datadog AI Research (DAIR)
+- [ ] https://careers.datadoghq.com/detail/6652564/?gh_jid=6652564 | Datadog | AI Research Scientist – Datadog AI Research (DAIR)
+- [x] #SKIP https://careers.datadoghq.com/detail/7798672/?gh_jid=7798672 | Datadog | Director, Product Management - AI Observability
+- [x] #SKIP https://careers.datadoghq.com/detail/7616721/?gh_jid=7616721 | Datadog | Director, Product Management - Applied AI
+- [ ] https://careers.datadoghq.com/detail/7966795/?gh_jid=7966795 | Datadog | Distinguished Architect, AI
+- [x] #SKIP https://careers.datadoghq.com/detail/7965428/?gh_jid=7965428 | Datadog | Engineering Manager I - AI Platform - Evaluation & Annotation
+- [x] #SKIP https://careers.datadoghq.com/detail/7608826/?gh_jid=7608826 | Datadog | Group Product Manager - Threat Detection and Incident Response (Cloud SIEM)
+- [x] #SKIP https://careers.datadoghq.com/detail/7745775/?gh_jid=7745775 | Datadog | GTM Strategy & Operations Senior Associate - Sales Development & AI
+- [ ] https://careers.datadoghq.com/detail/7927096/?gh_jid=7927096 | Datadog | Maintenance Assistant (NYC)
+- [ ] https://careers.datadoghq.com/detail/7529852/?gh_jid=7529852 | Datadog | Manager I, Engineering - AI Platform - Training & Serving
+- [ ] https://careers.datadoghq.com/detail/7560494/?gh_jid=7560494 | Datadog | Manager I, Engineering - Applied AI - Natural Language & Conversational Interfaces
+- [ ] https://careers.datadoghq.com/detail/7520030/?gh_jid=7520030 | Datadog | Manager II, Engineering - AI Platform Training, Serving and Storage
+- [ ] https://careers.datadoghq.com/detail/7594627/?gh_jid=7594627 | Datadog | Manager II, Engineering - AI Platform Training, Serving and Storage (NorAm)
+- [ ] https://careers.datadoghq.com/detail/7650238/?gh_jid=7650238 | Datadog | Manager II, Engineering - Applied AI (NorAm)
+- [ ] https://careers.datadoghq.com/detail/7926141/?gh_jid=7926141 | Datadog | Partner Solutions Architect
+- [ ] https://careers.datadoghq.com/detail/7922975/?gh_jid=7922975 | Datadog | Partner Solutions Architect (ANZ)
+- [x] #SKIP https://careers.datadoghq.com/detail/7683726/?gh_jid=7683726 | Datadog | Partner Solutions Architect (EMEA)
+- [x] #SKIP https://careers.datadoghq.com/detail/7776476/?gh_jid=7776476 | Datadog | Partner Solutions Architect (LATAM)
+- [x] #SKIP https://careers.datadoghq.com/detail/7961297/?gh_jid=7961297 | Datadog | Partner Technology Solutions Engineer
+- [x] #SKIP https://careers.datadoghq.com/detail/7943824/?gh_jid=7943824 | Datadog | Principal Partner Solutions Architect (Public Sector - Fed)
+- [x] #SKIP https://careers.datadoghq.com/detail/7704689/?gh_jid=7704689 | Datadog | Product Manager II - Custom Metrics
+- [x] #SKIP https://careers.datadoghq.com/detail/7776413/?gh_jid=7776413 | Datadog | Product Manager II - Identity Security
+- [x] #SKIP https://careers.datadoghq.com/detail/7144556/?gh_jid=7144556 | Datadog | Product Manager II - Model Lab
+- [x] #SKIP https://careers.datadoghq.com/detail/7800765/?gh_jid=7800765 | Datadog | Product Manager II - Risk-Based Alerting (SIEM)
+- [x] #SKIP https://careers.datadoghq.com/detail/7950121/?gh_jid=7950121 | Datadog | Product Manager II - Security Graph Foundations
+- [x] #SKIP https://careers.datadoghq.com/detail/7689452/?gh_jid=7689452 | Datadog | Product Marketing Manager - Emerging Products / AI
+- [ ] https://careers.datadoghq.com/detail/7527768/?gh_jid=7527768 | Datadog | Product Solutions Architect 3
+- [ ] https://careers.datadoghq.com/detail/7627531/?gh_jid=7627531 | Datadog | Product Solutions Architect - LLM Observability
+- [ ] https://careers.datadoghq.com/detail/7732699/?gh_jid=7732699 | Datadog | Product Solutions Architect - Product Analytics and Experimentation
+- [x] #SKIP https://careers.datadoghq.com/detail/7731292/?gh_jid=7731292 | Datadog | Senior AI Engineer
+- [x] #SKIP https://careers.datadoghq.com/detail/7415266/?gh_jid=7415266 | Datadog | Senior AI Engineer - APM Experiences
+- [x] #SKIP https://careers.datadoghq.com/detail/7553034/?gh_jid=7553034 | Datadog | Senior AI Engineer - Bits AI Security Analyst
+- [x] #SKIP https://careers.datadoghq.com/detail/7547361/?gh_jid=7547361 | Datadog | Senior Backend Software Engineer - Product Analytics
+- [x] #SKIP https://careers.datadoghq.com/detail/7555575/?gh_jid=7555575 | Datadog | Senior Corporate Development Lead, AI
+- [x] #SKIP https://careers.datadoghq.com/detail/7731306/?gh_jid=7731306 | Datadog | Senior Generative AI Engineer
+- [x] #SKIP https://careers.datadoghq.com/detail/7731295/?gh_jid=7731295 | Datadog | Senior LLM Engineer
+- [x] #SKIP https://careers.datadoghq.com/detail/7960450/?gh_jid=7960450 | Datadog | Senior Manager, Product Solutions Architecture
+- [x] #SKIP https://careers.datadoghq.com/detail/7947683/?gh_jid=7947683 | Datadog | Senior Platform Product Manager - AI SDLC Trusted Throughput
+- [x] #SKIP https://careers.datadoghq.com/detail/7808839/?gh_jid=7808839 | Datadog | Senior Product Manager - AI & Data Security
+- [x] #SKIP https://careers.datadoghq.com/detail/7929980/?gh_jid=7929980 | Datadog | Senior Product Manager - Bring Your Own Cloud (BYOC)
+- [x] #SKIP https://careers.datadoghq.com/detail/7785350/?gh_jid=7785350 | Datadog | Senior Product Manager - Data Agent
+- [x] #SKIP https://careers.datadoghq.com/detail/7065807/?gh_jid=7065807 | Datadog | Senior Product Manager - Database AI Optimization
+- [x] #SKIP https://careers.datadoghq.com/detail/7723988/?gh_jid=7723988 | Datadog | Senior Product Manager - Integrations & Ecosystem
+- [x] #SKIP https://careers.datadoghq.com/detail/7763117/?gh_jid=7763117 | Datadog | Senior Product Manager - Network Path
+- [x] #SKIP https://careers.datadoghq.com/detail/7974481/?gh_jid=7974481 | Datadog | Senior Product Manager - Search
+- [x] #SKIP https://careers.datadoghq.com/detail/7905006/?gh_jid=7905006 | Datadog | Senior Product Manager - Serverless
+- [x] #SKIP https://careers.datadoghq.com/detail/7750751/?gh_jid=7750751 | Datadog | Senior Product Solutions Architect - Logs
+- [x] #SKIP https://careers.datadoghq.com/detail/7440341/?gh_jid=7440341 | Datadog | Senior Software Engineer (Agent Engineer) - AI Code Gen
+- [x] #SKIP https://careers.datadoghq.com/detail/7097751/?gh_jid=7097751 | Datadog | Senior Software Engineer (AI)
+- [x] #SKIP https://careers.datadoghq.com/detail/7107875/?gh_jid=7107875 | Datadog | Senior Software Engineer - AI Code Gen - Agent Engineer
+- [x] #SKIP https://careers.datadoghq.com/detail/7925999/?gh_jid=7925999 | Datadog | Senior Software Engineer - Analytics Data Platform Lakehouse
+- [x] #SKIP https://careers.datadoghq.com/detail/7259387/?gh_jid=7259387 | Datadog | Senior Software Engineer - Backend
+- [x] #SKIP https://careers.datadoghq.com/detail/4599148/?gh_jid=4599148 | Datadog | Senior Software Engineer - Backend 
+- [x] #SKIP https://careers.datadoghq.com/detail/7899164/?gh_jid=7899164 | Datadog | Senior Software Engineer - Bits AI SRE
+- [x] #SKIP https://careers.datadoghq.com/detail/7555524/?gh_jid=7555524 | Datadog | Senior Software Engineer, Community Open Source Engineering
+- [x] #SKIP https://careers.datadoghq.com/detail/3851927/?gh_jid=3851927 | Datadog | Senior Software Engineer - Distributed Systems
+- [x] #SKIP https://careers.datadoghq.com/detail/7966967/?gh_jid=7966967 | Datadog | Senior Software Engineer - Environments Accelerator
+- [x] #SKIP https://careers.datadoghq.com/detail/7967161/?gh_jid=7967161 | Datadog | Senior Software Engineer - Infrastructure R&D
+- [x] #SKIP https://careers.datadoghq.com/detail/7957461/?gh_jid=7957461 | Datadog | Senior Software Engineer - Linux/eBPF
+- [x] #SKIP https://careers.datadoghq.com/detail/7959966/?gh_jid=7959966 | Datadog | Senior Software Engineer - REDAPL Graph Engine
+- [x] #SKIP https://careers.datadoghq.com/detail/7950090/?gh_jid=7950090 | Datadog | Senior Software Engineer - Synthetics Platform
+- [x] #SKIP https://careers.datadoghq.com/detail/6960503/?gh_jid=6960503 | Datadog | Senior Staff GenAI Engineer - Application Performance Monitoring (APM)
+- [x] #SKIP https://careers.datadoghq.com/detail/5608424/?gh_jid=5608424 | Datadog | Senior Staff Software Engineer 
+- [ ] https://careers.datadoghq.com/detail/7646452/?gh_jid=7646452 | Datadog | Software Engineer - Early Career
+- [x] #SKIP https://careers.datadoghq.com/detail/7752299/?gh_jid=7752299 | Datadog | Staff AI Engineer - Cloud FinOps
+- [x] #SKIP https://careers.datadoghq.com/detail/7629288/?gh_jid=7629288 | Datadog | Staff AI Engineer - Notebooks
+- [x] #SKIP https://careers.datadoghq.com/detail/7627445/?gh_jid=7627445 | Datadog | Staff AI Engineer - Notebooks 
+- [x] #SKIP https://careers.datadoghq.com/detail/7964141/?gh_jid=7964141 | Datadog | Staff Applied Scientist - Agentic Interfaces
+- [x] #SKIP https://careers.datadoghq.com/detail/7974511/?gh_jid=7974511 | Datadog | Staff GenAI Engineer - Application Performance Monitoring (APM)
+- [x] #SKIP https://careers.datadoghq.com/detail/3210217/?gh_jid=3210217 | Datadog | Staff Software Engineer
+- [x] #SKIP https://careers.datadoghq.com/detail/7635298/?gh_jid=7635298 | Datadog | Staff Software Engineer - Logs Management
+- [x] #SKIP https://careers.datadoghq.com/detail/7743369/?gh_jid=7743369 | Datadog | Staff Software Engineer - Logs Observability Pipelines [New York]
+- [x] #SKIP https://careers.datadoghq.com/detail/7107437/?gh_jid=7107437 | Datadog | Staff Software Engineer - ML Observability
+- [x] #SKIP https://careers.datadoghq.com/detail/7708309/?gh_jid=7708309 | Datadog | Technical Account Manager 2 (Thai Speaking)
+- [ ] https://jobs.dropbox.com/listing/7862086?gh_jid=7862086 | Dropbox | Frontend Product Software Engineer, Design Systems
+- [ ] https://jobs.dropbox.com/listing/6330388?gh_jid=6330388 | Dropbox | Infrastructure Software Engineer
+- [x] #SKIP https://jobs.dropbox.com/listing/7344930?gh_jid=7344930 | Dropbox | Principal Software Engineer, Core Sharing & Collaboration
+- [x] #SKIP https://jobs.dropbox.com/listing/7812915?gh_jid=7812915 | Dropbox | Senior Backend Product Software Engineer, Payments
+- [x] #SKIP https://jobs.dropbox.com/listing/7872745?gh_jid=7872745 | Dropbox | Senior Data Engineer, AI and Systems Engineering
+- [x] #SKIP https://jobs.dropbox.com/listing/7729764?gh_jid=7729764 | Dropbox | Senior Data Scientist, AI Products
+- [x] #SKIP https://jobs.dropbox.com/listing/7466604?gh_jid=7466604 | Dropbox | Senior Group Product Manager, Dropbox Sign
+- [x] #SKIP https://jobs.dropbox.com/listing/6333181?gh_jid=6333181 | Dropbox | Senior Infrastructure Software Engineer
+- [x] #SKIP https://jobs.dropbox.com/listing/7923162?gh_jid=7923162 | Dropbox | Senior Infrastructure Software Engineer, Identity & Auth Engineering
+- [x] #SKIP https://jobs.dropbox.com/listing/7759731?gh_jid=7759731 | Dropbox | Staff Backend Product Software Engineer, Commerce Platform
+- [x] #SKIP https://jobs.dropbox.com/listing/7421121?gh_jid=7421121 | Dropbox | Staff Backend Product Software Engineer, Core
+- [x] #SKIP https://jobs.dropbox.com/listing/7421149?gh_jid=7421149 | Dropbox | Staff Fullstack Software Engineer, Core Performance
+- [x] #SKIP https://jobs.dropbox.com/listing/7954604?gh_jid=7954604 | Dropbox | Staff Product Manager
+- [ ] https://jobs.dropbox.com/listing/7872754?gh_jid=7872754 | Dropbox | Systems Automation & Integration Engineer
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5707966004?gh_jid=5707966004 | Figma | AI Applied Scientist
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5980306004?gh_jid=5980306004 | Figma | Business Systems Analyst 
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5840332004?gh_jid=5840332004 | Figma | Data Platform Engineer
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5983820004?gh_jid=5983820004 | Figma | Manager, Data Science - AI Product
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5838098004?gh_jid=5838098004 | Figma | Manager, Software Engineering - AI Product 
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5722244004?gh_jid=5722244004 | Figma | Manager, Software Engineering - Billing
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5778796004?gh_jid=5778796004 | Figma | Manager, Software Engineering - Interaction Design
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5807963004?gh_jid=5807963004 | Figma | Manager, Software Engineering - Observability
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5804108004?gh_jid=5804108004 | Figma | Manager, Software Engineering - Search & Recommendations
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5711913004?gh_jid=5711913004 | Figma | Product Designer, AI Models
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5711468004?gh_jid=5711468004 | Figma | Product Designer, Design, Dev, & AI Tools
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5989185004?gh_jid=5989185004 | Figma | Product Manager, AI Growth
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5830640004?gh_jid=5830640004 | Figma | Product Manager, AI Platform
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5505263004?gh_jid=5505263004 | Figma | Product Manager, Design Tools
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5991176004?gh_jid=5991176004 | Figma | Sales AI Engineer
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5691886004?gh_jid=5691886004 | Figma | Software Engineer, AI Platforms
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5551730004?gh_jid=5551730004 | Figma | Software Engineer, AI Product
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5551697004?gh_jid=5551697004 | Figma | Software Engineer, AI Product (London, United Kingdom)
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5552530004?gh_jid=5552530004 | Figma | Software Engineer, C++
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5759501004?gh_jid=5759501004 | Figma | Software Engineer, Code Platform
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5551686004?gh_jid=5551686004 | Figma | Software Engineer, Data Infrastructure
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5790627004?gh_jid=5790627004 | Figma | Software Engineer, Developer Experience
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5552549004?gh_jid=5552549004 | Figma | Software Engineer, Distributed Systems
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5691911004?gh_jid=5691911004 | Figma | Software Engineer, Full Stack
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5552522004?gh_jid=5552522004 | Figma | Software Engineer, Graphics & Media
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5552560004?gh_jid=5552560004 | Figma | Software Engineer, Growth & Monetization
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5551532004?gh_jid=5551532004 | Figma | Software Engineer, Machine Learning
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5551649004?gh_jid=5551649004 | Figma | Software Engineer, Production Engineering
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5781928004?gh_jid=5781928004 | Figma | Software Engineer, Production Engineering  (London, United Kingdom)
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5998049004?gh_jid=5998049004 | Figma | Strategic Finance, Systems & AI Innovation
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5837760004?gh_jid=5837760004 | Figma | Technical Program Manager, AI Performance
+- [x] #SKIP https://boards.greenhouse.io/figma/jobs/5839202004?gh_jid=5839202004 | Figma | UX Writer, AI 
+- [ ] https://www.samsara.com/company/careers/roles/7266629?gh_jid=7266629 | Samsara | AI / Computer Vision (IC)
+- [ ] https://www.samsara.com/company/careers/roles/7491153?gh_jid=7491153 | Samsara | AI Engineer
+- [ ] https://www.samsara.com/company/careers/roles/7839203?gh_jid=7839203 | Samsara | Digital Innovation Co-Op – Supply Chain
+- [ ] https://www.samsara.com/company/careers/roles/7812192?gh_jid=7812192 | Samsara | Manager, Software Engineering (Developer Experience)
+- [ ] https://www.samsara.com/company/careers/roles/7266435?gh_jid=7266435 | Samsara | Manager, Software Engineering - Mobile Platform
+- [ ] https://www.samsara.com/company/careers/roles/7266585?gh_jid=7266585 | Samsara | Manager, Software Engineering (Platform Reports)
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7604461?gh_jid=7604461 | Samsara | Principal Product Manager
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7650416?gh_jid=7650416 | Samsara | Principal Product Manager - Maintenance
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7703696?gh_jid=7703696 | Samsara | Senior Application Security Engineer (AI & Vulnerability)
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7610376?gh_jid=7610376 | Samsara | Senior Automation Engineer (HIL)
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7782752?gh_jid=7782752 | Samsara | Senior Manager, Safety AI
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7941390?gh_jid=7941390 | Samsara | Senior Performance Marketing Manager - Paid Social
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7736609?gh_jid=7736609 | Samsara | Senior/Principal Product Manager - Safety AI
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7700461?gh_jid=7700461 | Samsara | Senior Product Manager, Growth
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7742662?gh_jid=7742662 | Samsara | Senior Program Manager, Sales Programs – AI
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7615410?gh_jid=7615410 | Samsara | Senior Program Manager - Sales Programs (Transformational)
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7266719?gh_jid=7266719 | Samsara | Senior Software Engineer, AI Platform
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7847219?gh_jid=7847219 | Samsara | Senior Software Engineer - Connected Workflows
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7745837?gh_jid=7745837 | Samsara | Senior Software Engineer, Growth
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7349219?gh_jid=7349219 | Samsara | Senior Software Engineer I - Agent Foundations
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7717540?gh_jid=7717540 | Samsara | Senior Software Engineer II, Developer Experience / Operational Excellence
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7743836?gh_jid=7743836 | Samsara | Senior Software Engineer II, DevEx, OPX
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7266469?gh_jid=7266469 | Samsara | Senior Software Engineer II - Mobile Platform
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7569229?gh_jid=7569229 | Samsara | Senior Software Engineer - Route Execution
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7266162?gh_jid=7266162 | Samsara | Senior Staff Software Engineer - STCE
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7768924?gh_jid=7768924 | Samsara | Senior Supply Chain Manager
+- [ ] https://www.samsara.com/company/careers/roles/7618581?gh_jid=7618581 | Samsara | Software Engineer II, AI Platform
+- [ ] https://www.samsara.com/company/careers/roles/7610288?gh_jid=7610288 | Samsara | Solutions Integration Engineer
+- [ ] https://www.samsara.com/company/careers/roles/7775532?gh_jid=7775532 | Samsara | Solutions Integration Engineer IV
+- [ ] https://www.samsara.com/company/careers/roles/7961464?gh_jid=7961464 | Samsara | Specialist Seller - Enterprise Select AI Products
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7610374?gh_jid=7610374 | Samsara | Sr. Automation Engineer (Infra)
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7786156?gh_jid=7786156 | Samsara | Sr. Product Manager I, In-vehicle Experience
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7750279?gh_jid=7750279 | Samsara | Sr. Revenue Tools Product Manager I
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7583834?gh_jid=7583834 | Samsara | Sr. Support Tools Product Manager
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7266357?gh_jid=7266357 | Samsara | Staff Machine Learning Engineer - Edge AI
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7721193?gh_jid=7721193 | Samsara | Staff ML Engineer - ML Infrastructure
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7752678?gh_jid=7752678 | Samsara | Staff Software Engineer
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7588828?gh_jid=7588828 | Samsara | Staff Software Engineer - CAM
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7266385?gh_jid=7266385 | Samsara | Staff Software Engineer - Platform
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7266287?gh_jid=7266287 | Samsara | Staff Software Engineer - Platform and Infrastructure
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7548384?gh_jid=7548384 | Samsara | Staff Software Engineer - Sustainability
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7905378?gh_jid=7905378 | Samsara | Supply Chain Manager
+- [ ] https://nuro.ai/careersitem?gh_jid=7917839 | Nuro | Full Stack Software Engineer, Fleet Platform and Operations Tooling
+- [ ] https://nuro.ai/careersitem?gh_jid=7439020 | Nuro | ML Research Scientist, Prediction & Smart Agents
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7095296 | Nuro | Senior ML Research Scientist, End-to-End Autonomous Driving
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7717697 | Nuro | Senior Product Manager, City Management Tooling
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7603694 | Nuro | Senior Product Manager, Data
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7564578 | Nuro | Senior Product Manager, Fleet Intelligence
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7974493 | Nuro | Senior Product Manager, Mapping
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7717678 | Nuro | Senior Product Manager, Operator Experience Platform
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7896065 | Nuro | Senior Software Engineer, Autonomy Visualization
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=6953540 | Nuro | Senior Software Engineer, Behavior Planning
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7838557 | Nuro | Senior Software Engineer, Cloud Efficiency & Cost Optimization
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=6926534 | Nuro | Senior Software Engineer, Collision Avoidance Testing
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7896050 | Nuro | Senior Software Engineer, Distributed Compute System
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=6941199 | Nuro | Senior Software Engineer, Engineering Productivity
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7958983 | Nuro | Senior Software Engineer, FinOps
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7782682 | Nuro | Senior Software Engineer – GenAI Infrastructure & Agent Systems for Engineering Efficiency
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7003547 | Nuro | Senior Software Engineer, Localization and Mapping
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7904958 | Nuro | Senior Software Engineer, Map Platform
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7296151 | Nuro | Senior Software Engineer, Middleware
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7895271 | Nuro | Senior Software Engineer, ML Infrastructure
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7551601 | Nuro | Senior Software Engineer, Networking & Real-Time Systems
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7701096 | Nuro | Senior Software Engineer, Onboard Autonomy
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7913297 | Nuro | Senior Software Engineer, Over-the-Air Updates.
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7389868 | Nuro | Senior Software Engineer, Perception ML Data
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7786596 | Nuro | Senior Software Engineer, Performance Tooling and Infrastructure
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=6832319 | Nuro | Senior Software Engineer, Routing
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=5401358 | Nuro | Senior Software Engineer, Simulation
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7398839 | Nuro | Senior Software Engineer, Teleoperation
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7280340 | Nuro | Senior Software Engineer, Video Streaming
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7243150 | Nuro | Senior/Staff Software Engineer,  Behavior Verification
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7895640 | Nuro | Senior/Staff Software Engineer, Data Platform
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7570197 | Nuro | Senior/Staff Software Engineer, Fault Response Verification
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7895639 | Nuro | Senior/Staff Software Engineer, Labeling Platform
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7895638 | Nuro | Senior/Staff Software Engineer, ML Data Infrastructure
+- [ ] https://nuro.ai/careersitem?gh_jid=7351061 | Nuro | Software Engineer, AI Platform - Intern
+- [ ] https://nuro.ai/careersitem?gh_jid=7351066 | Nuro | Software Engineer, AI Platform - New Grad
+- [ ] https://nuro.ai/careersitem?gh_jid=7896063 | Nuro | Software Engineer, Autonomy Visualization
+- [ ] https://nuro.ai/careersitem?gh_jid=7895644 | Nuro | Software Engineer, Data Platform
+- [ ] https://nuro.ai/careersitem?gh_jid=7896051 | Nuro | Software Engineer, Distributed Compute System
+- [ ] https://nuro.ai/careersitem?gh_jid=7825886 | Nuro | Software Engineer, Middleware
+- [ ] https://nuro.ai/careersitem?gh_jid=7895818 | Nuro | Software Engineer, ML Data Infrastructure
+- [ ] https://nuro.ai/careersitem?gh_jid=7895273 | Nuro | Software Engineer, ML Infrastructure
+- [ ] https://nuro.ai/careersitem?gh_jid=7481633 | Nuro | Software Engineer, Networking & Real-Time Systems
+- [ ] https://nuro.ai/careersitem?gh_jid=7638789 | Nuro | Software Engineer, Offboard Infrastructure
+- [ ] https://nuro.ai/careersitem?gh_jid=7638808 | Nuro | Software Engineer, Onboard Infrastructure
+- [ ] https://nuro.ai/careersitem?gh_jid=7809136 | Nuro | Software Engineer, Onboard Systems
+- [ ] https://nuro.ai/careersitem?gh_jid=7786521 | Nuro | Software Engineer, Performance Tooling and Infrastructure
+- [ ] https://nuro.ai/careersitem?gh_jid=7482347 | Nuro | Software Engineer, Routing
+- [ ] https://nuro.ai/careersitem?gh_jid=7235419 | Nuro | Software Engineer, Software Update Infrastructure
+- [ ] https://nuro.ai/careersitem?gh_jid=7481634 | Nuro | Software Engineer, Video Streaming
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7736012 | Nuro | Sr. Software Engineer, Perception Data Infrastructure
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7238934 | Nuro | Staff/Senior Software Engineer, Offboard Infrastructure
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7236603 | Nuro | Staff/Senior Software Engineer, Onboard Infrastructure
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7137941 | Nuro | Staff Software Engineer, Behavior ML Data
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7974966 | Nuro | Staff Software Engineer, Onboard Infrastructure
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7196037 | Nuro | Staff Software Engineer, Routing
+- [x] #SKIP https://nuro.ai/careersitem?gh_jid=7528153 | Nuro | Technical Lead Manager, ML Platform Infrastructure
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7467839 | Waymo | Applied Research Scientist, LLM/VLM  (PhD New Grad)
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7488508 | Waymo | Applied Research Scientist, Perception LLM/VLM (PhD, New Grad)
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7446279 | Waymo | Applied Scientist / MLE,  Perception Modeling
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7435924 | Waymo | Business System Lead - Supply Chain
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7859141 | Waymo | Business Systems Lead - Insurance & Operations
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7435977 | Waymo | Charging Automation Lead
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7435297 | Waymo | Claims Advocate 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7724345 | Waymo | Emergency Services Liaison, Japan & Asia / 緊急サービス・リエゾン (日本・アジア担当)
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7561880 | Waymo | Engineering Manager (ML), Perception, Traffic Control Understanding
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7516860 | Waymo | Engineering Manager (ML), Perception, Vehicle Understanding
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7851886 | Waymo | Fleet Campaigns PgM  
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7913555 | Waymo | Fleet Response (ERT/RAD) Training Program Manager
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7855418 | Waymo | Front-End Software Engineer, Simulation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7902119 | Waymo | Full Stack Software Engineer, Depot UX
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7869025 | Waymo | Group Product Manager, Fleet & Event Response
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7650676 | Waymo | Group Product Manager, London
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7947024 | Waymo | Group Product Manager, Perception Modeling - Semantics
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7968179 | Waymo | Hardware Lead, In-Vehicle Infotainment
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7852501 | Waymo | Machine Learning Engineer, Depot Automation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7424806 | Waymo | Machine Learning Engineer, ML Resources
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7509005 | Waymo | ML Accelerator Architect
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7616808 | Waymo | ML Microarchitect
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7561934 | Waymo | OEM Platform Integration Engineer
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7461052 | Waymo | Onboard Developer Platform Software Engineer
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7412386 | Waymo | Onboard Frameworks Software Engineer
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7461103 | Waymo | Onboard Infrastructure Software Engineer
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7545007 | Waymo | Principal Software Engineer, ML Flywheel Technical Lead
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7773177 | Waymo | Principal Software Engineer, ML System Architect
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7848842 | Waymo | Principal Software Engineer, Onboard Field Response
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=6989523 | Waymo | Principal Software Engineer, Perception Pretraining
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7766491 | Waymo | Principal Software Engineer - Waymo Driver Post Training
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7922962 | Waymo | Product Manager, Mapping (Data Quality & Tooling) 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7926309 | Waymo | Product Manager, Mapping (Real-time Disruptions) 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7902413 | Waymo | Product Manager, Pickup and Dropoff Systems
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7942537 | Waymo | Program Manager, ML Data
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7834285 | Waymo | Public Affairs Manager, Texas
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7954299 | Waymo | Ridehailing, Site Reliability Engineer 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7851972 | Waymo | Ride-Hail Market Operations Lead
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7826677 | Waymo | Senior FP&A Analyst - Supply Chain
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7426952 | Waymo | Senior Fullstack Software Engineer, Workshop Management
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7488596 | Waymo | Senior Machine Learning Engineer, Perception LLM/VLM
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7644924 | Waymo | Senior Machine Learning Engineer – VLM/LLM Evaluation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7774345 | Waymo | Senior ML Compiler Engineer, Compute
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7858937 | Waymo | Senior ML Engineer, LLM / VLM Distillation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7762871 | Waymo | Senior Product Manager, DevAI & Agentic Workflows
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7572081 | Waymo | Senior Research Scientist, Foundation Model (LLM/VLM)
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7926984 | Waymo | Senior Software Engineer, Agentic Workflows
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7896159 | Waymo | Senior Software Engineer, Data Infrastructure
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7863159 | Waymo | Senior Software Engineer,  DevAI 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7747032 | Waymo | Senior Software Engineer, Eval Authoring APIs
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7430650 | Waymo | Senior Software Engineer, Event Response
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7430666 | Waymo | Senior Software Engineer, Fleet Monitoring & Platform
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7426432 | Waymo | Senior Software Engineer, Fleet Orchestration and Optimization
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7510368 | Waymo | Senior Software Engineer, Inertial Navigation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7429795 | Waymo | Senior Software Engineer, Internal Tooling
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7028511 | Waymo | Senior Software Engineer, Linux Kernel
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7703602 | Waymo | Senior Software Engineer, Machine Learning Performance
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7429828 | Waymo | Senior Software Engineer, Mapping Field Response
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7028592 | Waymo | Senior Software Engineer (ML) - Car Experience
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7177351 | Waymo | Senior Software Engineer, ML Evaluation Infra and Efficiency
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7605770 | Waymo | Senior Software Engineer, Motion Controls
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=6773081 | Waymo | Senior Software Engineer - Multiverse
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7713195 | Waymo | Senior Software Engineer, Onboard Software Integrity Infrastructure
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7689282 | Waymo | Senior Software Engineer, Perception Verification
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7456936 | Waymo | Senior Software Engineer, Planner
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7336953 | Waymo | Senior Software Engineer, Planner Reasoning
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7334481 | Waymo | Senior Software Engineer, Post-Training & RL Frameworks
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7902125 | Waymo | Senior Software Engineer, PUDO Experience
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7477172 | Waymo | Senior Software Engineer, Quantitative Evaluations
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7749587 | Waymo | Senior Software Engineer, Sensor Test and Calibration
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7430553 | Waymo | Senior Software Engineer, Simulation Infrastructure
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7429718 | Waymo | Senior Software Engineer, Simulation ML Infrastructure
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7540809 | Waymo | Senior Software Engineer, Simulation, Vehicle & Autonomous Driving Realism
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=6507799 | Waymo | Senior Software Engineer, Simulator Evaluation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7222566 | Waymo | Senior Software Engineer, Simulator Platform
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7550770 | Waymo | Senior Software Engineer, Statistical Evaluation and Sampling
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7822756 | Waymo | Senior Software Engineer, Vehicle Platforms C++
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7863238 | Waymo | Senior Staff Engineer, DevAI
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7774356 | Waymo | Senior Staff Machine Learning Engineer, Depot Automation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=6669555 | Waymo | Senior/Staff ML Engineer, 3D/4D World Modeling, Simulation 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7421737 | Waymo | Senior Staff ML Engineer, Driver Understanding and Evaluation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7449213 | Waymo | Senior Staff Software Engineer
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7378817 | Waymo | Senior Staff Software Engineer, Capacity Optimization
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7580705 | Waymo | Senior Staff Software Engineer, Model Post Training
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7455962 | Waymo | Senior Staff Software Engineer, Perception Data
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7426774 | Waymo | Senior Staff Software Engineer, Simulation 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7429968 | Waymo | Senior Staff Software Engineer, TLM
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7426471 | Waymo | Senior Staff TLM, Data Mining and Sampling for ML and Evaluation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7632784 | Waymo | Senior Systems Engineer, Depot Automation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7960517 | Waymo | Software Engineer
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7558429 | Waymo | Software Engineer, Backend
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7307289 | Waymo | Software Engineer Backend - Simulation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7905695 | Waymo | Software Engineer, Booking
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7466529 | Waymo | Software Engineer, Bulk/Interactive Inference
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7901969 | Waymo | Software Engineer, Chassis
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7902599 | Waymo | Software Engineer, Driver Validation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7351058 | Waymo | Software Engineer, Driving Behaviors
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7912824 | Waymo | Software Engineer, Fleet Automation 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7939542 | Waymo | Software Engineer, Fleet Monitoring
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7901957 | Waymo | Software Engineer, Fleet Orchestration Core
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7912827 | Waymo | Software Engineer, Fleet Orchestration Infra
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7596990 | Waymo | Software Engineer, Full Stack
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7554830 | Waymo | Software Engineer, GPU
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7416895 | Waymo | Software Engineer, Labeling Infrastructure
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7901924 | Waymo | Software Engineer, Logs Infrastructure
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7584885 | Waymo | Software Engineer, Machine Learning/AI Accelerator
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7703664 | Waymo | Software Engineer, Machine Learning Performance
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7698498 | Waymo | Software Engineer, Machine Learning Tooling
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7905680 | Waymo | Software Engineer -  Marketplace Experimentation Platform
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7905643 | Waymo | Software Engineer, Marketplace Pricing
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7728681 | Waymo | Software Engineer, ML Accelerator Modeling (TW)
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7353876 | Waymo | Software Engineer, ML Inference, Simulation Infrastructure
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7609435 | Waymo | Software Engineer, Model Lifecycle
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7531397 | Waymo | Software Engineer, Multiverse
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7461072 | Waymo | Software Engineer, Onboard Reliability Infra
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7926526 | Waymo | Software Engineer, Operational/ Process Efficiency 
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7902582 | Waymo | Software Engineer, Payment BE
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7256244 | Waymo | Software Engineer, Perception Evaluation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7449712 | Waymo | Software Engineer, Perception Evaluation and Test Automation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7902131 | Waymo | Software Engineer, Pin Infra
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7259110 | Waymo | Software Engineer, Planner Reasoning
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7460969 | Waymo | Software Engineer, Planner Reasoning Platform
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7141380 | Waymo | Software Engineer, Planner Vehicle Dynamics
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7858779 | Waymo | Software Engineer, Post-Silicon Testing 
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7466534 | Waymo | Software Engineer, Quantitative Evaluations
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7587455 | Waymo | Software Engineer, Sensor/Imaging
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7430555 | Waymo | Software Engineer, Simulation Infrastructure
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=6562547 | Waymo | Software Engineer, Simulator Evaluation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7543520 | Waymo | Software Engineer, Statistical Evaluation and Sampling
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7622998 | Waymo | Software Engineer, Strategic SWE Reserve
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7708010 | Waymo | Software Engineer, System-on-Chip (SoC) Simulation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7532414 | Waymo | Software Engineer, Test Automation Infrastructure
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7905678 | Waymo | Software Engineer, Trip Platform
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7429873 | Waymo | Software Engineer, Vehicle Platforms C++
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7939376 | Waymo | Software Engineer Weather Monitoring
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7421839 | Waymo | Software Quality Operations Specialist, Domain Expansion
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7658914 | Waymo | Software Technical Lead Manager, Test Automation Infrastructure
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7571504 | Waymo | Sr. Software Engineer, Core Platforms 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7905693 | Waymo | Sr. Software Engineer, Marketplace ML Platform
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7438645 | Waymo | Sr Software Engineer, Telematics
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7595124 | Waymo | Staff Machine Learning Engineer – VLM/LLM Evaluation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7028616 | Waymo | Staff Software Engineer (BE/ML) - Compliance & Readiness
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7766411 | Waymo | Staff Software Engineer, Capacity Optimization
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7439142 | Waymo | Staff Software Engineer, Chassis
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7863214 | Waymo | Staff Software Engineer, DevAI
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7912801 | Waymo | Staff Software Engineer, Driver Validation 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7450339 | Waymo | Staff Software Engineer, Linux Kernel
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7170802 | Waymo | Staff Software Engineer, Machine Learning, Planner Selection
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7224992 | Waymo | Staff Software Engineer, Machine Learning, Route and Pin Quality
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7531466 | Waymo | Staff Software Engineer, Multiverse
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7547529 | Waymo | Staff Software Engineer, Privacy
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=6901826 | Waymo | Staff Software Engineer, Quantitative Evaluation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7943238 | Waymo | Staff Software Engineer, Quantitative Evaluations
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=6615783 | Waymo | Staff Software Engineer, Simulation ML Infrastructure
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7602321 | Waymo | Staff Software Engineer, Simulator Evaluation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7902617 | Waymo | Staff Software Engineer, Speciality PUDO
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7680942 | Waymo | Staff Software Engineer / Technical Lead Manager 
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7306995 | Waymo | Staff Software Engineer / Technical Lead Manager - Mapping   
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7931005 | Waymo | Staff Software Engineer, Weather Operations
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7426946 | Waymo | Staff Software Engineer, Workshop Management
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7094669 | Waymo | Staff Technical Lead Manager, ML Sensor Validation
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7804301 | Waymo | Systems Integration Engineer
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7702392 | Waymo | Systems Test Engineer, Commercialization Test Automation
+- [x] #SKIP https://careers.withwaymo.com/jobs?gh_jid=7686010 | Waymo | Tech Lead  Manager ML Optimization
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7899420 | Waymo | Technical Training Manager (WRA/RS)
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7851856 | Waymo | Waymo Training Solution Program Manager Waymo トレーニング ソリューション プログラム マネージャー
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7939995 | Gusto | Benefit Services - Member Fulfillment
+- [ ] https://job-boards.greenhouse.io/gusto/jobs/7369003 | Gusto | Enterprise Application AI Architect
+- [ ] https://job-boards.greenhouse.io/gusto/jobs/7931506 | Gusto | Group Operations Fulfillment, Benefit Services 
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7948318 | Gusto | Head of AI and Machine Learning Engineering
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7640344 | Gusto | Principal Product Designer, CoreX AI
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7665272 | Gusto | Principal Product Manager, Agentic Benefits Operations
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7138952 | Gusto | Principal Product Manager, AI Enabled Workforce
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7581996 | Gusto | Principal Product Manager, Cash Flow 
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7312754 | Gusto | Principal Product Manager, Customer Onboarding 
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7843112 | Gusto | Principal Product Manager, Reporting
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7235291 | Gusto | Principal Product Manager, Tax Platform
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7654934 | Gusto | Principal Software Engineer, Money Group 
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7027020 | Gusto | Principal Software Engineer - Pay Group Engineering
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7562102 | Gusto | Senior Product Manager, Contractor Products
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7759823 | Gusto | Senior Product Manager, Document Studio
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7673980 | Gusto | Senior Product Manager, Gusto Pro Workflows
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7532277 | Gusto | Senior Product Manager, Symmetry New Tax Products
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7467602 | Gusto | Senior Product Manager, Web Experiences
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7357569 | Gusto | Senior Software Engineer, Data Platform
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7942791 | Gusto | Senior Staff Software Engineer - Pricing and Packaging
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7307124 | Gusto | Sr. Staff AI/ML Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7815573 | Gusto | Staff Business Systems Analyst
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7760341 | Gusto | Staff Software Engineer, Core Platforms
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7458337 | Gusto | Staff Software Engineer, Core Products
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7413644 | Gusto | Staff Software Engineer, Database Infrastructure
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7947658 | Gusto | Staff Software Engineer, Developer Productivity Async
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7822587 | Gusto | Staff Software Engineer, Payments / Risk
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7863130 | Gusto | Staff Software Engineer, Platform Orchestration
+- [x] #SKIP https://job-boards.greenhouse.io/gusto/jobs/7590298 | Gusto | Staff Software Engineer, Security & AI Platform
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7658241 | Instacart | Ads AI Analytics Lead II
+- [ ] https://instacart.careers/job/?gh_jid=7875518 | Instacart | AI Field Consultant
+- [ ] https://instacart.careers/job/?gh_jid=7826880 | Instacart | Bilingual Staff Technical Program Manager, Global Enterprise Fulfillment Platform
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7967233 | Instacart | Director of Product, Agentic Commerce
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7909581 | Instacart | Integration & Automation Tech Lead
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7597064 | Instacart | Principal Product Manager, Agentic Commerce
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7743713 | Instacart | Retailer Ads Sales Executive, Mid-Market Ads
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7789182 | Instacart | Retail Sales Manager, International
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7779561 | Instacart | Senior Data Scientist II - AI for Analytics
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7947508 | Instacart | Senior Engineering Manager, Retailer Platform
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7958331 | Instacart | Senior Financial Analyst, Retailer
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7769926 | Instacart | Senior Product Manager, Fraud & Trust
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7838738 | Instacart | Senior Product Manager, In-Store Integrations
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7963724 | Instacart | Senior Product Manager, In-Store Tasks
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7904851 | Instacart | Senior Product Manager, Shopping Experience
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7872338 | Instacart | Senior Security Engineer, Cloud, AI, Product Security
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7872336 | Instacart | Senior Security Engineer, Cloud, AI, Product Security 
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7950935 | Instacart | Senior Software Engineer, Ads
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7974573 | Instacart | Senior Software Engineer, AI Productivity
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7974559 | Instacart | Senior Software Engineer, Backend Platform
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951926 | Instacart | Senior Software Engineer, Core Experience
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951036 | Instacart | Senior Software Engineer, Data Governance & Foundations
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7974567 | Instacart | Senior Software Engineer, Developer Experience
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951938 | Instacart | Senior Software Engineer II, Ads Data Solutions Engineering
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951041 | Instacart | Senior Software Engineer II, AI Labs & Foundations
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951060 | Instacart | Senior Software Engineer II, Core Experience
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951076 | Instacart | Senior Software Engineer II, Logistic Foundation
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951087 | Instacart | Senior Software Engineer II, (ML/AI Platform)
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951096 | Instacart | Senior Software Engineer II, Storage
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7951118 | Instacart | Senior Software Engineer, Storage
+- [ ] https://instacart.careers/job/?gh_jid=7963661 | Instacart | Software Engineer II, Technical Search Visibility
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7728839 | Instacart | Staff Software Engineer, Ads Data Platform
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7778620 | Instacart | Staff Software Engineer,  Data Infrastructure
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7778618 | Instacart | Staff Software Engineer, Data Infrastructure
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7361224 | Instacart | Staff Software Engineer, FoodStorm
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7872483 | Instacart | Staff Software Engineer, Home & Cross-Retailer Search
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7838936 | Instacart | Staff Software Engineer, Shopper Activation & Engagement
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7872388 | Instacart | Staff Software Engineer, Web
+- [ ] https://instacart.careers/job/?gh_jid=7706355 | Instacart | Strategic Finance Manager, Retailer
+- [x] #SKIP https://sofi.com/careers/job/7713452003?gh_jid=7713452003 | SoFi | Appraisal Order Analyst
+- [ ] https://sofi.com/careers/job/7565483003?gh_jid=7565483003 | SoFi | Contact Platform Engineer
+- [x] #SKIP https://sofi.com/careers/job/7704803003?gh_jid=7704803003 | SoFi | Director, AI Platforms
+- [x] #SKIP https://sofi.com/careers/job/7570377003?gh_jid=7570377003 | SoFi | Group Product Manager, Invest
+- [x] #SKIP https://sofi.com/careers/job/7634836003?gh_jid=7634836003 | SoFi | Insurance Agent, Protect
+- [x] #SKIP https://sofi.com/careers/job/7747028003?gh_jid=7747028003 | SoFi | Mailroom Associate
+- [x] #SKIP https://sofi.com/careers/job/7747024003?gh_jid=7747024003 | SoFi | Mailroom Lead
+- [x] #SKIP https://sofi.com/careers/job/7702238003?gh_jid=7702238003 | SoFi | Post Closing Specialist (Servicing Boarding & Trailing Docs Focus)
+- [x] #SKIP https://sofi.com/careers/job/7589085003?gh_jid=7589085003 | SoFi | Principal, Appraisal Underwriting Strategy & Governance
+- [x] #SKIP https://sofi.com/careers/job/7580153003?gh_jid=7580153003 | SoFi | Principal Product Manager, Ads & Measurement
+- [x] #SKIP https://sofi.com/careers/job/7670800003?gh_jid=7670800003 | SoFi | Principal Product Manager, AI Features
+- [x] #SKIP https://sofi.com/careers/job/7638977003?gh_jid=7638977003 | SoFi | Principal Product Manager - Fraud, Risk & ML Platform
+- [x] #SKIP https://sofi.com/careers/job/7687964003?gh_jid=7687964003 | SoFi | Principal Product Manager, Marketing Technology
+- [x] #SKIP https://sofi.com/careers/job/7697158003?gh_jid=7697158003 | SoFi | Principal Product Manager, Real-Time Payments Platform
+- [x] #SKIP https://sofi.com/careers/job/7666785003?gh_jid=7666785003 | SoFi | Principal Software Engineer, Agentic Experiences
+- [x] #SKIP https://sofi.com/careers/job/7511157003?gh_jid=7511157003 | SoFi | Principal Software Engineer, AI Accelerated SDLC
+- [x] #SKIP https://sofi.com/careers/job/7575386003?gh_jid=7575386003 | SoFi | Principal Software Engineer, Loans Originations
+- [x] #SKIP https://sofi.com/careers/job/7575354003?gh_jid=7575354003 | SoFi | Principal Software Engineer, Loans Platform
+- [x] #SKIP https://sofi.com/careers/job/7688391003?gh_jid=7688391003 | SoFi | Principal Software Engineer, Member Growth
+- [x] #SKIP https://sofi.com/careers/job/7602827003?gh_jid=7602827003 | SoFi | Production Sales Manager, Retail
+- [x] #SKIP https://sofi.com/careers/job/7573978003?gh_jid=7573978003 | SoFi | Retail Loan Originator
+- [ ] https://sofi.com/careers/job/7735448003?gh_jid=7735448003 | SoFi | Retail Market Manager
+- [x] #SKIP https://sofi.com/careers/job/7700757003?gh_jid=7700757003 | SoFi | Security Product Lead – Product & AI Security
+- [x] #SKIP https://sofi.com/careers/job/7545775003?gh_jid=7545775003 | SoFi | Senior Manager, Government Affairs
+- [x] #SKIP https://sofi.com/careers/job/7697154003?gh_jid=7697154003 | SoFi | Senior Product Manager, Commercial Banking
+- [x] #SKIP https://sofi.com/careers/job/7720241003?gh_jid=7720241003 | SoFi | Senior Product Manager, Home Loans Consumer Experience
+- [x] #SKIP https://sofi.com/careers/job/7616217003?gh_jid=7616217003 | SoFi | Senior Product Manager, Member Account Safety
+- [x] #SKIP https://sofi.com/careers/job/7741776003?gh_jid=7741776003 | SoFi | Senior Product Manager, Money
+- [x] #SKIP https://sofi.com/careers/job/7717851003?gh_jid=7717851003 | SoFi | Senior Product Manager, Originations Core
+- [x] #SKIP https://sofi.com/careers/job/7644783003?gh_jid=7644783003 | SoFi | Senior Product Manager, Personal Loans New Initiatives
+- [x] #SKIP https://sofi.com/careers/job/7720245003?gh_jid=7720245003 | SoFi | Senior Product Manager, Servicing
+- [x] #SKIP https://sofi.com/careers/job/7676573003?gh_jid=7676573003 | SoFi | Senior Product Manager, Transactional Risk
+- [x] #SKIP https://sofi.com/careers/job/7616225003?gh_jid=7616225003 | SoFi | Senior Product Manager, Underwriting
+- [x] #SKIP https://sofi.com/careers/job/7695845003?gh_jid=7695845003 | SoFi | Senior Software Engineer, Cloud Platform
+- [x] #SKIP https://sofi.com/careers/job/7727874003?gh_jid=7727874003 | SoFi | Senior Software Engineer, Data Trust
+- [x] #SKIP https://sofi.com/careers/job/7726028003?gh_jid=7726028003 | SoFi | Senior Software Engineer, Engineering Enablement
+- [x] #SKIP https://sofi.com/careers/job/7589449003?gh_jid=7589449003 | SoFi | Senior Software Engineer, Invest
+- [x] #SKIP https://sofi.com/careers/job/7593403003?gh_jid=7593403003 | SoFi | Senior Staff AI Engineer
+- [x] #SKIP https://sofi.com/careers/job/7589416003?gh_jid=7589416003 | SoFi | Senior Staff Software Engineer, Agentic Test Platform
+- [x] #SKIP https://sofi.com/careers/job/7589427003?gh_jid=7589427003 | SoFi | Senior Staff Software Engineer, AI Accelerated SDLC
+- [x] #SKIP https://sofi.com/careers/job/7575336003?gh_jid=7575336003 | SoFi | Senior Staff Software Engineer, Loans Platform
+- [x] #SKIP https://sofi.com/careers/job/7676577003?gh_jid=7676577003 | SoFi | Software Engineering Manager, Digital Identity — Access & Rights
+- [ ] https://sofi.com/careers/job/7713729003?gh_jid=7713729003 | SoFi | Software Engineer, Loans Originations
+- [x] #SKIP https://sofi.com/careers/job/7695839003?gh_jid=7695839003 | SoFi | Sr Software Engineer, Data Foundations
+- [x] #SKIP https://sofi.com/careers/job/7718803003?gh_jid=7718803003 | SoFi | Staff AI Engineer
+- [x] #SKIP https://sofi.com/careers/job/7704502003?gh_jid=7704502003 | SoFi | Staff Risk AI & Data Engineer
+- [x] #SKIP https://sofi.com/careers/job/7621305003?gh_jid=7621305003 | SoFi | Staff Software Engineer, AI - Member Growth
+- [x] #SKIP https://sofi.com/careers/job/7687969003?gh_jid=7687969003 | SoFi | Staff Software Engineer, Bank
+- [x] #SKIP https://sofi.com/careers/job/7701314003?gh_jid=7701314003 | SoFi | Staff Software Engineer, Loans Originations
+- [x] #SKIP https://sofi.com/careers/job/7632139003?gh_jid=7632139003 | SoFi | Staff Software Engineer, Loans Platform
+- [x] #SKIP https://sofi.com/careers/job/7676471003?gh_jid=7676471003 | SoFi | Staff Software Engineer, Servicing Platform
+- [x] #SKIP https://careers.roblox.com/jobs/7403998?gh_jid=7403998 | Roblox | [2026] Senior Machine Learning Engineer, AI Platform - PhD Early Career
+- [x] #SKIP https://careers.roblox.com/jobs/7323437?gh_jid=7323437 | Roblox | [2026] Senior Machine Learning Engineer, Multimodal AI, Computer Vision and Graphics - PhD Early Career 
+- [ ] https://careers.roblox.com/jobs/7557909?gh_jid=7557909 | Roblox | [2026] Software Engineer, Game Developer
+- [x] #SKIP https://careers.roblox.com/jobs/7963129?gh_jid=7963129 | Roblox | Director Engineering, Economy ML
+- [x] #SKIP https://careers.roblox.com/jobs/7595328?gh_jid=7595328 | Roblox | Director of Engineering - AI for Roblox Studio
+- [x] #SKIP https://careers.roblox.com/jobs/7682993?gh_jid=7682993 | Roblox | Principal AI/ML Engineer, Reliability 
+- [x] #SKIP https://careers.roblox.com/jobs/7449585?gh_jid=7449585 | Roblox | Principal Core Systems Software Engineer - Game Engine (C++)
+- [x] #SKIP https://careers.roblox.com/jobs/7629843?gh_jid=7629843 | Roblox | Principal Machine Learning Engineer, Embodied AI and Smart NPCs
+- [x] #SKIP https://careers.roblox.com/jobs/7789332?gh_jid=7789332 | Roblox | Principal Security Software Engineer, Application Security
+- [x] #SKIP https://careers.roblox.com/jobs/7932208?gh_jid=7932208 | Roblox | Principal/Senior Product Manager, Communications
+- [x] #SKIP https://careers.roblox.com/jobs/7744272?gh_jid=7744272 | Roblox | Principal Software Engineer
+- [x] #SKIP https://careers.roblox.com/jobs/7460850?gh_jid=7460850 | Roblox | Principal Software Engineer, Ads Experience
+- [x] #SKIP https://careers.roblox.com/jobs/7561827?gh_jid=7561827 | Roblox | Principal Software Engineer - Asset Loading
+- [x] #SKIP https://careers.roblox.com/jobs/7605764?gh_jid=7605764 | Roblox | Principal Software Engineer, Cluster Lifecycle
+- [x] #SKIP https://careers.roblox.com/jobs/7816166?gh_jid=7816166 | Roblox | Principal Software Engineer, Compute Provisioning
+- [x] #SKIP https://careers.roblox.com/jobs/7752066?gh_jid=7752066 | Roblox | Principal Software Engineer, Connections 
+- [x] #SKIP https://careers.roblox.com/jobs/7876660?gh_jid=7876660 | Roblox | Principal Software Engineer, Connections (Backend)
+- [x] #SKIP https://careers.roblox.com/jobs/7650307?gh_jid=7650307 | Roblox | Principal Software Engineer - Content Lifecycle
+- [x] #SKIP https://careers.roblox.com/jobs/7821818?gh_jid=7821818 | Roblox | Principal Software Engineer - Content Platform
+- [x] #SKIP https://careers.roblox.com/jobs/7839207?gh_jid=7839207 | Roblox | Principal Software Engineer, Crash Reporting
+- [x] #SKIP https://careers.roblox.com/jobs/7769510?gh_jid=7769510 | Roblox | Principal Software Engineer - Creator Collaboration
+- [x] #SKIP https://careers.roblox.com/jobs/7740153?gh_jid=7740153 | Roblox | Principal Software Engineer - Creator Distributed Systems & Storage   
+- [x] #SKIP https://careers.roblox.com/jobs/7559318?gh_jid=7559318 | Roblox | Principal Software Engineer - Creator Success
+- [x] #SKIP https://careers.roblox.com/jobs/7678832?gh_jid=7678832 | Roblox | Principal Software Engineer, Data Engineering
+- [x] #SKIP https://careers.roblox.com/jobs/7629489?gh_jid=7629489 | Roblox | Principal Software Engineer - Economy ML (Data Systems)
+- [x] #SKIP https://careers.roblox.com/jobs/7473601?gh_jid=7473601 | Roblox | Principal Software Engineer - Game Engine Systems
+- [x] #SKIP https://careers.roblox.com/jobs/7059504?gh_jid=7059504 | Roblox | Principal Software Engineer - Roblox Database
+- [x] #SKIP https://careers.roblox.com/jobs/7545955?gh_jid=7545955 | Roblox | Principal Software Engineer - Roblox Economy Platform
+- [x] #SKIP https://careers.roblox.com/jobs/7862605?gh_jid=7862605 | Roblox | Principal Software Engineer - Storage Cache
+- [x] #SKIP https://careers.roblox.com/jobs/7851718?gh_jid=7851718 | Roblox | Principal Software Engineer - Video 
+- [x] #SKIP https://careers.roblox.com/jobs/7918002?gh_jid=7918002 | Roblox | Principal Software Engineer, WebRTC
+- [x] #SKIP https://careers.roblox.com/jobs/7342441?gh_jid=7342441 | Roblox | Senior AI Platform Engineer - Agentic Systems
+- [x] #SKIP https://careers.roblox.com/jobs/7903021?gh_jid=7903021 | Roblox | Senior Analyst, AI Workflows & Automation
+- [x] #SKIP https://careers.roblox.com/jobs/7673572?gh_jid=7673572 | Roblox | Senior Engineering Manager, AI Platform 
+- [x] #SKIP https://careers.roblox.com/jobs/7760129?gh_jid=7760129 | Roblox | Senior Frontend/Fullstack Software Engineer, Social Graph
+- [x] #SKIP https://careers.roblox.com/jobs/7396342?gh_jid=7396342 | Roblox | Senior Frontend Software Engineer, Ads Experience
+- [x] #SKIP https://careers.roblox.com/jobs/7913878?gh_jid=7913878 | Roblox | Senior Frontend Software Engineer - Marketplace
+- [x] #SKIP https://careers.roblox.com/jobs/7918631?gh_jid=7918631 | Roblox | Senior Fullstack Software Engineer, Consumer Platforms 
+- [x] #SKIP https://careers.roblox.com/jobs/7859569?gh_jid=7859569 | Roblox | Senior Fullstack Software Engineer, Social Play
+- [x] #SKIP https://careers.roblox.com/jobs/7249513?gh_jid=7249513 | Roblox | Senior Machine Learning - Avatar, Core AI
+- [x] #SKIP https://careers.roblox.com/jobs/7943933?gh_jid=7943933 | Roblox | Senior Machine Learning Engineer, GenAI Data
+- [x] #SKIP https://careers.roblox.com/jobs/7185278?gh_jid=7185278 | Roblox | Senior/Principal Platform Engineer, ML Platform
+- [x] #SKIP https://careers.roblox.com/jobs/7864279?gh_jid=7864279 | Roblox | Senior / Principal Software Engineer - Asset Safety
+- [x] #SKIP https://careers.roblox.com/jobs/7437922?gh_jid=7437922 | Roblox | Senior/Principal Software Engineer - Data Access
+- [x] #SKIP https://careers.roblox.com/jobs/7748281?gh_jid=7748281 | Roblox | Senior Product Manager, AI Content Safety
+- [x] #SKIP https://careers.roblox.com/jobs/7839534?gh_jid=7839534 | Roblox | Senior Product Manager, App Architecture
+- [x] #SKIP https://careers.roblox.com/jobs/7819841?gh_jid=7819841 | Roblox | Senior Product Manager, Avatar Movement
+- [x] #SKIP https://careers.roblox.com/jobs/7809292?gh_jid=7809292 | Roblox | Senior Product Manager - Consumer Platforms (Consoles)
+- [x] #SKIP https://careers.roblox.com/jobs/7808950?gh_jid=7808950 | Roblox | Senior Product Manager - Consumer Platforms (Web & Backend)
+- [x] #SKIP https://careers.roblox.com/jobs/7701911?gh_jid=7701911 | Roblox | Senior Product Manager, Engineering Acceleration
+- [x] #SKIP https://careers.roblox.com/jobs/7816527?gh_jid=7816527 | Roblox | Senior Product Manager, UI Ecosystems
+- [x] #SKIP https://careers.roblox.com/jobs/7896293?gh_jid=7896293 | Roblox | Senior Security Software Engineer, Application Security
+- [x] #SKIP https://careers.roblox.com/jobs/7896061?gh_jid=7896061 | Roblox | Senior Security Software Engineer, Infrastructure Security
+- [x] #SKIP https://careers.roblox.com/jobs/7922649?gh_jid=7922649 | Roblox | Senior Security Software Engineer, Vulnerability Management
+- [x] #SKIP https://careers.roblox.com/jobs/7655780?gh_jid=7655780 | Roblox | Senior Software Engineer, Ads Experience (C++) 
+- [x] #SKIP https://careers.roblox.com/jobs/7360413?gh_jid=7360413 | Roblox | Senior Software Engineer, App Performance
+- [x] #SKIP https://careers.roblox.com/jobs/7923268?gh_jid=7923268 | Roblox | Senior Software Engineer, Avatar Animation 
+- [x] #SKIP https://careers.roblox.com/jobs/7545202?gh_jid=7545202 | Roblox | Senior Software Engineer - Avatar Personalization
+- [x] #SKIP https://careers.roblox.com/jobs/7283870?gh_jid=7283870 | Roblox | Senior Software Engineer, Client Systems (C++)
+- [x] #SKIP https://careers.roblox.com/jobs/7733855?gh_jid=7733855 | Roblox | Senior Software Engineer, Co-Experience
+- [x] #SKIP https://careers.roblox.com/jobs/7816258?gh_jid=7816258 | Roblox | Senior Software Engineer, Compute Cell Platform
+- [x] #SKIP https://careers.roblox.com/jobs/7793743?gh_jid=7793743 | Roblox | Senior Software Engineer, Compute Fleet Management
+- [x] #SKIP https://careers.roblox.com/jobs/7872506?gh_jid=7872506 | Roblox | Senior Software Engineer, Consumer Platforms (Frontend)
+- [x] #SKIP https://careers.roblox.com/jobs/7708489?gh_jid=7708489 | Roblox | Senior Software Engineer, Core UI
+- [x] #SKIP https://careers.roblox.com/jobs/7948192?gh_jid=7948192 | Roblox | Senior Software Engineer - Creator Collaboration
+- [x] #SKIP https://careers.roblox.com/jobs/7746809?gh_jid=7746809 | Roblox | Senior Software Engineer Data Access
+- [x] #SKIP https://careers.roblox.com/jobs/7852258?gh_jid=7852258 | Roblox | Senior Software Engineer - Data Infrastructure, Safety
+- [x] #SKIP https://careers.roblox.com/jobs/7545971?gh_jid=7545971 | Roblox | Senior Software Engineer, Developer Monetization (C++)
+- [x] #SKIP https://careers.roblox.com/jobs/7826403?gh_jid=7826403 | Roblox | Senior Software Engineer, Developer Monetization (Fullstack)
+- [x] #SKIP https://careers.roblox.com/jobs/7886342?gh_jid=7886342 | Roblox | Senior Software Engineer Engine Harmony 
+- [x] #SKIP https://careers.roblox.com/jobs/7377933?gh_jid=7377933 | Roblox | Senior Software Engineer - Engine Infrastructure
+- [x] #SKIP https://careers.roblox.com/jobs/7651420?gh_jid=7651420 | Roblox | Senior Software Engineer - Engine Reliability
+- [x] #SKIP https://careers.roblox.com/jobs/7908886?gh_jid=7908886 | Roblox | Senior Software Engineer - Engine Systems 
+- [x] #SKIP https://careers.roblox.com/jobs/7309267?gh_jid=7309267 | Roblox | Senior Software Engineer, Engine Systems
+- [x] #SKIP https://careers.roblox.com/jobs/7472910?gh_jid=7472910 | Roblox | Senior Software Engineer, Frontend
+- [x] #SKIP https://careers.roblox.com/jobs/7409676?gh_jid=7409676 | Roblox | Senior Software Engineer - Game Engine Network (C++)
+- [x] #SKIP https://careers.roblox.com/jobs/7354277?gh_jid=7354277 | Roblox | Senior Software Engineer, Game Engine Systems
+- [x] #SKIP https://careers.roblox.com/jobs/7535925?gh_jid=7535925 | Roblox | Senior Software Engineer, Game Solutions
+- [x] #SKIP https://careers.roblox.com/jobs/7559306?gh_jid=7559306 | Roblox | Senior Software Engineer - Marketplace Foundation
+- [x] #SKIP https://careers.roblox.com/jobs/7913302?gh_jid=7913302 | Roblox | Senior Software Engineer - Marketplace Merchandise
+- [x] #SKIP https://careers.roblox.com/jobs/7919050?gh_jid=7919050 | Roblox | Senior Software Engineer - Open Cloud 
+- [x] #SKIP https://careers.roblox.com/jobs/7923586?gh_jid=7923586 | Roblox | Senior Software Engineer - Release 
+- [x] #SKIP https://careers.roblox.com/jobs/7698330?gh_jid=7698330 | Roblox | Senior Software Engineer, Service Mesh
+- [x] #SKIP https://careers.roblox.com/jobs/7793685?gh_jid=7793685 | Roblox | Senior Software Engineer - Studio Architecture
+- [x] #SKIP https://careers.roblox.com/jobs/7943710?gh_jid=7943710 | Roblox | Senior Software Engineer - Studio Authoring Tools
+- [x] #SKIP https://careers.roblox.com/jobs/7848096?gh_jid=7848096 | Roblox | Senior Software Engineer, Studio Platform
+- [x] #SKIP https://careers.roblox.com/jobs/7707937?gh_jid=7707937 | Roblox | Senior Software Engineer, User Safety
+- [ ] https://careers.roblox.com/jobs/7888723?gh_jid=7888723 | Roblox | Software Engineer, Communication Safety
+- [ ] https://careers.roblox.com/jobs/7943533?gh_jid=7943533 | Roblox | Software Engineer, Core Services
+- [ ] https://careers.roblox.com/jobs/7786397?gh_jid=7786397 | Roblox | Software Engineer, Creator Translation
+- [x] #SKIP https://careers.roblox.com/jobs/7482015?gh_jid=7482015 | Roblox | Software Engineering Manager, Engine UI
+- [ ] https://careers.roblox.com/jobs/7947219?gh_jid=7947219 | Roblox | Software Engineer, Monetization Products
+- [ ] https://careers.roblox.com/jobs/7711780?gh_jid=7711780 | Roblox | Software Engineer, User Co-Experience
+- [ ] https://careers.roblox.com/jobs/7767204?gh_jid=7767204 | Roblox | Software Engineer, User Sharing
+- [ ] https://careers.roblox.com/jobs/7561739?gh_jid=7561739 | Roblox | Systems Software Engineer - Game Engine Network (C++)
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8531775002?gh_jid=8531775002 | Chime | Director, Associate General Counsel, Privacy, Cybersecurity, and AI
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8535338002?gh_jid=8535338002 | Chime | Mobile Software Engineer, Lending
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8530421002?gh_jid=8530421002 | Chime | Product Manager, AI & App Experience
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8382253002?gh_jid=8382253002 | Chime | Product Manager, Data Platform
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8530438002?gh_jid=8530438002 | Chime | Product Manager, MyPay
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8530184002?gh_jid=8530184002 | Chime | Product Manager, Trust & Safety
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8552459002?gh_jid=8552459002 | Chime | Senior Program Manager, AI Enablement
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8400999002?gh_jid=8400999002 | Chime | Senior Software Engineer (Chicago)
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8505462002?gh_jid=8505462002 | Chime | Senior Software Engineer, Data Engineering
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8457140002?gh_jid=8457140002 | Chime | Senior Software Engineer, Data Platform
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8219793002?gh_jid=8219793002 | Chime | Software Engineer, Credit Risk Platform
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8523547002?gh_jid=8523547002 | Chime | Software Engineer, Deposits & Insights
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8183064002?gh_jid=8183064002 | Chime | Software Engineer, Financial Platform
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8433840002?gh_jid=8433840002 | Chime | Software Engineer, Instant Loans
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8505460002?gh_jid=8505460002 | Chime | Software Engineer, Machine Learning Platform
+- [x] #SKIP https://boards.greenhouse.io/chime/jobs/8499450002?gh_jid=8499450002 | Chime | Software Engineer, MyPay
+- [ ] https://www.weareroku.com/jobs/7818758?gh_jid=7818758 | Roku | AI Program Manager
+- [ ] https://www.weareroku.com/jobs/7923418?gh_jid=7923418 | Roku | Assistant General Counsel, Legal & Business Affairs - Ad Tech & Media Transactions
+- [x] #SKIP https://www.weareroku.com/jobs/7762025?gh_jid=7762025 | Roku | Director, Head of Industry, Media and Entertainment
+- [x] #SKIP https://www.weareroku.com/jobs/7927836?gh_jid=7927836 | Roku | Lead ML Inference Engineer, Advertising
+- [ ] https://www.weareroku.com/jobs/7347254?gh_jid=7347254 | Roku | Manager, Software Engineering
+- [ ] https://www.weareroku.com/jobs/7619943?gh_jid=7619943 | Roku | Paid Search Manager
+- [x] #SKIP https://www.weareroku.com/jobs/7927165?gh_jid=7927165 | Roku | Senior Counsel, Legal & Business Affairs - Ad Tech & Media Transactions
+- [x] #SKIP https://www.weareroku.com/jobs/7434311?gh_jid=7434311 | Roku | Senior Manager , Software Engineering - Data 
+- [x] #SKIP https://www.weareroku.com/jobs/7956233?gh_jid=7956233 | Roku | Senior Manager, Software Engineering - Web (Ads Customer Interface)
+- [x] #SKIP https://www.weareroku.com/jobs/7849194?gh_jid=7849194 | Roku | Senior Manager, Software Engineering, Wireless
+- [x] #SKIP https://www.weareroku.com/jobs/7687190?gh_jid=7687190 | Roku | Senior Product Manager
+- [x] #SKIP https://www.weareroku.com/jobs/7642909?gh_jid=7642909 | Roku | Senior Product Manager, Account Foundations
+- [x] #SKIP https://www.weareroku.com/jobs/7393070?gh_jid=7393070 | Roku | Senior Product Manager, Consumer Payments
+- [x] #SKIP https://www.weareroku.com/jobs/7822355?gh_jid=7822355 | Roku | Senior Product Manager – Data Collaboration & Measurement
+- [x] #SKIP https://www.weareroku.com/jobs/7773057?gh_jid=7773057 | Roku | Senior Product Manager - Finance/Revenue Systems
+- [x] #SKIP https://www.weareroku.com/jobs/7913338?gh_jid=7913338 | Roku | Senior Product Manager, Howdy
+- [x] #SKIP https://www.weareroku.com/jobs/7663977?gh_jid=7663977 | Roku | Senior Product Manager, Platform / OS
+- [x] #SKIP https://www.weareroku.com/jobs/7901533?gh_jid=7901533 | Roku |  Senior Product Manager, Recommendations
+- [x] #SKIP https://www.weareroku.com/jobs/7899578?gh_jid=7899578 | Roku | Senior Product Manager, Recommendations
+- [x] #SKIP https://www.weareroku.com/jobs/7270779?gh_jid=7270779 | Roku | Senior Product Manager - RPay 
+- [x] #SKIP https://www.weareroku.com/jobs/7298573?gh_jid=7298573 | Roku | Senior Product Manager, The Roku Channel
+- [x] #SKIP https://www.weareroku.com/jobs/7894845?gh_jid=7894845 | Roku | Senior QA Automation Architect
+- [x] #SKIP https://www.weareroku.com/jobs/7461814?gh_jid=7461814 | Roku | Senior Software Engineer
+- [x] #SKIP https://www.weareroku.com/jobs/7846544?gh_jid=7846544 | Roku | Senior Software Engineer, Ad Auctions
+- [x] #SKIP https://www.weareroku.com/jobs/7032137?gh_jid=7032137 | Roku | Senior Software Engineer, Ad Serving
+- [x] #SKIP https://www.weareroku.com/jobs/7905224?gh_jid=7905224 | Roku | Senior Software Engineer - Advertising Analytics
+- [x] #SKIP https://www.weareroku.com/jobs/7957059?gh_jid=7957059 | Roku | Senior Software Engineer, Advertising Engineering
+- [x] #SKIP https://www.weareroku.com/jobs/7518739?gh_jid=7518739 | Roku | Senior Software Engineer - Backend
+- [x] #SKIP https://www.weareroku.com/jobs/7822342?gh_jid=7822342 | Roku | Senior Software Engineer, Backend
+- [x] #SKIP https://www.weareroku.com/jobs/7627225?gh_jid=7627225 | Roku | Senior Software Engineer - Backend and Data
+- [x] #SKIP https://www.weareroku.com/jobs/7919919?gh_jid=7919919 | Roku | Senior Software Engineer, Bigdata
+- [x] #SKIP https://www.weareroku.com/jobs/7461370?gh_jid=7461370 | Roku | Senior Software Engineer (Bigdata - Platform)
+- [x] #SKIP https://www.weareroku.com/jobs/7886908?gh_jid=7886908 | Roku | Senior Software Engineer - Business Applications and Machine Learning 
+- [x] #SKIP https://www.weareroku.com/jobs/7727845?gh_jid=7727845 | Roku | Senior Software Engineer, Cloud Content Platform
+- [x] #SKIP https://www.weareroku.com/jobs/7906005?gh_jid=7906005 | Roku | Senior Software Engineer, Content Platform 
+- [x] #SKIP https://www.weareroku.com/jobs/7560438?gh_jid=7560438 | Roku | Senior Software Engineer, C++ UI
+- [x] #SKIP https://www.weareroku.com/jobs/7523566?gh_jid=7523566 | Roku | Senior Software Engineer, Data - Advertising Engineering 
+- [x] #SKIP https://www.weareroku.com/jobs/7919804?gh_jid=7919804 | Roku | Senior Software Engineer , Data Eng
+- [x] #SKIP https://www.weareroku.com/jobs/7883734?gh_jid=7883734 | Roku | Senior Software Engineer - Data Insights
+- [x] #SKIP https://www.weareroku.com/jobs/7905390?gh_jid=7905390 | Roku | Senior Software Engineer – Data Management Platform
+- [x] #SKIP https://www.weareroku.com/jobs/7282266?gh_jid=7282266 | Roku | Senior Software Engineer - Data Products
+- [x] #SKIP https://www.weareroku.com/jobs/7388982?gh_jid=7388982 | Roku | Senior Software Engineer - FullStack
+- [x] #SKIP https://www.weareroku.com/jobs/7204319?gh_jid=7204319 | Roku | Senior Software Engineer, Infra
+- [x] #SKIP https://www.weareroku.com/jobs/7795904?gh_jid=7795904 | Roku | Senior Software Engineer, Infrastructure and Efficiency 
+- [x] #SKIP https://www.weareroku.com/jobs/7795872?gh_jid=7795872 | Roku | Senior Software Engineer, Infrastructure / Efficiency / Productivity
+- [x] #SKIP https://www.weareroku.com/jobs/7584669?gh_jid=7584669 | Roku | Senior Software Engineering Manager, Ads Auction & Marketplace Optimization
+- [x] #SKIP https://www.weareroku.com/jobs/7487357?gh_jid=7487357 | Roku | Senior Software Engineer in Test, Python
+- [x] #SKIP https://www.weareroku.com/jobs/6351228?gh_jid=6351228 | Roku | Senior Software Engineer - Kubernetes & ServiceMesh
+- [x] #SKIP https://www.weareroku.com/jobs/7704712?gh_jid=7704712 | Roku | Senior Software Engineer, Live
+- [x] #SKIP https://www.weareroku.com/jobs/7438457?gh_jid=7438457 | Roku | Senior Software Engineer – Live & VOD Video Infrastructure
+- [x] #SKIP https://www.weareroku.com/jobs/7474952?gh_jid=7474952 | Roku | Senior Software Engineer, Machine Learning
+- [x] #SKIP https://www.weareroku.com/jobs/7061330?gh_jid=7061330 | Roku | Senior Software Engineer, Machine Learning 
+- [x] #SKIP https://www.weareroku.com/jobs/7297156?gh_jid=7297156 | Roku | Senior Software Engineer,Machine Learning Content Platform 
+- [x] #SKIP https://www.weareroku.com/jobs/7250580?gh_jid=7250580 | Roku | Senior Software Engineer,  Machine learning- Search
+- [x] #SKIP https://www.weareroku.com/jobs/7358641?gh_jid=7358641 | Roku | Senior Software Engineer, Observability 
+- [x] #SKIP https://www.weareroku.com/jobs/7896608?gh_jid=7896608 | Roku | Senior Software Engineer, Picture Quality
+- [x] #SKIP https://www.weareroku.com/jobs/7540285?gh_jid=7540285 | Roku | Senior Software Engineer, Platform Infrastructure
+- [x] #SKIP https://www.weareroku.com/jobs/7215692?gh_jid=7215692 | Roku | Senior Software Engineer, Roku TV
+- [x] #SKIP https://www.weareroku.com/jobs/7721626?gh_jid=7721626 | Roku | Senior Software Engineer, Roku TV 
+- [x] #SKIP https://www.weareroku.com/jobs/7490596?gh_jid=7490596 | Roku | Senior Software Engineer, Roku UI
+- [x] #SKIP https://www.weareroku.com/jobs/7259126?gh_jid=7259126 | Roku | Senior Software Engineer, Smart TV
+- [x] #SKIP https://www.weareroku.com/jobs/7823087?gh_jid=7823087 | Roku | Senior Software Engineer - SRE
+- [x] #SKIP https://www.weareroku.com/jobs/7529892?gh_jid=7529892 | Roku | Senior Software Engineer - Streaming Apps
+- [x] #SKIP https://www.weareroku.com/jobs/7814754?gh_jid=7814754 | Roku | Senior Software Engineer, Subscriptions
+- [x] #SKIP https://www.weareroku.com/jobs/7586196?gh_jid=7586196 | Roku | Senior Software Engineer, Subscriptions Platform
+- [x] #SKIP https://www.weareroku.com/jobs/7818543?gh_jid=7818543 | Roku | Senior Software Engineer, UI
+- [x] #SKIP https://www.weareroku.com/jobs/7334715?gh_jid=7334715 | Roku | Senior Software Engineer - Video Platform
+- [x] #SKIP https://www.weareroku.com/jobs/7912009?gh_jid=7912009 | Roku | Senior Software Engineer, Video Platform
+- [x] #SKIP https://www.weareroku.com/jobs/7748787?gh_jid=7748787 | Roku | Senior Software Engineer - Cloud Infrastructure & Observability 
+- [x] #SKIP https://www.weareroku.com/jobs/7609611?gh_jid=7609611 | Roku | Senior Software Engineer,  Devops/SRE
+- [x] #SKIP https://www.weareroku.com/jobs/7972287?gh_jid=7972287 | Roku | Software Engineering Manager 
+- [ ] https://www.weareroku.com/jobs/7626224?gh_jid=7626224 | Roku | Software Engineer Intern - 12 month Industry Placement
+- [ ] https://www.weareroku.com/jobs/7743965?gh_jid=7743965 | Roku | Software Engineer Intern, Audio Software and Test
+- [ ] https://www.weareroku.com/jobs/7745673?gh_jid=7745673 | Roku | Software Engineer Intern, Audio Technology
+- [ ] https://www.weareroku.com/jobs/7621771?gh_jid=7621771 | Roku | Software Engineer Intern, Mobile
+- [ ] https://www.weareroku.com/jobs/7555263?gh_jid=7555263 | Roku | Software Engineer, Machine Learning
+- [ ] https://www.weareroku.com/jobs/7340984?gh_jid=7340984 | Roku | Software Engineer - Python, Automation 
+- [ ] https://www.weareroku.com/jobs/7677198?gh_jid=7677198 | Roku | Software Engineer, Roku TV
+- [ ] https://www.weareroku.com/jobs/7515755?gh_jid=7515755 | Roku | Software Engineer, UI
+- [x] #SKIP https://www.weareroku.com/jobs/7718484?gh_jid=7718484 | Roku | Sr. Manager, Customer Acquisition (Paid Media)
+- [x] #SKIP https://www.weareroku.com/jobs/7868793?gh_jid=7868793 | Roku | Sr. Software Engineer
+- [x] #SKIP https://www.weareroku.com/jobs/7537553?gh_jid=7537553 | Roku | Sr. Software Engineer - Cloud Networking
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7912239 | Pure Storage | Account Executive- BFSI, Mumbai
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7418412 | Pure Storage | Account Executive, Taiwan
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7851349 | Pure Storage | AI Project Management Intern
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7929039 | Pure Storage | Application Engineer (AI Automation)
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7430317 | Pure Storage | Business Strategy Manager, Subscription Transformation
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7843037 | Pure Storage | Business Systems Analyst
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7654941 | Pure Storage | Business Systems Analyst, Legal Operations
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7818598 | Pure Storage | Cloud Native Architect, Portworx (UK - Staines)
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7618842 | Pure Storage | Cloud Software Engineer, Everpure Cloud
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7647799 | Pure Storage | Commercial Strategy & Transformation Manager
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7634487 | Pure Storage | Data Engineer - Agentic AI focus
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7609418 | Pure Storage | Director, Learning & Development - Talent Transformation
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7597404 | Pure Storage | Enterprise Solutions Architect Advanced Services
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7765128 | Pure Storage | Field Solution Architect - AI/Analytics (Tokyo) 
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7882753 | Pure Storage | Field Solutions Architect
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7254748 | Pure Storage | Growth Product Manager, Subscription Products & Lifecycle
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7963123 | Pure Storage | Java/Kotlin Software Engineer, Pure Protect
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/6676814 | Pure Storage |  Linux Kernel Software Engineer - Systems Engineering
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7946936 | Pure Storage | Member of Technical Staff, Production / DevOps Platform Engineering
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7866653 | Pure Storage | Platform Engineer - Network Integration, ISS
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7712590 | Pure Storage | Principal Product Manager, AI – Commerce Platform
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7838283 | Pure Storage | Principal Product Manager, Cloud
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7940253 | Pure Storage | Principal Product Manager, Commercial Systems
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7858951 | Pure Storage | Principal Product Manager, FB Foundation
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7671833 | Pure Storage | Principal Product Manager, FlashArray//ST
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7779275 | Pure Storage | Principal Product Manager, OEM Growth
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7702100 | Pure Storage | Principal Software Engineer, Datapath
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7601923 | Pure Storage | Principal Systems Architect – Platforms & AI Integration, DTG
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7893040 | Pure Storage | Product Manager || Join the PURE Talent Community
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7903476 | Pure Storage | Product Manager, Pure1
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7671846 | Pure Storage | Product Manager, Systems, FlashArray & FlashBlade
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7897210 | Pure Storage | Python Software Engineer
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7954059 | Pure Storage | Python Software Engineer, Octilion
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7857995 | Pure Storage | Security Product Manager, FlashArray
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7823868 | Pure Storage | Senior AI Knowledge Graph Engineer 
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7688316 | Pure Storage | Senior Business Development Manager, AI Native Ecosystems & Strategic Influence
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7864153 | Pure Storage | Senior Business Systems Analyst - Quote to Cash
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7815714 | Pure Storage | Senior Data Engineering Manager -  Conversational AI & Finance Control Tower
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7723137 | Pure Storage | Senior Data Platform Engineer, ISS - Data Platform Engineering
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7899524 | Pure Storage | Senior Full Stack Software Engineer, Digital Experience
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7922768 | Pure Storage | Senior LLM AI Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7506262 | Pure Storage | Senior Platform Networking Software Engineer, Systems Engineering
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7384706 | Pure Storage |  Senior Platform Software Engineer, System Engineering
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7929346 | Pure Storage | Senior Product Manager, Data Management
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7671835 | Pure Storage | Senior Product Manager, FlashArray Core 
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7919041 | Pure Storage | Senior Security Architect - AI/CI
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7707470 | Pure Storage | Senior Software Engineer - Production Engineering
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7389688 | Pure Storage | Senior Technical Marketing Engineer, AI
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7681099 | Pure Storage | Software Engineer
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7904144 | Pure Storage | Software Engineer (Containers)
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7258968 | Pure Storage | Software Engineer Grad
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7608922 | Pure Storage | Software Engineer, Hyperscale Line of Business
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/6862405 | Pure Storage | Software Engineering Manager
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7954084 | Pure Storage | Software Engineer, Pure Protect
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7904822 | Pure Storage | Solutions Architect with focus data mobility
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7862650 | Pure Storage | Sr. Product Manager, Data Protection
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7652215 | Pure Storage | Staff Software Engineer, Hyperscale Build Infrastructure
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7301265 | Pure Storage | Strategic Sales Executive – AI Product Line
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7677131 | Pure Storage | Supply Chain Manager
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7893945 | Pure Storage | System Software Engineer, Cloud (C++/Python)
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7930600 | Pure Storage | System Software Engineer, Object team
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7958327 | Pure Storage | Technical Program Manager, Supply Chain Planning & CTO/CPQ
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7932078?gh_jid=7932078 | Flexport | Account Manager I, Fulfillment 
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7774349?gh_jid=7774349 | Flexport | Air Operations Associate
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7742856?gh_jid=7742856 | Flexport | Air Operations Associate, Hanoi
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7654705?gh_jid=7654705 | Flexport | Air Pricing Associate
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7953626?gh_jid=7953626 | Flexport | Assistant Manager, Air Operations (Gurugram)
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7953608?gh_jid=7953608 | Flexport | Assistant Manager, Ocean Operations (Chennai)
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7392516?gh_jid=7392516 | Flexport | Group Product Manager
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7410259?gh_jid=7410259 | Flexport | Senior Air Freight Manager, Taiwan
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7676195?gh_jid=7676195 | Flexport | Senior Air Operations Associate
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7855587?gh_jid=7855587 | Flexport | Senior Air Planning Associate
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7238381?gh_jid=7238381 | Flexport |  Senior Manager, Strategic Initiatives (Fulfillment)
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7288888?gh_jid=7288888 | Flexport | Senior Manager, Strategic Initiatives (Fulfillment)
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7740282?gh_jid=7740282 | Flexport | Senior Product Manager
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7921068?gh_jid=7921068 | Flexport | Senior Software Engineer: Platform
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7839346?gh_jid=7839346 | Flexport |  Software Engineer II, Autonomous Freight Systems
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/5745289?gh_jid=5745289 | Flexport | Software Engineer II, Forwarding App
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7906161?gh_jid=7906161 | Flexport | Software Engineer II, Forwarding App Infra
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7740288?gh_jid=7740288 | Flexport | Staff Product Manager
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7849059?gh_jid=7849059 | Flexport | Staff Product Manager, Growth
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7311883?gh_jid=7311883 | Flexport | Staff Software Engineer: Applied AI
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7819181?gh_jid=7819181 | Flexport | Staff Software Engineer, Autonomous Freight Systems
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7921059?gh_jid=7921059 | Flexport | Staff Software Engineer: Platform
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7211619 | MongoDB | Account Executive ( Bahasa, Thai or Vietnamese Speaker)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7027409 | MongoDB | Advisory Pre-Sales Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7930725 | MongoDB | AI Natives Enterprise Account Executive 
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7908293 | MongoDB | Data Product Manager, Finance
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7387191 | MongoDB | Director, Internal Audit & Controls Transformation
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7658187 | MongoDB | Director of Product Management, AI Builder Experience 
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7523899 | MongoDB | Engineering Manager, Search Query Platform & Availability
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7211805 | MongoDB | Enterprise Account Executive (Bahasa, Vietnamese and Thai speaker)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7826031 | MongoDB | Head of AI Platform, GM 
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7728309 | MongoDB | Manager, Solutions Architecture
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7913421 | MongoDB | Marketing Operations Manager (Strategic Developer Relations & AI Ops)
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7952245 | MongoDB | Partner Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7960792 | MongoDB | Pre-Sales Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7942148 | MongoDB | Principal Business Development Manager, Frontier AI Labs
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7657688 | MongoDB | Principal Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7774143 | MongoDB | Principal, Strategic AI Partnerships
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7793281 | MongoDB | Product Manager, Developer Experience
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7746436 | MongoDB | Sales Development Representative - Thai Speaking
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7727896 | MongoDB | Security Software Engineer, Infrastructure Security (Staff or Senior)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7778975 | MongoDB | Senior Administrator - Business Systems
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7428476 | MongoDB | Senior Data Product Manager, Product Telemetry
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7778978 | MongoDB | Senior Engineer - Business Systems (Integrations)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7527949 | MongoDB | Senior Manager, Martech Transformation
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7871387 | MongoDB | Senior Manager, Sales Operations (AI Programs)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7700740 | MongoDB | Senior Partner Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7924987 | MongoDB | Senior Platform Engineer
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7838735 | MongoDB | Senior Product Manager
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7523959 | MongoDB | Senior Product Manager, Account Protection
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7388900 | MongoDB | Senior Product Manager, AI Builders Experience
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7705474 | MongoDB | Senior Product Manager - IT Go-to-Market AI
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7851166 | MongoDB | Senior Product Manager, Replication & Storage Engines
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7590644 | MongoDB | Senior Software Engineer
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7523872 | MongoDB | Senior Software Engineer, App Analysis & Modelling
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7838287 | MongoDB | Senior Software Engineer, Application Migration
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7588895 | MongoDB | Senior Software Engineer, Atlas Clusters
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7890652 | MongoDB | Senior Software Engineer, Atlas Clusters Platform
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7378959 | MongoDB | Senior Software Engineer, C2C Services
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7392902 | MongoDB | Senior Software Engineer, Forward Deployed AI Engineer
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7467701 | MongoDB | Senior Software Engineer, Inference Platform
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7695616 | MongoDB | Senior Software Engineer, Observability
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7833628 | MongoDB | Senior Software Engineer - Query Integration
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7653008 | MongoDB | Senior Software Engineer, Server Networking Security (Rust)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7815677 | MongoDB | Senior Software Engineer, Server Security
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7581417 | MongoDB | Senior Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7942578 | MongoDB | Senior Solutions Architect (Pre-Sales)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7757460 | MongoDB | Senior Solutions Architect (Thai Speaking)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7640020 | MongoDB | Senior Vice President, Solutions Architecture
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7613695 | MongoDB | Software Engineer 2
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7744404 | MongoDB | Software Engineer 3
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7523878 | MongoDB | Software Engineer 3, App Analysis & Modelling
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7579042 | MongoDB | Software Engineer 3, Atlas Clusters
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7662950 | MongoDB | Software Engineer 3, Atlas Search Systems
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7523911 | MongoDB | Software Engineer 3, Atlas Vector Search
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7736144 | MongoDB | Software Engineer 3, Cloud Alerts Platform
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7717350 | MongoDB | Software Engineer 3, Customer Observability
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7745890 | MongoDB | Software Engineer 3, DevTools
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7581867 | MongoDB | Software Engineer 3, Private Cloud Backup
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7699932 | MongoDB | software engineer 3, query execution
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7816135 | MongoDB | Software Engineer 3 - Query Optimization
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7235322 | MongoDB | Software Engineer 3, Search Systems Replication & Routing
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7411027 | MongoDB | Software Engineer, Atlas Growth
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7311708 | MongoDB | Software Engineer, Code Generation
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7523834 | MongoDB | Software Engineer, Data Migration
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7851388 | MongoDB | Software Engineer, Developer Productivity
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7768470 | MongoDB | Software Engineering Internship - Summer 2026/2027
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7963328 | MongoDB | Software Engineer (Internal Query Engine Testing Tools), Query
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7773483 | MongoDB | Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7557618 | MongoDB | Solutions Architect, German speaker
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7778981 | MongoDB | Staff Engineer - Business Systems (Integrations)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7922824 | MongoDB | Staff Product Manager
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7781724 | MongoDB | Staff Product Manager - Internal AI
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7411430 | MongoDB | Staff Software Engineer, Atlas Growth
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7915330 | MongoDB | Staff Software Engineer - Query Execution
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7646261 | MongoDB | Staff Software Engineer, Query (Optimization)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7696228 | MongoDB | Staff Software Engineer, Server Networking Security (Rust)
+- [ ] https://boards.greenhouse.io/faire/jobs/8541220002?gh_jid=8541220002 | Faire | Account Manager, Fulfillment
+- [ ] https://boards.greenhouse.io/faire/jobs/8400765002?gh_jid=8400765002 | Faire | Applied AI / ML Scientist - Ads Bidding
+- [ ] https://boards.greenhouse.io/faire/jobs/8400855002?gh_jid=8400855002 | Faire | Applied AI / ML Scientist - Search Ads
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8541548002?gh_jid=8541548002 | Faire | Growth Marketing Manager, Paid Social
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8530585002?gh_jid=8530585002 | Faire | GTM Strategy & Operations Senior Lead, Fulfillment
+- [ ] https://boards.greenhouse.io/faire/jobs/8564497002?gh_jid=8564497002 | Faire | IT Operations Automation Engineer
+- [ ] https://boards.greenhouse.io/faire/jobs/8545972002?gh_jid=8545972002 | Faire | People Analytics & AI Specialist
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8456064002?gh_jid=8456064002 | Faire | Principal Applied AI / ML Engineer
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8398741002?gh_jid=8398741002 | Faire | Senior Applied AI/ML Scientist - Ads Bidding
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8525082002?gh_jid=8525082002 | Faire | Senior Applied AI/ML Scientist - Fulfillment
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8227567002?gh_jid=8227567002 | Faire | Senior Applied AI/ML Scientist - Listing Quality
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/7934398002?gh_jid=7934398002 | Faire | Senior Applied AI/ML Scientist - Search
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8399389002?gh_jid=8399389002 | Faire | Senior Applied AI/ML Scientist - Search Ads
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8476833002?gh_jid=8476833002 | Faire | Senior Product Marketing Manager - Faire Pay 
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8465041002?gh_jid=8465041002 | Faire | Senior Software Engineer - Growth
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8536687002?gh_jid=8536687002 | Faire | Staff Engineer, Enterprise AI
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8542017002?gh_jid=8542017002 | Faire | Staff Machine Learning Platform Engineer
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8572155002?gh_jid=8572155002 | Faire | Staff Product Manager, Inspire & App
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8462945002?gh_jid=8462945002 | Faire | Staff Product Manager, Pricing
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8572160002?gh_jid=8572160002 | Faire | Staff Product Manager, Relationship Growth
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8431976002?gh_jid=8431976002 | Faire | Staff Product Manager, Search Algorithms
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8547681002?gh_jid=8547681002 | Faire | Strategic Finance Lead, Fulfillment
+- [x] #SKIP https://job-boards.greenhouse.io/mixpanel/jobs/7513876 | Mixpanel | Manager, Solutions Engineering 
+- [x] #SKIP https://job-boards.greenhouse.io/mixpanel/jobs/7779504 | Mixpanel | Senior Product Manager, Platform
+- [x] #SKIP https://job-boards.greenhouse.io/mixpanel/jobs/7941944 | Mixpanel | Senior Software Engineer, AI Platform
+- [x] #SKIP https://job-boards.greenhouse.io/mixpanel/jobs/7850960 | Mixpanel | Senior Software Engineer, AI Product Insights
+- [x] #SKIP https://job-boards.greenhouse.io/mixpanel/jobs/7407407 | Mixpanel | Senior Solutions Engineer
+- [ ] https://job-boards.greenhouse.io/mixpanel/jobs/7850958 | Mixpanel | Software Engineer, AI Product Insights
+- [x] #SKIP https://job-boards.greenhouse.io/yext/jobs/7815403 | Yext | Product Manager
+- [x] #SKIP https://job-boards.greenhouse.io/yext/jobs/7815397 | Yext | Senior Product Manager 
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/6557024 | ZipRecruiter | Senior Software Engineer, Big Data
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/6556954 | ZipRecruiter | Senior Software Engineer, Full Stack
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/5167472 | ZipRecruiter | Senior Software Engineer, Machine Learning
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/5167470 | ZipRecruiter | Senior Software Engineer, Machine Learning 
+- [ ] https://job-boards.greenhouse.io/ziprecruiter/jobs/7951866 | ZipRecruiter | Software Engineer III
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/2447848 | ZipRecruiter | Software Engineering Manager 
+- [ ] https://job-boards.greenhouse.io/ziprecruiter/jobs/7927670 | ZipRecruiter | Software Engineer,  Tech Ops
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/5167496 | ZipRecruiter | Staff Software Engineer, Machine Learning
+- [ ] https://job-boards.greenhouse.io/verkada/jobs/5117760007 | Verkada | AI Software Engineering Intern - Fall 2026
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4595354007 | Verkada | Associate Solutions Engineering Program Manager
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4135277007 | Verkada | Associate Solutions Engineer, San Mateo
+- [ ] https://job-boards.greenhouse.io/verkada/jobs/5099422007 | Verkada | Backend Software Engineering Intern - Fall 2026
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4706884007 | Verkada | Director of Enablement, Solutions Engineering
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5088870007 | Verkada | Director, Partner Solutions Engineering
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5148388007 | Verkada | Engineering Manager, Agentic Workflows 
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5147217007 | Verkada | Enterprise Solutions Engineer, Alberta
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4669998007 | Verkada | Enterprise Solutions Engineer, Central Corp
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4086572007 | Verkada | Enterprise Solutions Engineer, Greater Atlanta Area
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4388180007 | Verkada | Enterprise Solutions Engineer, Greater Houston Area
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4992817007 | Verkada | Enterprise Solutions Engineering Manager, Canada
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5136810007 | Verkada | Enterprise Solutions Engineering Manager, Central SLED
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4184018007 | Verkada | Enterprise Solutions Engineer - London, UK
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5069449007 | Verkada | Enterprise Solutions Engineer, Ohio/Indiana, SLED
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4834059007 | Verkada | Enterprise Solutions Engineer, West Coast
+- [ ] https://job-boards.greenhouse.io/verkada/jobs/5099529007 | Verkada | Frontend Software Engineering Intern - Fall 2026
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4140713007 | Verkada | Global Solutions Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4176914007 | Verkada | Global Solutions Engineer, LATAM
+- [ ] https://job-boards.greenhouse.io/verkada/jobs/4702541007 | Verkada | Go Software Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5023364007 | Verkada | Lead Product Manager, New Alarms Product
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5062987007 | Verkada | Lead Product Manager, Security Trailers
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4989832007 | Verkada | Lead Software Engineer - Fleet Management
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4428728007 | Verkada | Manufacturing Engineer (Taiwan)
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4350342007 | Verkada | Product Design Mechanical Engineer (Taiwan)
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4964448007 | Verkada | Product Manager, Business Systems & Analytics - People Systems
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5120808007 | Verkada | Senior Backend Software Engineer - Workplace Products
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5146916007 | Verkada | Senior Frontend Engineer, Business Systems
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5027435007 | Verkada | Senior Growth Product Manager
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4971857007 | Verkada | Senior Product Manager, Access Control Core Hardware and Fleet Management
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5104945007 | Verkada | Senior Product Manager, New Alarms Product
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4816589007 | Verkada | Senior Product Manager, Video Platform
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4128752007 | Verkada | Senior Software Engineer - C++
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4128785007 | Verkada | Senior Software Engineer - Camera Platform
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4129305007 | Verkada | Senior Software Engineer, Data Platform
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5066093007 | Verkada | Senior Software Engineer – Storage Systems
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5074111007 | Verkada | Senior-Staff Software Engineer, Engineering Productivity
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5121434007 | Verkada | Senior-Staff Software Engineer, Platform Infrastructure
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5029724007 | Verkada | Senior-Staff Software Engineer, Tooling
+- [ ] https://job-boards.greenhouse.io/verkada/jobs/4128624007 | Verkada | Software Engineer - Computer Vision
+- [ ] https://job-boards.greenhouse.io/verkada/jobs/4135093007 | Verkada | Software Engineer - Fleet Management
+- [ ] https://job-boards.greenhouse.io/verkada/jobs/4134234007 | Verkada | Software Engineer - Imaging Systems
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5124588007 | Verkada | Software Engineering Manager - Alarms
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4205246007 | Verkada | Software Engineering Manager - Cameras
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5131737007 | Verkada | Software Engineering Manager, Data Protection Platform
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5044258007 | Verkada | Software Engineering Manager, Growth
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5087511007 | Verkada | Software Engineering Manager - Intercom
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5022552007 | Verkada | Software Engineering Manager - Search
+- [ ] https://job-boards.greenhouse.io/verkada/jobs/5029725007 | Verkada | Software Engineer, Platform Infrastructure
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4138083007 | Verkada | Solutions Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5116308007 | Verkada | Solutions Engineer 
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5138458007 | Verkada | Solutions Engineer, ASEAN
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5139532007 | Verkada | Solutions Engineer - ATL
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5124829007 | Verkada | Solutions Engineering Director, Associate Program
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5019825007 | Verkada | Solutions Engineering Manager, EMEA 
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4185105007 | Verkada | Solutions Engineering Manager, Select & Territory
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5116424007 | Verkada | Sr. Analyst Business Systems  
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5143763007 | Verkada | Staff Software Engineer - Data Protection
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5143766007 | Verkada | Staff Software Engineer - Detection and Response Platform
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5144160007 | Verkada | Staff+ Software Engineer, Security Infrastructure
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5138344007 | Verkada | Technical Trainer, VCE
+- [ ] https://job-boards.greenhouse.io/tripadvisor/jobs/7912462 | Tripadvisor | B2B Restaurant Trainer
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7893073 | Tripadvisor | Local Marketing Intern - Spain (Prácticas)
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7960678 | Tripadvisor | Principal Software Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7916585 | Tripadvisor | Principal Software Engineer (Experiences)
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7866457 | Tripadvisor | Senior Software Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7874031 | Tripadvisor | Senior Software Engineer- Backend
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/5365729 | Tripadvisor | Senior Software Engineer (Experiences) 
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7929990 | Tripadvisor | Senior Software Engineer - Full Stack
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7929991 | Tripadvisor | Senior Software Engineer - Full Stack/Front-end focused
+- [ ] https://job-boards.greenhouse.io/tripadvisor/jobs/6119964 | Tripadvisor | Software Engineer II
+- [ ] https://job-boards.greenhouse.io/tripadvisor/jobs/6977663 | Tripadvisor | Software Engineer II 
+- [ ] https://job-boards.greenhouse.io/tripadvisor/jobs/5917973 | Tripadvisor | Software Engineer II - Experiences 
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7777476 | Tripadvisor | Sr. Email Marketing Manager
+- [x] #SKIP https://careers.onepeloton.com/en/all-jobs/?gh_jid=7917109 | Peloton | Lead Product Manager, Personalized Guidance
+- [ ] https://careers.onepeloton.com/en/all-jobs/?gh_jid=7871276 | Peloton | Partnership Manager, Omnichannel Retail Partners
+- [ ] https://careers.onepeloton.com/en/all-jobs/?gh_jid=7953884 | Peloton | Retail and Cafe Associate
+- [x] #SKIP https://careers.onepeloton.com/en/all-jobs/?gh_jid=7652179 | Peloton | Senior Full Stack Software Engineer, Device Services 
+- [x] #SKIP https://careers.onepeloton.com/en/all-jobs/?gh_jid=7733269 | Peloton | Senior Manager, Supply Chain Strategy
+- [x] #SKIP https://careers.onepeloton.com/en/all-jobs/?gh_jid=7950057 | Peloton | Senior Software Engineer
+- [x] #SKIP https://careers.onepeloton.com/en/all-jobs/?gh_jid=7652177 | Peloton | Senior Software Engineer, Data Foundations
+- [x] #SKIP https://careers.onepeloton.com/en/all-jobs/?gh_jid=7652175 | Peloton | Senior Software Engineer, E-Commerce
+- [x] #SKIP https://careers.onepeloton.com/en/all-jobs/?gh_jid=7568890 | Peloton | Sr. SaaS Solutions Architect
+- [x] #SKIP https://careers.onepeloton.com/en/all-jobs/?gh_jid=7220253 | Peloton | Staff Enterprise AI Engineer
+
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8546367002 | Databricks | AI Engineer - FDE (Forward Deployed Engineer)
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8465963002 | Databricks | Delivery Solutions Architect
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8550331002 | Databricks | Delivery Solutions Architect - Public Sector
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8461243002 | Databricks | Resident Solutions Architect - Communications, Media, Entertainment & Games
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8456966002 | Databricks | Resident Solutions Architect - Financial Services
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494144002 | Databricks | Resident Solutions Architect - Healthcare & Life Sciences
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494154002 | Databricks | Resident Solutions Architect - Manufacturing
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8494108002 | Databricks | Resident Solutions Architect - Public Sector
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7477087002 | Databricks | Senior Software Engineer - Backend
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=5048461002 | Databricks | Senior Software Engineer - Database Engine Internals
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8012800002 | Databricks | Senior Software Engineer - Distributed Data Systems
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8099342002 | Databricks | Senior Software Engineer - Fullstack
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8516237002 | Databricks | Senior Solutions Architect - Lakewatch
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8303014002 | Databricks | Senior Staff Software Engineer - Delta
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8422484002 | Databricks | Senior Staff Software Engineer - Unity Catalog Runtime Enforcement 
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=8029666002 | Databricks | Software Engineer - Backend
+- [ ] https://databricks.com/company/careers/open-positions/job?gh_jid=5898477002 | Databricks | Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8537033002 | Databricks | Sr. Solutions Architect
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8368205002 | Databricks | Sr. Solutions Engineer
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8367023002 | Databricks | Staff Backend Software Engineer- (AI Platform)
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=7984907002 | Databricks | Staff Software Engineer - Backend
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=6937001002 | Databricks | Staff Software Engineer - Distributed Data Systems
+- [x] #SKIP https://databricks.com/company/careers/open-positions/job?gh_jid=8441890002 | Databricks | Strategic AI/BI Account Executive
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7956758?gh_jid=7956758 | Cloudflare | Field Solutions Engineer 
+- [x] #SKIP https://boards.greenhouse.io/cloudflare/jobs/7778849?gh_jid=7778849 | Cloudflare | Senior Forward Deployed Engineer
+- [ ] https://app.careerpuck.com/job-board/lyft/job/8536085002?gh_jid=8536085002 | Lyft | Data Scientist, Algorithms, Optimization - Fulfillment
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8492202002?gh_jid=8492202002 | Lyft | Group Product Manager II, Pricing
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8550274002?gh_jid=8550274002 | Lyft | Product Manager, Driver Earnings
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8525086002?gh_jid=8525086002 | Lyft | Product Manager, Driver Experience
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8508372002?gh_jid=8508372002 | Lyft | Senior AI Software Engineer, Risk - Insurance Claims Management
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8483867002?gh_jid=8483867002 | Lyft | Senior Data Scientist - Optimization, Central Market Management & AI
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8503978002?gh_jid=8503978002 | Lyft | Senior Design Program Manager, Design Foundations & AI Transformation
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8492244002?gh_jid=8492244002 | Lyft | Senior Software Engineer, Marketplace
+- [x] #SKIP https://app.careerpuck.com/job-board/lyft/job/8547660002?gh_jid=8547660002 | Lyft | Staff Growth Product Manager, Lyft Business
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/7869277 | Reddit | Client Partner, Large Customer Sales (Retail, Ecomm)
+- [x] #SKIP https://job-boards.greenhouse.io/reddit/jobs/6469397 | Reddit | Software Engineer, Ads
+- [x] #SKIP https://www.brex.com/careers/8432707002?gh_jid=8432707002 | Brex | Director of Product, Growth/AI
+- [x] #SKIP https://www.brex.com/careers/8395068002?gh_jid=8395068002 | Brex | Engineering Manager, AI — Brex Assistant
+- [x] #SKIP https://www.brex.com/careers/8367553002?gh_jid=8367553002 | Brex | Engineering Manager, GTM Engineering 
+- [x] #SKIP https://www.brex.com/careers/8438582002?gh_jid=8438582002 | Brex | Group Product Manager
+- [x] #SKIP https://www.brex.com/careers/8461333002?gh_jid=8461333002 | Brex | Senior Software Engineer, Backend (Product Engineering) 
+- [x] #SKIP https://www.brex.com/careers/8501052002?gh_jid=8501052002 | Brex | Senior Software Engineer, Frontend
+- [x] #SKIP https://www.brex.com/careers/8472633002?gh_jid=8472633002 | Brex | Senior Software Engineer, Full Stack
+- [x] #SKIP https://www.brex.com/careers/8430182002?gh_jid=8430182002 | Brex | Senior Software Engineer, Product Data Platform
+- [ ] https://www.brex.com/careers/8523205002?gh_jid=8523205002 | Brex | Software Engineer, Forward Deployed Agent Builder
+- [ ] https://www.brex.com/careers/8459783002?gh_jid=8459783002 | Brex | Software Engineer II, Backend
+- [x] #SKIP https://www.brex.com/careers/8432703002?gh_jid=8432703002 | Brex | Staff Product Manager
+- [x] #SKIP https://www.brex.com/careers/8436530002?gh_jid=8436530002 | Brex | Staff Product Manager, Growth
+- [x] #SKIP http://block.xyz/careers/jobs/5209236008?gh_jid=5209236008 | Block | Channel Sales Support Agent
+- [x] #SKIP http://block.xyz/careers/jobs/5183725008?gh_jid=5183725008 | Block | Channel Sales Support Agent (Reseller)
+- [x] #SKIP http://block.xyz/careers/jobs/5196189008?gh_jid=5196189008 | Block | Senior Software Engineer, Cash App Banking
+- [x] #SKIP http://block.xyz/careers/jobs/5172117008?gh_jid=5172117008 | Block | Senior Solutions Engineer
+- [ ] http://block.xyz/careers/jobs/5196181008?gh_jid=5196181008 | Block | Software Engineer, Cash App Banking
+- [ ] http://block.xyz/careers/jobs/5198719008?gh_jid=5198719008 | Block | Software Engineer, Cash App - Controls
+- [ ] http://block.xyz/careers/jobs/5196173008?gh_jid=5196173008 | Block | Software Engineer, Cash App - Lending Products
+- [x] #SKIP http://block.xyz/careers/jobs/5187354008?gh_jid=5187354008 | Block | Solutions Engineer
+- [x] #SKIP http://block.xyz/careers/jobs/5196194008?gh_jid=5196194008 | Block | Staff Software Engineer, Cash App Banking
+- [x] #SKIP http://block.xyz/careers/jobs/4918639008?gh_jid=4918639008 | Block | Staff Solutions Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7741588?gh_jid=7741588 | Okta | Principal Software Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7600340?gh_jid=7600340 | Okta | Senior Solutions Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7897125?gh_jid=7897125 | Okta | Senior Solutions Engineer, Auth0
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7592210?gh_jid=7592210 | Okta | Senior Solutions Engineer- West Coast
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7902820?gh_jid=7902820 | Okta | Staff Software Engineer
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7893046?gh_jid=7893046 | Okta | Staff Software Engineer 
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7610167?gh_jid=7610167 | Okta | Staff Software Engineer, Security
+- [x] #SKIP https://www.okta.com/company/careers/opportunity/7744348?gh_jid=7744348 | Okta | Staff Software Engineer, Security Engineering
+- [x] #SKIP https://boards.greenhouse.io/robinhood/jobs/7728174?t=gh_src=&gh_jid=7728174 | Robinhood | Senior Security Engineer, AI Vulnerability Management
+- [ ] https://careers.datadoghq.com/detail/7183013/?gh_jid=7183013 | Datadog | AI Research Engineer - Datadog AI Research (DAIR)
+- [x] #SKIP https://careers.datadoghq.com/detail/7722122/?gh_jid=7722122 | Datadog | Partner Solutions Architect (EMEA)
+- [x] #SKIP https://careers.datadoghq.com/detail/7566827/?gh_jid=7566827 | Datadog | Senior Software Engineer (AI)
+- [x] #SKIP https://careers.datadoghq.com/detail/7957460/?gh_jid=7957460 | Datadog | Senior Software Engineer - Linux/eBPF
+- [x] #SKIP https://careers.datadoghq.com/detail/7959962/?gh_jid=7959962 | Datadog | Senior Software Engineer - REDAPL Graph Engine
+- [x] #SKIP https://careers.datadoghq.com/detail/7627429/?gh_jid=7627429 | Datadog | Staff AI Engineer - Notebooks 
+- [ ] https://jobs.dropbox.com/listing/6330377?gh_jid=6330377 | Dropbox | Infrastructure Software Engineer
+- [x] #SKIP https://jobs.dropbox.com/listing/7344925?gh_jid=7344925 | Dropbox | Principal Software Engineer, Core Sharing & Collaboration
+- [x] #SKIP https://jobs.dropbox.com/listing/7872748?gh_jid=7872748 | Dropbox | Senior Data Engineer, AI and Systems Engineering
+- [x] #SKIP https://jobs.dropbox.com/listing/7729761?gh_jid=7729761 | Dropbox | Senior Data Scientist, AI Products
+- [x] #SKIP https://jobs.dropbox.com/listing/7466607?gh_jid=7466607 | Dropbox | Senior Group Product Manager, Dropbox Sign
+- [x] #SKIP https://jobs.dropbox.com/listing/7923159?gh_jid=7923159 | Dropbox | Senior Infrastructure Software Engineer, Identity & Auth Engineering
+- [x] #SKIP https://jobs.dropbox.com/listing/7759728?gh_jid=7759728 | Dropbox | Staff Backend Product Software Engineer, Commerce Platform
+- [x] #SKIP https://jobs.dropbox.com/listing/7421124?gh_jid=7421124 | Dropbox | Staff Backend Product Software Engineer, Core
+- [x] #SKIP https://jobs.dropbox.com/listing/7421153?gh_jid=7421153 | Dropbox | Staff Fullstack Software Engineer, Core Performance
+- [x] #SKIP https://jobs.dropbox.com/listing/7954607?gh_jid=7954607 | Dropbox | Staff Product Manager
+- [ ] https://jobs.dropbox.com/listing/7872752?gh_jid=7872752 | Dropbox | Systems Automation & Integration Engineer
+- [x] #SKIP https://www.asana.com/jobs/apply/7955044?gh_jid=7955044 | Asana | Head of Customer AI Transformation
+- [x] #SKIP https://www.asana.com/jobs/apply/7586942?gh_jid=7586942 | Asana | Senior Engineering Manager, AI Agents
+- [ ] https://www.asana.com/jobs/apply/7595104?gh_jid=7595104 | Asana | Software Engineer, CI/CD
+- [ ] https://www.samsara.com/company/careers/roles/7589442?gh_jid=7589442 | Samsara | AI Engineer
+- [ ] https://www.samsara.com/company/careers/roles/7630034?gh_jid=7630034 | Samsara | Manager, Software Engineering - Mobile Platform
+- [ ] https://www.samsara.com/company/careers/roles/7345839?gh_jid=7345839 | Samsara | Manager, Software Engineering (Platform Reports)
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7269221?gh_jid=7269221 | Samsara | Principal Product Manager - Maintenance
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7731751?gh_jid=7731751 | Samsara | Senior Manager, Safety AI
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7733571?gh_jid=7733571 | Samsara | Senior/Principal Product Manager - Safety AI
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7536597?gh_jid=7536597 | Samsara | Senior Program Manager - Sales Programs (Transformational)
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7773090?gh_jid=7773090 | Samsara | Senior Software Engineer, Growth
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7558088?gh_jid=7558088 | Samsara | Senior Software Engineer I - Agent Foundations
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7573118?gh_jid=7573118 | Samsara | Senior Software Engineer - Route Execution
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7367675?gh_jid=7367675 | Samsara | Senior Staff Software Engineer - STCE
+- [ ] https://www.samsara.com/company/careers/roles/7619925?gh_jid=7619925 | Samsara | Software Engineer II, AI Platform
+- [ ] https://www.samsara.com/company/careers/roles/7961471?gh_jid=7961471 | Samsara | Specialist Seller - Enterprise Select AI Products
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7621277?gh_jid=7621277 | Samsara | Sr. Support Tools Product Manager
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7431070?gh_jid=7431070 | Samsara | Staff Machine Learning Engineer - Edge AI
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7746586?gh_jid=7746586 | Samsara | Staff ML Engineer - ML Infrastructure
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7597673?gh_jid=7597673 | Samsara | Staff Software Engineer
+- [x] #SKIP https://www.samsara.com/company/careers/roles/7398072?gh_jid=7398072 | Samsara | Staff Software Engineer - Sustainability
+- [ ] https://careers.withwaymo.com/jobs?gh_jid=7960496 | Waymo | Software Engineer
+- [ ] https://instacart.careers/job/?gh_jid=7875516 | Instacart | AI Field Consultant
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7967235 | Instacart | Director of Product, Agentic Commerce
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7597066 | Instacart | Principal Product Manager, Agentic Commerce
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7779563 | Instacart | Senior Data Scientist II - AI for Analytics
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7947506 | Instacart | Senior Engineering Manager, Retailer Platform
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7958329 | Instacart | Senior Financial Analyst, Retailer
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7769924 | Instacart | Senior Product Manager, Fraud & Trust
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7838736 | Instacart | Senior Product Manager, In-Store Integrations
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7963726 | Instacart | Senior Product Manager, In-Store Tasks
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7939947 | Instacart | Senior Software Engineer, Ads
+- [x] #SKIP https://instacart.careers/job/?gh_jid=7838938 | Instacart | Staff Software Engineer, Shopper Activation & Engagement
+- [ ] https://instacart.careers/job/?gh_jid=7705901 | Instacart | Strategic Finance Manager, Retailer
+- [x] #SKIP https://careers.roblox.com/jobs/7540219?gh_jid=7540219 | Roblox | Senior Software Engineer, Avatar Animation 
+- [x] #SKIP https://sofi.com/careers/job/7575382003?gh_jid=7575382003 | SoFi | Principal Software Engineer, Loans Platform
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7919048 | Pure Storage | Senior Security Architect - AI/CI
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7117974 | Pure Storage | Senior Technical Marketing Engineer, AI
+- [ ] https://job-boards.greenhouse.io/purestorage/jobs/7681034 | Pure Storage | Software Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/purestorage/jobs/7760440 | Pure Storage | Supply Chain Manager
+- [x] #SKIP https://job-boards.greenhouse.io/mixpanel/jobs/7052292 | Mixpanel | Manager, Solutions Engineering 
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7790438 | MongoDB | Manager, Solutions Architecture
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7951322 | MongoDB | Pre-Sales Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7564234 | MongoDB | Principal Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7727899 | MongoDB | Security Software Engineer, Infrastructure Security (Staff or Senior)
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7683484 | MongoDB | Senior Partner Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7851080 | MongoDB | Senior Product Manager
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7378931 | MongoDB | Senior Product Manager, AI Builders Experience
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7851168 | MongoDB | Senior Product Manager, Replication & Storage Engines
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7816572 | MongoDB | Senior Software Engineer
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7736191 | MongoDB | Senior Software Engineer, Atlas Clusters
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7960501 | MongoDB | Senior Software Engineer, C2C Services
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7590735 | MongoDB | Senior Software Engineer, Forward Deployed AI Engineer
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7833626 | MongoDB | Senior Software Engineer - Query Integration
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7815679 | MongoDB | Senior Software Engineer, Server Security
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7946420 | MongoDB | Senior Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7736116 | MongoDB | Senior Solutions Architect (Pre-Sales)
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7859378 | MongoDB | Software Engineer 3
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7523920 | MongoDB | Software Engineer 3, Atlas Search Systems
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7766302 | MongoDB | Software Engineer 3, DevTools
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7311666 | MongoDB | Software Engineer, Code Generation
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7571473 | MongoDB | Software Engineer (Internal Query Engine Testing Tools), Query
+- [ ] https://www.mongodb.com/careers/job/?gh_jid=7610086 | MongoDB | Solutions Architect
+- [x] #SKIP https://www.mongodb.com/careers/job/?gh_jid=7602834 | MongoDB | Staff Software Engineer, Query (Optimization)
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7449131?gh_jid=7449131 | Flexport | Senior Manager, Strategic Initiatives (Fulfillment)
+- [x] #SKIP https://boards.greenhouse.io/flexport/jobs/7779606?gh_jid=7779606 | Flexport | Staff Product Manager
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8227562002?gh_jid=8227562002 | Faire | Senior Applied AI/ML Scientist - Listing Quality
+- [x] #SKIP https://boards.greenhouse.io/faire/jobs/8426107002?gh_jid=8426107002 | Faire | Staff Machine Learning Platform Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/6530760 | ZipRecruiter | Senior Software Engineer, Big Data
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/6530780 | ZipRecruiter | Senior Software Engineer, Full Stack
+- [x] #SKIP https://job-boards.greenhouse.io/ziprecruiter/jobs/5167480 | ZipRecruiter | Staff Software Engineer, Machine Learning
+- [x] #SKIP https://job-boards.greenhouse.io/tripadvisor/jobs/7716377 | Tripadvisor | Senior Software Engineer
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/5148270007 | Verkada | Enterprise Solutions Engineer, West Coast
+- [x] #SKIP https://job-boards.greenhouse.io/verkada/jobs/4086501007 | Verkada | Solutions Engineer
+- [x] #SKIP https://www.weareroku.com/jobs/7469332?gh_jid=7469332 | Roku | Lead ML Inference Engineer, Advertising
+- [ ] https://www.weareroku.com/jobs/7567185?gh_jid=7567185 | Roku | Manager, Software Engineering
+- [x] #SKIP https://www.weareroku.com/jobs/7871135?gh_jid=7871135 | Roku | Senior Product Manager – Data Collaboration & Measurement
+- [x] #SKIP https://www.weareroku.com/jobs/7773188?gh_jid=7773188 | Roku | Senior Product Manager - Finance/Revenue Systems
+- [x] #SKIP https://www.weareroku.com/jobs/7874930?gh_jid=7874930 | Roku | Senior Product Manager, Recommendations
+- [x] #SKIP https://www.weareroku.com/jobs/7951996?gh_jid=7951996 | Roku | Senior Product Manager, The Roku Channel
+- [x] #SKIP https://www.weareroku.com/jobs/7846521?gh_jid=7846521 | Roku | Senior Software Engineer, Ad Auctions
+- [x] #SKIP https://www.weareroku.com/jobs/7118167?gh_jid=7118167 | Roku | Senior Software Engineer, Ad Serving
+- [x] #SKIP https://www.weareroku.com/jobs/7905358?gh_jid=7905358 | Roku | Senior Software Engineer - Advertising Analytics
+- [x] #SKIP https://www.weareroku.com/jobs/7908405?gh_jid=7908405 | Roku | Senior Software Engineer - Business Applications and Machine Learning 
+- [x] #SKIP https://www.weareroku.com/jobs/7905225?gh_jid=7905225 | Roku | Senior Software Engineer – Data Management Platform
+- [x] #SKIP https://www.weareroku.com/jobs/7921795?gh_jid=7921795 | Roku | Senior Software Engineering Manager, Ads Auction & Marketplace Optimization
+- [x] #SKIP https://www.weareroku.com/jobs/7618763?gh_jid=7618763 | Roku | Senior Software Engineer, Live
+- [x] #SKIP https://www.weareroku.com/jobs/7438173?gh_jid=7438173 | Roku | Senior Software Engineer – Live & VOD Video Infrastructure
+- [x] #SKIP https://www.weareroku.com/jobs/7418278?gh_jid=7418278 | Roku | Senior Software Engineer, Machine Learning
+- [x] #SKIP https://www.weareroku.com/jobs/7768307?gh_jid=7768307 | Roku | Senior Software Engineer, Roku UI
+- [x] #SKIP https://www.weareroku.com/jobs/7795881?gh_jid=7795881 | Roku | Senior Software Engineer - Cloud Infrastructure & Observability 

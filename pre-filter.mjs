@@ -77,19 +77,57 @@ function shouldSkipRoleType(roleTitle) {
     /designer/i,
     /ux\s+designer/i,
     /product designer/i,
+    // Non-technical ops/non-engineering roles
+    /mailroom/i,
+    /loan originator/i,
+    /insurance agent/i,
+    /claims advocate/i,
+    /fulfillment associate/i,
+    /supply chain manager/i,
+    /air operations/i,
+    /ocean operations/i,
+    /freight operations/i,
+    /public affairs/i,
+    /financial analyst/i,
+    /\bfp&a\b/i,
+    /legal affairs/i,
+    /communications lead/i,
+    /illustrator/i,
+    /technical trainer/i,
+    /service delivery trainer/i,
+    /customer acquisition/i,
+    /paid media/i,
+    /member fulfillment/i,
+    /mortgage/i,
+    /underwriter/i,
+    /compliance officer/i,
+    /appraisal/i,
+    /post closing/i,
+    /retail associate/i,
+    /fleet monitoring/i,
   ];
   return skipPatterns.some((p) => p.test(roleTitle));
 }
 
 function shouldSkipSeniority(roleTitle) {
   const skipPatterns = [
+    /\b(?:senior|sr\.?)\b/i,           // Senior or Sr/Sr. anywhere in title
     /^staff\s+/i,
     /^staff\+/i,
     /^senior\s+staff/i,
     /^principal/i,
+    /\blead\b/i,                        // Lead Software Engineer, etc.
     /^director/i,
     /^vp\s+/i,
     /^head\s+of/i,
+    // Engineering manager roles require 5+ YOE managing teams
+    /engineering manager/i,
+    /software engineering manager/i,
+    /manager\s+i\s+engineering/i,
+    /manager\s+ii\s+engineering/i,
+    /senior engineering manager/i,
+    /group product manager/i,
+    /director of engineering/i,
   ];
   return skipPatterns.some((p) => p.test(roleTitle));
 }
@@ -124,6 +162,26 @@ function shouldSkipLocation(url) {
   return nonUSCountries.some((country) => urlLower.includes(country));
 }
 
+function shouldSkipLocationInTitle(roleTitle) {
+  // Many international roles have location in title e.g. "(Indonesia)", "France", "APAC Lead"
+  // Use word boundaries to prevent "india" from matching "indiana"
+  if (profileCountry !== 'United States') {
+    return false;
+  }
+
+  const internationalLocs = [
+    'london', 'uk', 'emea', 'apac', 'apj', 'latam', 'canada', 'montreal', 'toronto',
+    'australia', 'sydney', 'india', 'mumbai', 'bangalore', 'germany', 'france',
+    'paris', 'amsterdam', 'netherlands', 'japan', 'tokyo', 'korea', 'singapore',
+    'taiwan', 'hong kong', 'indonesia', 'vietnam', 'thailand', 'brazil', 'mexico',
+    'spain', 'italy', 'denmark', 'sweden', 'finland', 'norway', 'czech', 'poland',
+    'swiss', 'zurich', 'new zealand', 'china', 'gcc', 'middle east',
+    'polish speaker', 'german speaker', 'thai speaking', 'french speaking', 'reykjavik',
+  ];
+  const regexStr = '\\b(?:' + internationalLocs.join('|') + ')\\b';
+  return new RegExp(regexStr, 'i').test(roleTitle);
+}
+
 function shouldSkipAlreadyProcessed(url) {
   const slug = extractCompanySlug(url);
   if (!slug) return false;
@@ -148,7 +206,7 @@ let inPendingSection = false;
 for (let i = 0; i < lines.length; i++) {
   const line = lines[i];
 
-  if (line.trim() === '## Pending') {
+  if (line.trim() === '## Pending' || line.trim() === '## Pendientes') {
     inPendingSection = true;
     continue;
   }
@@ -184,6 +242,8 @@ for (let i = 0; i < lines.length; i++) {
     skipReason = `Seniority mismatch: ${roleTrimmed} (5+ YOE required)`;
   } else if (shouldSkipLocation(urlTrimmed)) {
     skipReason = 'Location outside target (non-US)';
+  } else if (shouldSkipLocationInTitle(roleTrimmed)) {
+    skipReason = 'Location in title (non-US): ' + roleTrimmed;
   } else if (shouldSkipAlreadyProcessed(urlTrimmed)) {
     skipReason = 'Already processed';
   }

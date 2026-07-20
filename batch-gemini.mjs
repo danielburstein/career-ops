@@ -47,7 +47,7 @@ const PATHS = {
 // Parse CLI args
 // ============================================================================
 const args = process.argv.slice(2);
-let concurrency = 5;
+let concurrency = 10;
 let minScore = 0;
 let dryRun = false;
 let resume = false;
@@ -162,7 +162,7 @@ const pendingOffers = [];
 let inPendingSection = false;
 
 for (const line of pipelineLines) {
-  if (line.trim() === '## Pending') {
+  if (line.trim() === '## Pending' || line.trim() === '## Pendientes') {
     inPendingSection = true;
     continue;
   }
@@ -280,23 +280,37 @@ async function evaluateOffer(offer) {
     },
   });
 
-  try {
-    const result = await model.generateContent([
-      { text: systemPrompt },
-      {
-        text: `\n\nJOB DESCRIPTION TO EVALUATE:\n\nCompany: ${offer.company}\nRole: ${offer.role}\n\n${jdText}`,
-      },
-    ]);
-    const text = result.response.text();
-    if (!text || text.trim().length === 0) {
-      console.error(`    Error: Empty response from Gemini for ${offer.company}`);
+  const MAX_RETRIES = 4;
+  let delay = 3000;
+
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      const result = await model.generateContent([
+        { text: systemPrompt },
+        {
+          text: `\n\nJOB DESCRIPTION TO EVALUATE:\n\nCompany: ${offer.company}\nRole: ${offer.role}\n\n${jdText}`,
+        },
+      ]);
+      const text = result.response.text();
+      if (!text || text.trim().length === 0) {
+        console.error(`    Error: Empty response from Gemini for ${offer.company}`);
+        return null;
+      }
+      return text;
+    } catch (err) {
+      const msg = (err.message || '').split(apiKey).join('[REDACTED]');
+      const is503 = msg.includes('503') || msg.includes('Service Unavailable');
+
+      if (is503 && attempt < MAX_RETRIES) {
+        console.error(`    ⏳ 503 for ${offer.company}, retrying in ${delay/1000}s (${attempt}/${MAX_RETRIES})...`);
+        await new Promise(r => setTimeout(r, delay));
+        delay *= 2;
+        continue;
+      }
+
+      console.error(`    Error: Gemini API failed for ${offer.company}: ${msg}`);
       return null;
     }
-    return text;
-  } catch (err) {
-    const msg = (err.message || '').split(apiKey).join('[REDACTED]');
-    console.error(`    Error: Gemini API failed for ${offer.company}: ${msg}`);
-    return null;
   }
 }
 

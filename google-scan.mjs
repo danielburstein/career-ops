@@ -2,16 +2,19 @@
 /**
  * google-scan.mjs — Google Search–based job scanner for early-career SWE roles
  *
- * Scrapes Google search results for Lever/Greenhouse job postings, extracts
- * experience and location requirements via Gemini, and filters for CA/Remote
- * roles requiring ≤ 2 years experience.
+ * Stage 1: runs several title-variant Google queries over Lever and Greenhouse
+ * job boards, fetches each posting's description (with location),
+ * and saves new jobs to data/jobs.db with status 'not_checked'.
  *
  * Usage:
- *   node google-scan.mjs [--dry-run] [--headless] [--pages 3]
+ *   node google-scan.mjs [--dry-run] [--headless] [--pages 3] [--day | --week | --month | --all]
+ *     default: past 24 hours — each daily run surfaces newly indexed postings
+ *     --week   past week — use to catch up after skipping a few days
+ *     --month  past month    --all  no date restriction
  */
 
 import 'dotenv/config';
-import { readFileSync, writeFileSync, existsSync, readdirSync, appendFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createInterface } from 'readline';
@@ -20,18 +23,84 @@ import os from 'os';
 import path from 'path';
 import pLimit from 'p-limit';
 import { chromium } from 'playwright';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import Database from 'better-sqlite3';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const PATHS = {
-  pipeline: join(ROOT, 'data', 'pipeline.md'),
-  scanHistory: join(ROOT, 'data', 'scan-history.tsv'),
-  applications: join(ROOT, 'data', 'applications.md'),
+  db: join(ROOT, 'data', 'jobs.db'),
 };
 
 const CHROME_USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 const GOOGLE_SEARCH_URL = 'https://www.google.com/search';
-const SEARCH_QUERY = '(site:jobs.lever.co OR site:boards.greenhouse.io) "software engineer" ("new grad" OR "early career" OR "junior" OR "entry level" OR "associate")';
+
+// Discovery-oriented search: each variant runs as its own Google query; results are
+// merged + deduped. Freshness defaults to past 24 hours so every daily run surfaces a
+// fresh rotating set of newly indexed postings (small companies included) instead of
+// Google's static all-time top results.
+//
+// Three tactics working together:
+//   1. Negative filters (-senior -lead ...) make Google drop obvious senior/staff
+//      postings before they ever reach stage 2's LLM — saves the token budget.
+//   2. Micro-slicing: a matrix of stack × title × location queries. Each narrow slice
+//      forces Google to surface its "long tail" instead of the same top results —
+//      grow STACKS/TITLES to widen coverage.
+//   3. inurl: slices catch postings whose seniority is baked into the URL slug
+//      (Greenhouse/Lever slugs like /junior-software-engineer or /new-grad-2025).
+//
+// CONSTRAINT: Google silently ignores query terms past ~32 words (each word inside a
+// quoted phrase counts). Every group below is deliberately trimmed so the full
+// boards + slice + location + seniority + negatives stack stays ≤32 — the negatives
+// sit at the end of the query, so they're the first thing lost if we blow the budget.
+// countQueryTerms() warns at startup if a variant goes over.
+const JOB_SITES = '(site:jobs.lever.co OR site:boards.greenhouse.io OR site:job-boards.greenhouse.io OR site:jobs.ashbyhq.com)';
+const SENIORITY = '("new grad" OR junior OR "entry level" OR 2025)';
+const LOCATIONS = '("San Francisco" OR "Bay Area" OR remote)';
+// -sr/-principal/-director omitted to fit the 32-term budget; the SENIORITY anchor
+// keeps those pages rare and stage 2 catches the stragglers.
+const NEGATIVES = '-senior -lead -staff -manager -"5+ years"';
+
+// Slice 1: tech stacks — each term makes Google index-match different pages
+const STACKS = ['python', 'backend', 'full stack', 'AI', 'infrastructure', 'API', 'systems'];
+// Slice 2: exact <title> matches on the job board page itself
+const TITLES = ['"software engineer"', '"backend engineer"', '"developer"'];
+
+const SEARCH_VARIANTS = [];
+
+for (const stack of STACKS) {
+  SEARCH_VARIANTS.push({
+    label: `${stack} engineer (SF/remote)`,
+    q: `${JOB_SITES} "${stack}" engineer ${LOCATIONS} ${SENIORITY} ${NEGATIVES}`,
+  });
+}
+
+for (const title of TITLES) {
+  SEARCH_VARIANTS.push({
+    label: `intitle:${title}`,
+    q: `${JOB_SITES} intitle:${title} ${LOCATIONS} ${SENIORITY} ${NEGATIVES}`,
+  });
+}
+
+// Slice 3: seniority baked into the URL slug. Parentheses matter: Google's OR binds
+// tightly, so an unparenthesized `inurl:a OR inurl:b` would split the query in half.
+SEARCH_VARIANTS.push(
+  { label: 'inurl: new-grad / 2025 / university', q: `${JOB_SITES} (inurl:new-grad OR inurl:2025 OR inurl:university) ${NEGATIVES}` },
+  { label: 'inurl: junior / entry / associate', q: `${JOB_SITES} (inurl:junior OR inurl:entry OR inurl:associate) ${NEGATIVES}` },
+  // Broad catch-all: no seniority anchor on purpose — the 24h window keeps volume
+  // sane and stage 2's LLM does the real experience filtering.
+  { label: 'software engineer (broad — stage 2 filters)', q: `${JOB_SITES} "software engineer" ${LOCATIONS} ${NEGATIVES}` },
+);
+
+// Rough proxy for Google's 32-term cap: whitespace-split words (quoted phrases count
+// per word, which matches how Google counts them).
+function countQueryTerms(q) {
+  return q.split(/\s+/).filter(Boolean).length;
+}
+for (const v of SEARCH_VARIANTS) {
+  const n = countQueryTerms(v.q);
+  if (n > 32) {
+    console.warn(`⚠️  Query "${v.label}" has ${n} terms — Google ignores everything past 32, starting with the negative filters.`);
+  }
+}
 
 const CHROME_EXE = os.platform() === 'win32'
   ? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
@@ -41,17 +110,91 @@ const CHROME_EXE = os.platform() === 'win32'
 const DEBUG_PORT = 9223;
 
 // ============================================================================
+// Database initialization
+// ============================================================================
+function initDatabase() {
+  const db = new Database(PATHS.db);
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS jobs (
+      id            INTEGER PRIMARY KEY AUTOINCREMENT,
+      url           TEXT UNIQUE NOT NULL,
+      company       TEXT NOT NULL,
+      title         TEXT NOT NULL,
+      description   TEXT,
+      source        TEXT,
+      status        TEXT NOT NULL DEFAULT 'not_checked',
+      experience_years REAL,
+      location      TEXT,
+      first_seen    TEXT NOT NULL,
+      processed_at  TEXT,
+      applied_at    TEXT,
+      skip_reason   TEXT
+    )
+  `);
+  createViews(db);
+  return db;
+}
+
+// Category views — show up as virtual "folders" in DBeaver, always in sync with the jobs table.
+// Dropped and recreated on every run so definition changes here take effect automatically.
+function createViews(db) {
+  db.exec(`
+    DROP VIEW IF EXISTS processing;
+    CREATE VIEW processing AS
+      SELECT id, company, title, source, url, first_seen
+      FROM jobs WHERE status = 'not_checked' ORDER BY id;
+
+    DROP VIEW IF EXISTS to_apply;
+    CREATE VIEW to_apply AS
+      SELECT id, company, title, location, experience_years, url, first_seen
+      FROM jobs WHERE status = 'verified' ORDER BY id;
+
+    DROP VIEW IF EXISTS applied;
+    CREATE VIEW applied AS
+      SELECT id, company, title, location, url, applied_at
+      FROM jobs WHERE status = 'applied' ORDER BY applied_at DESC, id DESC;
+
+    DROP VIEW IF EXISTS stale;
+    CREATE VIEW stale AS
+      SELECT id, company, title, location, url, first_seen, processed_at
+      FROM jobs WHERE skip_reason = 'posting_closed' ORDER BY id;
+
+    DROP VIEW IF EXISTS skipped;
+    CREATE VIEW skipped AS
+      SELECT id, company, title, location, experience_years, skip_reason, url
+      FROM jobs WHERE status = 'skipped' AND skip_reason != 'posting_closed'
+      ORDER BY skip_reason, id;
+
+    DROP VIEW IF EXISTS pipeline_summary;
+    CREATE VIEW pipeline_summary AS
+      SELECT status, COALESCE(skip_reason, '-') AS reason, COUNT(*) AS count
+      FROM jobs GROUP BY status, skip_reason ORDER BY count DESC;
+  `);
+}
+
+function getSeenUrls(db) {
+  const rows = db.prepare('SELECT url FROM jobs').all();
+  return new Set(rows.map(r => r.url));
+}
+
+// ============================================================================
 // Parse CLI args
 // ============================================================================
 const args = process.argv.slice(2);
 let dryRun = false;
 let headless = false;
-let maxPages = 3;
+let maxPages = 4;
+
+let freshness = 'd'; // Google tbs=qdr: filter — default: past 24 hours, so daily runs surface new postings
 
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--dry-run') dryRun = true;
   if (args[i] === '--headless') headless = true;
   if (args[i] === '--pages' && args[i + 1]) maxPages = parseInt(args[++i], 10);
+  if (args[i] === '--day') freshness = 'd';      // past 24 hours (default)
+  if (args[i] === '--week') freshness = 'w';     // past week — catch-up after skipping days
+  if (args[i] === '--month') freshness = 'm';    // past month
+  if (args[i] === '--all') freshness = null;     // no date restriction
 }
 
 // ============================================================================
@@ -106,7 +249,7 @@ function loadSeenUrls() {
 // Extract company slug from URL
 // ============================================================================
 function extractCompanySlug(url) {
-  const match = url.match(/(?:jobs\.lever\.co|boards\.greenhouse\.io)\/([^\/]+)/);
+  const match = url.match(/(?:jobs\.lever\.co|(?:boards|job-boards)\.greenhouse\.io|jobs\.ashbyhq\.com)\/([^\/]+)/);
   return match ? match[1] : 'unknown';
 }
 
@@ -115,8 +258,22 @@ function extractCompanySlug(url) {
 // ============================================================================
 function isValidJobUrl(url) {
   const leverPattern = /jobs\.lever\.co\/[^\/]+\/[^\/]+/;
-  const greenhousePattern = /boards\.greenhouse\.io\/[^\/]+\/jobs\/[^\/]+/;
-  return leverPattern.test(url) || greenhousePattern.test(url);
+  const greenhousePattern = /(?:boards|job-boards)\.greenhouse\.io\/[^\/]+\/jobs\/[^\/]+/;
+  const ashbyPattern = /jobs\.ashbyhq\.com\/[^\/]+\/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i;
+  return leverPattern.test(url) || greenhousePattern.test(url) || ashbyPattern.test(url);
+}
+
+// Strip Google text fragments (#:~:text=...), query params, and trailing /apply
+// so the same job always maps to one canonical URL (DB dedup relies on this)
+function normalizeJobUrl(url) {
+  try {
+    const u = new URL(url);
+    let pathname = u.pathname.replace(/\/(?:apply|application)\/?$/, ''); // Lever /apply, Ashby /application
+    if (pathname.endsWith('/')) pathname = pathname.slice(0, -1);
+    return `${u.origin}${pathname}`;
+  } catch {
+    return url.split('#')[0].split('?')[0];
+  }
 }
 
 // ============================================================================
@@ -255,57 +412,73 @@ async function scrapeGoogleSearch() {
     page.setDefaultTimeout(30000);
 
     const urls = new Set();
-    const searchUrl = `${GOOGLE_SEARCH_URL}?q=${encodeURIComponent(SEARCH_QUERY)}`;
-    console.log(`📍 Navigating to: ${searchUrl}\n`);
+    const freshnessLabel = freshness === 'd' ? 'past 24 hours' : freshness === 'w' ? 'past week' : freshness === 'm' ? 'past month' : 'all time';
+    console.log(`📍 Running ${SEARCH_VARIANTS.length} query variants × up to ${maxPages} pages each (${freshnessLabel})\n`);
 
-    for (let pageNum = 0; pageNum < maxPages; pageNum++) {
-      const pageUrl = pageNum === 0 ? searchUrl : `${searchUrl}&start=${pageNum * 10}`;
-      console.log(`  Page ${pageNum + 1}/${maxPages}...`);
+    for (let qIdx = 0; qIdx < SEARCH_VARIANTS.length; qIdx++) {
+      // filter=0 disables Google's near-duplicate omission — job board pages are
+      // template-heavy, so without it Google hides most of them as "very similar"
+      const searchUrl = `${GOOGLE_SEARCH_URL}?q=${encodeURIComponent(SEARCH_VARIANTS[qIdx].q)}`
+        + '&filter=0'
+        + (freshness ? `&tbs=qdr:${freshness}` : '');
+      console.log(`  🔎 [${qIdx + 1}/${SEARCH_VARIANTS.length}] ${SEARCH_VARIANTS[qIdx].label}`);
 
-      try {
-        await page.goto(pageUrl, { waitUntil: 'networkidle', timeout: 45000 });
-      } catch (err) {
-        // Timeout or navigation error on later pages is not fatal — we may have found results already
-        if (pageNum === 0) throw err; // Fail if first page doesn't load
-        console.log(`    (Page ${pageNum + 1} timed out or errored, skipping)`);
-        break;
-      }
+      for (let pageNum = 0; pageNum < maxPages; pageNum++) {
+        const pageUrl = pageNum === 0 ? searchUrl : `${searchUrl}&start=${pageNum * 10}`;
 
-      // Check for CAPTCHA and wait if needed
-      while (await isCaptchaOrConsentPage(page)) {
-        await waitForCaptcha(page);
-        await page.reload({ waitUntil: 'networkidle' });
-      }
+        try {
+          await page.goto(pageUrl, { waitUntil: 'networkidle', timeout: 45000 });
+        } catch (err) {
+          // Timeout on the very first load is fatal; anywhere else, move on
+          if (qIdx === 0 && pageNum === 0) throw err;
+          console.log(`     (page ${pageNum + 1} timed out, moving on)`);
+          break;
+        }
 
-      await page.waitForTimeout(1000 + Math.random() * 1000); // random delay 1-2s
+        // Check for CAPTCHA and wait if needed
+        while (await isCaptchaOrConsentPage(page)) {
+          await waitForCaptcha(page);
+          await page.reload({ waitUntil: 'networkidle' });
+        }
 
-      // Extract all job board links
-      const links = await page.evaluate(() => {
-        const anchors = Array.from(document.querySelectorAll('a[href]'));
-        return anchors
-          .map(a => a.href)
-          .filter(href =>
-            href.includes('jobs.lever.co') || href.includes('boards.greenhouse.io')
-          );
-      });
+        await page.waitForTimeout(1000 + Math.random() * 1500); // random delay between requests
 
-      links.forEach(url => {
-        // Clean up Google redirect wrapper
-        let cleanUrl = url;
-        if (url.includes('url?q=')) {
-          const match = url.match(/url\?q=([^&]+)/);
-          if (match) {
-            cleanUrl = decodeURIComponent(match[1]);
-            // Strip any remaining query params
-            const qIdx = cleanUrl.indexOf('?');
-            if (qIdx !== -1) cleanUrl = cleanUrl.substring(0, qIdx);
+        // Extract all job board links
+        const links = await page.evaluate(() => {
+          const anchors = Array.from(document.querySelectorAll('a[href]'));
+          return anchors
+            .map(a => a.href)
+            .filter(href =>
+              href.includes('lever.co') || href.includes('greenhouse.io') || href.includes('ashbyhq.com')
+            );
+        });
+
+        // Zero job-board links = "did not match any documents" (normal for a thin
+        // 24h window) — skip the remaining pages of this query
+        if (links.length === 0) {
+          if (pageNum === 0) console.log('     (no results in this window)');
+          break;
+        }
+
+        const before = urls.size;
+        links.forEach(url => {
+          // Clean up Google redirect wrapper
+          let cleanUrl = url;
+          if (url.includes('url?q=')) {
+            const match = url.match(/url\?q=([^&]+)/);
+            if (match) cleanUrl = decodeURIComponent(match[1]);
           }
-        }
-        if (isValidJobUrl(cleanUrl)) {
-          urls.add(cleanUrl);
-        }
-      });
+          cleanUrl = normalizeJobUrl(cleanUrl);
+          if (isValidJobUrl(cleanUrl)) {
+            urls.add(cleanUrl);
+          }
+        });
 
+        // Nothing new past page 1 usually means end of results for this query
+        if (pageNum > 0 && urls.size === before) break;
+      }
+
+      console.log(`     running total: ${urls.size} unique URLs`);
     }
 
     if (useRealChrome) {
@@ -350,8 +523,8 @@ async function fetchJDHtml(url) {
     }
 
     let text = stripHtml(await response.text());
-    if (text.length > 3000) {
-      text = text.substring(0, 3000) + '\n[... truncated ...]';
+    if (text.length > 5000) {
+      text = text.substring(0, 5000) + '\n[... truncated ...]';
     }
     return text || '[Empty JD]';
   } catch (err) {
@@ -378,14 +551,18 @@ async function fetchJD(url) {
         if (data.ok === false) {
           // Job not found via API, fall through
         } else {
+          // Location lives in metadata, not the description text — prepend it so the LLM can see it
+          const locationParts = [data.categories?.location, data.workplaceType].filter(p => p && p !== 'unspecified');
+          const header = locationParts.length ? `Location: ${locationParts.join(' | ')}\n\n` : '';
           const sections = [
             data.text || '',
+            data.descriptionPlain || stripHtml(data.description || ''),
             ...(data.lists || []).map(l => `${l.text}\n${stripHtml(l.content)}`),
-            data.additional || '',
+            data.additionalPlain || stripHtml(data.additional || ''),
           ];
-          const text = sections.join('\n').trim();
+          const text = sections.filter(Boolean).join('\n').trim();
           if (text.length > 50) {
-            return text.substring(0, 3000);
+            return { title: data.text || null, description: (header + text).substring(0, 5000) };
           }
         }
       }
@@ -395,7 +572,7 @@ async function fetchJD(url) {
   }
 
   // Greenhouse API: https://boards-api.greenhouse.io/v1/boards/{company}/jobs/{jobId}
-  const ghMatch = url.match(/boards\.greenhouse\.io\/([^\/?\s]+)\/jobs\/(\d+)/);
+  const ghMatch = url.match(/(?:boards|job-boards)\.greenhouse\.io\/([^\/?\s]+)\/jobs\/(\d+)/);
   if (ghMatch) {
     const [, company, jobId] = ghMatch;
     try {
@@ -405,9 +582,10 @@ async function fetchJD(url) {
       });
       if (res.ok) {
         const data = await res.json();
+        const header = data.location?.name ? `Location: ${data.location.name}\n\n` : '';
         const text = stripHtml(data.content || '');
         if (text.length > 50) {
-          return text.substring(0, 3000);
+          return { title: data.title || null, description: (header + text).substring(0, 5000) };
         }
       }
     } catch {
@@ -415,175 +593,35 @@ async function fetchJD(url) {
     }
   }
 
-  // Fallback: HTML scraping
-  return fetchJDHtml(url);
-}
-
-// ============================================================================
-// Extract experience and location with Gemini (reuse client to avoid init overhead)
-// ============================================================================
-let geminiModel = null;
-
-function initGeminiModel() {
-  if (!geminiModel) {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    geminiModel = genAI.getGenerativeModel({
-      model: 'gemini-2.0-flash-lite',
-      generationConfig: { temperature: 0.2, maxOutputTokens: 200 },
-    });
-  }
-  return geminiModel;
-}
-
-async function extractJobMetadata(url, jdText) {
-  // Check if JD fetch failed
-  if (!jdText || jdText.startsWith('[Could not fetch') || jdText.startsWith('[Fetch error')) {
-    return { experience_years: null, location: 'Unknown', fetchError: true };
-  }
-
-  // If JD is too short (likely API parse error or bad response), skip
-  if (jdText.length < 50) {
-    return { experience_years: null, location: 'Unknown', fetchError: true };
-  }
-
-  const model = initGeminiModel();
-
-  // Debug: log JD text length
-  const jdPreview = jdText.substring(0, 100).replace(/\n/g, ' ');
-
-  const prompt = `Extract and return ONLY a JSON object, no other text:
-{
-  "experience_years": <number or null>,
-  "location": "<string>"
-}
-Rules:
-- "0-2 years" → 2. "2+ years" → 2. "3+ years" → 3. "no experience" → 0. unclear → null.
-- location: first location mentioned or "Remote". Keep it short.
-
-Job posting:
-${jdText}`;
-
-  const MAX_RETRIES = 3;
-  let delay = 2000;
-
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+  // Ashby posting API: https://api.ashbyhq.com/posting-api/job-board/{org} returns the whole board
+  const ashbyMatch = url.match(/jobs\.ashbyhq\.com\/([^\/?#\s]+)\/([0-9a-f-]{36})/i);
+  if (ashbyMatch) {
+    const [, org, jobId] = ashbyMatch;
     try {
-      const result = await model.generateContent(prompt);
-      const text = result.response.text().trim();
-
-      // Extract JSON: match outermost braces, accounting for nested objects
-      let braceCount = 0;
-      let jsonStart = -1;
-      let jsonEnd = -1;
-
-      for (let i = 0; i < text.length; i++) {
-        if (text[i] === '{') {
-          if (braceCount === 0) jsonStart = i;
-          braceCount++;
-        } else if (text[i] === '}') {
-          braceCount--;
-          if (braceCount === 0 && jsonStart !== -1) {
-            jsonEnd = i + 1;
-            break;
+      const res = await fetch(`https://api.ashbyhq.com/posting-api/job-board/${org}`, {
+        headers: { 'User-Agent': CHROME_USER_AGENT, 'Accept': 'application/json' },
+        signal: AbortSignal.timeout(10000),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        const job = (data.jobs || []).find(j => j.id === jobId || (j.jobUrl || '').includes(jobId));
+        if (job) {
+          const locationParts = [job.location, job.isRemote ? 'remote' : null].filter(Boolean);
+          const header = locationParts.length ? `Location: ${locationParts.join(' | ')}\n\n` : '';
+          const body = job.descriptionPlain || stripHtml(job.descriptionHtml || '');
+          const text = [job.title || '', body].filter(Boolean).join('\n').trim();
+          if (text.length > 50) {
+            return { title: job.title || null, description: (header + text).substring(0, 5000) };
           }
         }
       }
-
-      if (jsonStart === -1 || jsonEnd === -1) {
-        return { experience_years: null, location: 'Unknown' };
-      }
-
-      const jsonStr = text.substring(jsonStart, jsonEnd);
-      const parsed = JSON.parse(jsonStr);
-
-      // Validate required fields
-      if (typeof parsed === 'object' && parsed !== null) {
-        return {
-          experience_years: parsed.experience_years ?? null,
-          location: (parsed.location && typeof parsed.location === 'string') ? parsed.location : 'Unknown',
-        };
-      }
-
-      return { experience_years: null, location: 'Unknown' };
-    } catch (err) {
-      if (attempt < MAX_RETRIES) {
-        await new Promise(r => setTimeout(r, delay));
-        delay *= 2;
-        continue;
-      }
-      return { experience_years: null, location: 'Unknown' };
-    }
-  }
-}
-
-// ============================================================================
-// Filter job
-// ============================================================================
-function passesFilter(metadata) {
-  const { experience_years, location, fetchError } = metadata;
-
-  // If fetch failed, skip (don't evaluate on incomplete data)
-  if (fetchError) return false;
-
-  // Rule 1: experience <= 2 years (or null/unknown → keep, as unknown is assumed entry-level)
-  if (experience_years !== null && experience_years > 2) {
-    return false;
-  }
-
-  // Rule 2: location matches California or Remote
-  const locLower = (location || '').toLowerCase();
-
-  // California: "california", "ca" (word boundary), or specific CA cities
-  const caMatch = /\bcalifornia\b|\bca\b|san francisco|los angeles|san jose|san diego|oakland|berkeley|mountain view|palo alto|cupertino/i.test(location || '');
-  const remoteMatch = /\bremote\b/i.test(location || '');
-
-  return caMatch || remoteMatch;
-}
-
-// ============================================================================
-// Append to pipeline.md
-// ============================================================================
-function appendToPipeline(url, company, role) {
-  if (!existsSync(PATHS.pipeline)) {
-    writeFileSync(PATHS.pipeline, '# Pipeline\n\n## Pending\n\n');
-  }
-
-  let content = readFileSync(PATHS.pipeline, 'utf-8');
-
-  // Find insertion point (before next ## heading or end of file)
-  const insertionMatch = content.match(/^## Pending\s*$/m);
-  if (!insertionMatch) {
-    // Create Pending section if missing
-    if (!content.includes('## Pending')) {
-      content += '\n## Pending\n\n';
+    } catch {
+      // Fall through to HTML scrape
     }
   }
 
-  const line = `- [ ] ${url} | ${company} | ${role}\n`;
-  const pendingIndex = content.indexOf('## Pending');
-  const nextHeading = content.indexOf('\n## ', pendingIndex + 1);
-
-  if (nextHeading === -1) {
-    content += line;
-  } else {
-    content = content.substring(0, nextHeading) + '\n' + line + content.substring(nextHeading);
-  }
-
-  writeFileSync(PATHS.pipeline, content);
-}
-
-// ============================================================================
-// Append to scan-history.tsv
-// ============================================================================
-function appendToScanHistory(url, title, company, status, location) {
-  const now = new Date().toISOString().split('T')[0];
-
-  if (!existsSync(PATHS.scanHistory)) {
-    writeFileSync(PATHS.scanHistory, 'url\tfirst_seen\tportal\ttitle\tcompany\tstatus\tlocation\n');
-  }
-
-  const line = `${url}\t${now}\tgoogle-search\t${title}\t${company}\t${status}\t${location}\n`;
-  appendFileSync(PATHS.scanHistory, line);
+  // Fallback: HTML scraping (no reliable title there)
+  return { title: null, description: await fetchJDHtml(url) };
 }
 
 // ============================================================================
@@ -592,13 +630,14 @@ function appendToScanHistory(url, title, company, status, location) {
 async function main() {
   console.log(`
 ╔════════════════════════════════════════════════════════════════╗
-║           Google Search Job Scanner                           ║
-║  Early-career SWE roles (CA + Remote, ≤2 years experience)    ║
+║           Google Search Job Scanner — Stage 1: Collect        ║
+║  Scrapes Google for Lever/Greenhouse jobs, saves to database  ║
 ╚════════════════════════════════════════════════════════════════╝
 `);
 
-  const seenUrls = loadSeenUrls();
-  console.log(`📊 Loaded ${seenUrls.size} previously seen URLs`);
+  const db = initDatabase();
+  const seenUrls = getSeenUrls(db);
+  console.log(`📊 Loaded ${seenUrls.size} jobs already in database`);
 
   // Search
   let foundUrls = [];
@@ -613,47 +652,43 @@ async function main() {
 
   // Filter new
   const newUrls = foundUrls.filter(url => !seenUrls.has(url));
-  console.log(`📥 ${newUrls.length} are new (not in history)`);
+  console.log(`📥 ${newUrls.length} are new`);
 
   if (newUrls.length === 0) {
-    console.log(`\n✨ No new jobs to process. Done!`);
+    console.log(`\n✨ No new jobs. Done!`);
+    db.close();
     process.exit(0);
   }
 
-  // Fetch + evaluate
-  console.log(`\n🔄 Fetching and evaluating...\n`);
+  // Fetch + save
+  console.log(`\n📝 Fetching job descriptions...\n`);
 
   const limit = pLimit(5); // 5 concurrent
-  let passCount = 0;
-  let filteredCount = 0;
+  const today = new Date().toISOString().split('T')[0];
+  let savedCount = 0;
   let errorCount = 0;
-  const errors = [];
+
+  const stmt = db.prepare(`
+    INSERT INTO jobs (url, company, title, description, source, status, first_seen)
+    VALUES (?, ?, ?, ?, ?, 'not_checked', ?)
+  `);
 
   const tasks = newUrls.map((url, idx) =>
     limit(async () => {
       const company = extractCompanySlug(url);
-      const roleTitle = url.split('/').pop().split('-').join(' ');
+      const source = url.includes('jobs.lever.co') ? 'lever'
+        : url.includes('ashbyhq.com') ? 'ashby'
+        : 'greenhouse';
+      const slugTitle = url.split('/').pop().split('-').join(' '); // fallback only
 
       try {
-        const jdText = await fetchJD(url);
-        const metadata = await extractJobMetadata(url, jdText);
-
-        if (passesFilter(metadata)) {
-          console.log(`  ✅ [${idx + 1}/${newUrls.length}] ${company} | ${roleTitle.substring(0, 50)}`);
-          appendToPipeline(url, company, roleTitle);
-          appendToScanHistory(url, roleTitle, company, 'added', metadata.location);
-          passCount++;
-        } else {
-          const reason = metadata.fetchError ? 'fetch-error' : `exp=${metadata.experience_years}, loc=${metadata.location}`;
-          console.log(`  ❌ [${idx + 1}/${newUrls.length}] SKIP ${company} | ${reason}`);
-          appendToScanHistory(url, roleTitle, company, 'skipped_filtered', metadata.location || 'Unknown');
-          filteredCount++;
-        }
+        const jd = await fetchJD(url);
+        stmt.run(url, company, jd.title || slugTitle, jd.description, source, today);
+        console.log(`  📥 [${idx + 1}/${newUrls.length}] ${company} → saved`);
+        savedCount++;
       } catch (err) {
         const errMsg = err.message || 'unknown error';
-        console.log(`  ⚠️  [${idx + 1}/${newUrls.length}] ERROR ${company}: ${errMsg.substring(0, 50)}`);
-        errors.push({ company, url, error: errMsg });
-        appendToScanHistory(url, roleTitle, company, 'skipped_error', 'Unknown');
+        console.log(`  ⚠️  [${idx + 1}/${newUrls.length}] ERROR ${company}: ${errMsg.substring(0, 40)}`);
         errorCount++;
       }
     })
@@ -665,24 +700,17 @@ async function main() {
 ╔════════════════════════════════════════════════════════════════╗
 ║                      Summary                                  ║
 ╠════════════════════════════════════════════════════════════════╣
-║ Found: ${foundUrls.length.toString().padStart(3)} URLs                                          ║
-║ New:   ${newUrls.length.toString().padStart(3)}                                             ║
-║ Passed filter: ${passCount.toString().padStart(3)}                                     ║
-║ Filtered out:  ${filteredCount.toString().padStart(3)}                                    ║
-║ Errors:        ${errorCount.toString().padStart(3)}                                     ║
+║ Found:  ${foundUrls.length.toString().padStart(3)} URLs                                         ║
+║ New:    ${newUrls.length.toString().padStart(3)}                                             ║
+║ Saved:  ${savedCount.toString().padStart(3)}                                             ║
+║ Errors: ${errorCount.toString().padStart(3)}                                             ║
 ╚════════════════════════════════════════════════════════════════╝
 `);
 
-  if (passCount > 0) {
-    console.log(`✨ Added ${passCount} jobs to ${PATHS.pipeline}`);
-  }
+  console.log(`\n📋 Saved ${savedCount} new jobs (status: not_checked)`);
+  console.log(`💡 Run 'node process-jobs.mjs' to evaluate and filter them.\n`);
 
-  if (errors.length > 0) {
-    console.log(`\n⚠️  ${errors.length} jobs had errors (check API quota/network):`);
-    errors.forEach(({ company, error }) => {
-      console.log(`   - ${company}: ${error.substring(0, 60)}`);
-    });
-  }
+  db.close();
 }
 
 main().catch(err => {

@@ -16,6 +16,7 @@
     "liveness": "node check-liveness.mjs",
     "scan": "node scan.mjs",
     "google-scan": "node google-scan.mjs",
+    "board-scan": "node board-scan.mjs",
     "patterns": "node analyze-patterns.mjs",
     "gemini:eval": "node gemini-eval.mjs",
     "pre-filter": "node pre-filter.mjs",
@@ -23,7 +24,11 @@
     "summary": "node batch-summary.mjs",
     "apply": "node auto-apply.mjs",
     "apply:queue": "node auto-apply.mjs --queue",
-    "pipeline": "node pre-filter.mjs && node batch-gemini.mjs && node merge-tracker.mjs"
+    "pipeline": "node pre-filter.mjs && node batch-gemini.mjs && node merge-tracker.mjs",
+    "process-jobs": "node process-jobs.mjs",
+    "apply-jobs": "node apply-jobs.mjs",
+    "apply-one": "node apply-jobs.mjs --limit 1",
+    "full-pipeline": "node board-scan.mjs && node google-scan.mjs && node process-jobs.mjs"
   },
   "keywords": [
     "ai",
@@ -43,6 +48,7 @@
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "better-sqlite3": "^12.11.1",
     "dotenv": "^17.0.0",
     "js-yaml": "^4.1.1",
     "p-limit": "^5.0.0",
